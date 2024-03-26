@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-moonfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-moonfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Moonfolk" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_MOONFOLK">
+		<description>
+			<p>The moonfolk, or soratami, are an enigmatic race of humanoid beings who are capable of flight and dwell in floating cities of Kamigawa's sky. Physically, they are slim, possess blue-gray skin, and have long ears which they sometimes wrap over their heads.</p>
+			<p class="indent">The moonfolk claim to be descended from a moon Myojin. They live within the floating city of Otawara, which rests in the clouds above lake Kamitaki. They watch over the world below, mostly indifferent to the concerns of the surface folk. They have a high emphasis on the study of magic and technology, with the Director of the Saiba Futurists being a moonfolk researcher.</p>
+
+			<h4>MOONFOLK NAMES</h4>
+			<p>Moonfolk do not use familial names, instead relying on mononyms. In rare cases, a moonfolk might hold a title that is recognized among their people and used to differentiate them from others with the same name.</p>
+			<p class="indent"><strong>Example Names:</strong> Chiyo, Eitoku, Erayo, Katsumasa, Kotori, Meloku, Tameshi, Tamiyo, Uyo</p>
+
+			<h4>MOONFOLK TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Cantrip.</em></strong> You know one cantrip of your choice from the wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting for that cantrip (choose when you select this race).</p>
+			<p class="indent"><strong><em>Kami's Legacy.</em></strong> You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Moonfolk)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Moonfolk)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_KAMIS_LEGACY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_FLIGHT" />
+		</rules>
+	</element>
+
+	<element name="Cantrip" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting for that cantrip (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Wizard Cantrip (Moonfolk)" supports="Wizard&amp;&amp;0" />
+			<select type="Racial Trait" name="Spellcasting Ability (Cantrip)" supports="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_INTELLIGENCE|ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_WISDOM|ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Cantrip">
+			<description>You know one cantrip of your choice from the wizard spell list. &#13;
+			Your spellcasting ability for this cantrip is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Cantrip">
+			<description>You know one cantrip of your choice from the wizard spell list. &#13;
+			Your spellcasting ability for this cantrip is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_CANTRIP_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Cantrip">
+			<description>You know one cantrip of your choice from the wizard spell list. &#13;
+			Your spellcasting ability for this cantrip is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Kami's Legacy" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_KAMIS_LEGACY">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</description>
+		</sheet>
+	</element>
+	
+	<element name="Flight" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_MOONFOLK_FLIGHT">
+		<description>
+			<p>You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{innate speed}} feet. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+</elements>

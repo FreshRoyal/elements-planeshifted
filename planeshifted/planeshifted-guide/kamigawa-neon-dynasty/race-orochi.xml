@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-orochi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-orochi.xml" />
+		</update>
+	</info>
+
+	<element name="Orochi" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_OROCHI">
+		<description>
+			<p>Orochi are anthropomorphic four-armed snakefolk who originally inhabited the Jukai Forest of Kamigawa. Their culture revolves around reverence for the kami of the land and nature, and their magic is noticeably tied to the seasons. Orochi traditionally live in colonies, built with a unique egg-like architecture. Orochi eggs are tended by a Broodmistress and her Eggwatchers. Orochi colonies are interestingly devoid of tombstones; by tradition, the dead are buried with a tree sapling, so they would become a part of the forest after death.</p>
+			<p class="indent">The orochi form three distinct tribes: the Kashi tribe, who house and breed warriors; the Matsu tribe, who raise spies and scouts; and the Sakura tribe, who preserve the orochi rituals and teachings.</p>
+			<p class="indent">In ages past, the orochi had legs like any other humanoid race in Kamigawa. After the Kami War, the orochi were forced out of their home, and they appealed to the kami for help. The kirin answered their call, but demanded the orochi give up their limbs as payment. When the orochi hastily agreed, the kirin had pity on them, taking only their legs and granting them access to greater magical power.</p>
+
+			<h4>OROCHI NAMES</h4>
+			<p>Almost all orochi have names that begin with an 'S' sound, and often contain more than one S in the rest of the name. Orochi do not use family names, but may use their tribe name as a surname.</p>
+			<p class="indent"><strong>Male Names:</strong> Sadao, Satoshi, Senichi, Seshiro, Sitsusuro, Shizuko, Shoichi, Sosuke</p>
+			<p class="indent"><strong>Female Names:</strong> Sachiko, Sakiko, Sasaya, Sayuri, Setsuko, Shidako, Shisato, Shinose</p>
+
+			<h4>OROCHI TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you select this race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> You have fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modified piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Gift of the Kirin.</em></strong> You know the druidcraft cantrip. Starting at 3rd level, you can cast the entangle spell with this trait. Once you cast entangle with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 1st level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Secondary Arms.</em></strong> You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+			<p class="indent"><strong><em>Serpentine Build.</em></strong> You have a serpentine body which you can use to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple.</p>
+			<p class="indent"><strong><em>Serpentine Build.</em></strong> You have a serpentine body which you can use to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple.</p>
+			<p class="indent"><strong><em>Poison Bite.</em></strong> As an action, you can make a special strike with your Bite. If the attack hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier or be poisoned until the start of your next turn. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Orochi)" supports="Custom Ability Score Improvement Option" />
+			<select type="Racial Trait" name="Size (Orochi)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Orochi)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_BITE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_SECONDARY_ARMS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_SERPENTINE_BUILD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_POISON_BITE" />
+		</rules>
+	</element>
+
+	<element name="Bite" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_BITE">
+		<description>
+			<p>You have fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modified piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6+{{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Gift of the Kirin" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN">
+		<description>
+			<p>You know the <i>druidcraft</i> cantrip. Starting at 3rd level, you can cast the <i>entangle</i> spell with this trait. Once you cast entangle with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 1st level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENTANGLE" level="3" />
+			<select type="Racial Trait" name="Spellcasting Ability (Gift of the Kirin)" supports="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_INTELLIGENCE|ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_WISDOM|ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Gift of the Kirin">
+			<description>You know the druidcraft cantrip. &#13;
+			Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="3">You know the druidcraft cantrip. &#13;
+			You can cast the entangle spell with this trait, once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Gift of the Kirin">
+			<description>You know the druidcraft cantrip. &#13;
+			Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="3">You know the druidcraft cantrip. &#13;
+			You can cast the entangle spell with this trait, once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_GIFT_OF_THE_KIRIN_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Gift of the Kirin">
+			<description>You know the druidcraft cantrip. &#13;
+			Your spellcasting ability for this spell is Charisma.</description>
+			<description level="3">You know the druidcraft cantrip. &#13;
+			You can cast the entangle spell with this trait, once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Secondary Arms" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_SECONDARY_ARMS">
+		<description>
+			<p>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+		</description>
+		<sheet>
+			<description>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</description>
+		</sheet>
+	</element>
+
+	<element name="Serpentine Build" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_SERPENTINE_BUILD">
+		<description>
+			<p>You have a serpentine body which you can use to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on ability checks you make to initiate a grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Poison Bite" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OROCHI_POISON_BITE">
+		<description>
+			<p>As an action, you can make a special strike with your Bite. If the attack hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier or be poisoned until the start of your next turn. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>ou can make a special strike with your Bite. If the attack hits, it deals its normal damage, and the target must succeed on a DC {{poison bite:dc}} Constitution saving throw  or be poisoned until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="poison bite:dc" value="8" />
+			<stat name="poison bite:dc" value="proficiency" />
+			<stat name="poison bite:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+</elements>

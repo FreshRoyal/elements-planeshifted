@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-akki.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-akki.xml" />
+		</update>
+	</info>
+
+	<element name="Akki" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_AKKI">
+		<description>
+			<p>Akki are a race of goblins native to Kamigawa's Sokenzan mountains; an ancestral homeland they share with the ogres. The akki are short and have skin that comes in a variety of red and brown hues, with a pair of tiny horns sticking out from their head, four-fingered hands and three-fingered toes with long claws, and no external ears. Akki have small, wiry bodies, but their backs are protected by large turtle-like shells covered in short spikes; these shells evolved over the years as akki pranks got more and more self-destructive.</p>
+			<p class="indent">Traditionally, akki form territorial tribes, which consist of warriors and shamans, led by a tribe elder. When akki encounter trespassers, they begin by trying to ward away the offender with small-time pranks usually involving fire and rocks, which slowly escalate in danger if the first few don't do the trick. During the time of the Kami War, many akki joined with the ronin and Godo's Bandits.</p>
+			<p class="indent">In the modern era, sensibilities toward akki have improved, and many rank among respected blacksmiths and samurai. With the advent of technology, akki have taken the unique practice of salvaging mechs and painting them in bright war paint; perhaps reminiscent of akki tribal cave inscriptions.</p>
+
+			<h4>AKKI NAMES</h4>
+			<p>As a general rule, akki names consist of a reduplicated word; a word that has the same sound repeated twice, or a very similar sound, with no differentiation given for gender. Akki are not known to take family names.</p>
+			<p class="indent"><strong>Example Names:</strong> Ai-Ai, Ben-Ben, Goro-Goro, Ishi-Ishi, Keni-Keni, Kiki-Jiki, Ku-Ku, Lim-Lim, Oku-Doku, Rin-Rin, Tok-Tok, Uppo-Uppo, Zo-Zu</p>
+
+			<h4>AKKI TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Craftiness.</em></strong> You have proficiency in one of the following skills of your choice: Arcana, Deception, Investigation, Sleight of Hand, or Survival.</p>
+			<p class="indent"><strong><em>Fire Resistance.</em></strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> You have a turtle-like spiky shell. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Fury of the Small.</em></strong> When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Akki)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_GOBLINOID" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Akki)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_CRAFTINESS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_FIRE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_FURY_OF_THE_SMALL" />
+		</rules>
+	</element>
+
+	<element name="Craftiness" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_CRAFTINESS">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Arcana, Deception, Investigation, Sleight of Hand, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Craftiness" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Craftiness)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Fire Resistance" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_FIRE_RESISTANCE">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+
+	<element name="Natural Armor" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_NATURAL_ARMOR">
+		<description>
+			<p>You have a turtle-like spiky shell. While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>When you aren’t wearing armor, your AC is {{akki:natural armor}}.</description>
+		</sheet>
+		<rules>
+			<stat name="akki:natural armor" value="13" />
+			<stat name="akki:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="akki:natural armor" bonus="calculation" alt="Natural Armor (Akki)" />
+		</rules>
+	</element>
+
+	<element name="Fury of the Small" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_AKKI_FURY_OF_THE_SMALL">
+		<description>
+			<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal {{proficiency}} extra damage to the creature.</description>
+		</sheet>
+	</element>
+
+</elements>

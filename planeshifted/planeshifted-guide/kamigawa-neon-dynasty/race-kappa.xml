@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-kappa.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-kappa.xml" />
+		</update>
+	</info>
+
+	<element name="Kappa" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_KAPPA">
+		<description>
+			<p>Kappa are mysterious, water-dwelling folk native to Kamigawa. Little is known about them, but kappa superficially resemble turtles, including having shells on their back like akki. Before the Kami War, it was believed they were extinct. The Shell of the Last Kappa was a relic of considerable magical power and was kept at a shrine.</p>
+			<p class="indent">Kappa have since re-emerged from somewhere beneath the waves of lake Kamitaki. Some of these resurgent kappa have a penchant for wrecking technology, while others have been known to make unique use of it, such as incorporating firearms into their shells.</p>
+			<p class="indent">There are many legends surrounding the kappa; namely, that they love cucumbers and this weakness can be exploited by their enemies. Furthermore, it is said that the bowl on their head which collects water is the source of their power. Given how rare kappas are, no one can reliably verify these legends.</p>
+
+			<h4>KAPPA NAMES</h4>
+			<p>Kappas use monikers instead of proper names, similar to how many kami spirits are named for the idea or subject they represent. Kappa monikers are given or chosen for the character personalities of the kappa who bear them. With those close to them, kappa may use nicknames that derive from these monikers.</p>
+			<p class="indent"><strong>Example Names:</strong> He-who-sculpts-figures-of-bronze, He-who-wrecks-technology, He-of-never-ending-hunger, She-of-ever-following-eyes</p>
+
+			<h4>KAPPA TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe both air and water.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Kappa Sara.</em></strong> Your head crests into a dish that can hold water. As long as the dish is full of water, you have advantage on ability checks you make to initiate or escape a grapple.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> Because of your shell, your base Armor Class is 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><strong><em>Shell Defense.</em></strong> You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your Armor Class, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kappa)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Kappa)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_CLAWS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_KAPPA_SARA" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_SHELL_DEFENSE" />
+		</rules>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_AMPHIBIOUS">
+		<description>
+			<p>You can breathe both air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe both air and water.</description>
+		</sheet>
+	</element>
+
+	<element name="Claws" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_CLAWS">
+		<description>
+			<p>You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Kappa Sara" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_KAPPA_SARA">
+		<description>
+			<p>Your head crests into a dish that can hold water. As long as the dish is full of water, you have advantage on ability checks you make to initiate or escape a grapple.</p>
+		</description>
+		<sheet>
+			<description>Your head crests into a dish that can hold water. As long as the dish is full of water, you have advantage on ability checks you make to initiate or escape a grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Armor" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_NATURAL_ARMOR">
+		<description>
+			<p>Because of your shell, your base Armor Class is 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.</p>
+		</description>
+		<sheet>
+			<description>Your shell provides you a base AC of 17 (your Dexterity modifier doesn't affect this number). You can't wear light, medium, or heavy armor, but if you are using a shield, you can apply the shield's bonus as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:kappa" value="17" bonus="base" />
+			<stat name="ac:calculation" value="ac:natural armor:kappa" bonus="calculation" equipped="![armor:any]" alt="Natural Armor (Kappa)" />
+		</rules>
+	</element>
+
+	<element name="Shell Defense" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KAPPA_SHELL_DEFENSE">
+		<description>
+			<p>You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to your Armor Class, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can withdraw into your shell. Until you emerge, you gain a +4 bonus to your AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.</description>
+		</sheet>
+	</element>
+
+</elements>

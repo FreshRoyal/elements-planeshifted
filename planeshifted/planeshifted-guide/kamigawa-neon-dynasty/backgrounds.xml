@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/backgrounds.xml" />
+		</update>
+	</info>
+
+	<!--Hacker-->
+	<element name="Hacker" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_HACKER">
+		<description>
+			<p>You have embraced the modern age and the advent of technology, and understand how to use it to your advantage. As a hacker, you are adept at breaking into networks and systems, and overriding technological devices. Perhaps you are working for one of the Reckoner gangs or the Saiba Futurists, or perhaps you are a lone wolf using your skills for your own ends.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Arcana, Investigation</li>
+				<li><strong>Tool Proficiencies:</strong> Hacking tools, thieves' tools</li>
+				<li><strong>Equipment:</strong> Hacking tools, a face mask, a set of dark common clothes including a hood, and a belt pouch containing 15 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_USERNAME" />
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_BLACKMAIL" />
+		</description>
+		<setters>
+			<set name="short">Arcana, Investigation, Hacking Tools, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_USERNAME" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGKND Hacker" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Username" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_USERNAME">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have created a faceless network persona tied to your hacking exploits, and are acquainted with other like-minded hackers who are friendly to this persona. Additionally, you can forge digital documents and identification, as long as you have seen an example of the kind of document you are trying to copy.</p>
+		</description>
+		<sheet alt="Username" />
+	</element>
+
+	<element name="Variant Feature: Blackmail" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_BLACKMAIL">
+		<supports>Background Feature, PSGKND Hacker</supports>
+		<description>
+			<p>You can exert leverage over one or more Imperial commoners and demand their help as needs warrant, provided you have access to your hacking tools. For example, you can have a message carried across a neighborhood, procure a short carriage ride without paying, or have others clean up a bloody mess you left in an alley. The DM decides if your demands are reasonable and if there is sufficient data to blackmail them with.</p>
+		</description>
+		<sheet alt="Blackmail" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+		</rules>
+	</element>
+
+	<!--Imperial Bushi-->
+	<element name="Imperial Bushi" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_IMPERIAL_BUSHI">
+		<description>
+			<p>You are a graduate of the Imperial Golden-Tail Academy, a kitsune-run school that trains Kamigawa's best Samurai. You are well respected and expected to uphold the law of the Empire and balance between mortals and kami.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Athletics, plus one of your choice from History, Intimidation, Insight, or Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong>  One type of gaming set, vehicles (land)</li>
+				<li><strong>Equipment:</strong> An insignia of rank (usually attached to or incorporated into your weapon hilt), a gaming set (one of your choice), a set of common clothes, and a belt pouch containing 10 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_IMPERIAL" />
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_ENFORCER" />
+		</description>
+		<setters>
+			<set name="short">Athletics, 1 Other Skill, Gaming Set, Vehicles (Land)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<select type="Proficiency" name="Skill Proficiency (Imperial Bushi)" supports="ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Gaming Set (Imperial Bushi)" supports="Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_IMPERIAL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGKND Imperial Bushi" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Imperial" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_IMPERIAL">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have an established place in the hierarchy of the Empire. You can requisition simple equipment for temporary use, and you can gain access to any Imperial outpost in Kamigawa, where you can rest in safety and receive the attention of medics. You are also paid a salary of 1 gp per week, which, combined with free lodging in an outpost, enables you to maintain a poor lifestyle between adventures.</p>
+		</description>
+		<sheet alt="Imperial" />
+	</element>
+
+	<element name="Variant Feature: Enforcer" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_ENFORCER">
+		<supports>Background Feature, PSGKND Imperial Bushi</supports>
+		<description>
+			<p>As an enforcer of the Imperials, you have the authority to arrest criminals. In the absence of other authorities, you are authorized to pass judgement and even carry out sentencing. If you abuse this power, however, your superiors in Eiganjo might strip it from you.</p>
+		</description>
+		<sheet alt="Enforcer" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+		</rules>
+	</element>
+
+	<!--Intercessor-->
+	<element name="Intercessor" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_INTERCESSOR">
+		<description>
+			<p>You stand in the gap between Kakuriyo and Utsushiyo, understanding both worlds. Perhaps you are an official Imperial Intercessor, or perhaps you are a Jukai Merge Keeper or even Saiba researcher, using your knowledge of kami to preserve the spirit world or to profit from it.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Religion, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong>  One type of artisan's tools, one type of musical instrument</li>
+				<li><strong>Equipment:</strong> A musical instrument (one of your choice), a wand with white paper streamers, a bottle of rice wine, vestments, a set of common clothes, and a belt pouch containing 5 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_KAKURIYO_CONNECTION" />
+		</description>
+		<setters>
+			<set name="short">Religion, Persuasion, Artisan's Tool, Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Artisan's Tool (Imperial Bushi)" supports="Artisan tools" />
+			<select type="Proficiency" name="Musical Instrument (Imperial Bushi)" supports="Musical Instrument" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_KAKURIYO_CONNECTION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Kakuriyo Connection" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_KAKURIYO_CONNECTION">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Your mannerisms and knowledge of kami customs are recognized by natives of the Kakuriyo, who see you as one of their own. Because of this, friendly kami spirits are inclined to come to your aid if you need help near a merge gate or shrine.</p>
+		</description>
+		<sheet alt="Kakuriyo Connection" />
+	</element>
+
+	<!--Living Historian-->
+	<element name="Living Historian" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_HACKER">
+		<description>
+			<p>You were trained in the ways of the Living Historians, preservers of history in ink. As a member of their order, you were given the tattoos that mark Kamigawa's history. Perhaps you remain with them still, or perhaps you forge your own path to not only record history, but make it.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> History, Religion</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's tools, tattooist's tools</li>
+				<li><strong>Equipment:</strong> A copy of Azusa's diary (a sacred prayer book), tattooist's tools, a set of traveler's clothes, and a belt pouch containing 10 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_LIVING_HISTORY" />
+		</description>
+		<setters>
+			<set name="short">History, Religion, Calligrapher's Tools, Tattooist's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_ITEM_TOOL_TATTOOISTS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_LIVING_HISTORY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Living History" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_LIVING_HISTORY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have tattoos of Kamigawa's history on your skin. When you enter a location of historical significance, your tattoos come to life to tell the story of the location's original purpose and important events. In addition, they can help you identify art objects and other items of cultural importance.</p>
+		</description>
+		<sheet alt="Living History" />
+	</element>
+
+	<!--Mothrider-->
+	<element name="Mothrider" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_MOTHRIDER">
+		<description>
+			<p>You have been given the training of the Eiganjo Mothriders, who tamed the Imperial Moths and use them as mounts. Perhaps you uphold the tenets of the Empire, or perhaps you and your moth have ridden to other lands to seek your own path.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Animal Handling</li>
+				<li><strong>Tool Proficiencies:</strong> Choose two from among navigator's tools, poisoner's kit, and weaver's tools</li>
+				<li><strong>Equipment:</strong> A riding saddle, 10 days of animal feed, a pair of goggles, a set of traveler's clothes, and a belt pouch containing 10 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_EIGANJO_MOTH" />
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_IMPERIAL_MOTH_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Animal Handling, 2 Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<select type="Proficiency" name="Tool Proficiency (Mothrider)" number="2" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT|ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_EIGANJO_MOTH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Eiganjo Moth" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_EIGANJO_MOTH">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Over the years, you have befriended an imperial moth. The moth acts independently of you, but regards you as an ally. If you are incapacitated or absent, the moth flees. If the moth dies, you have advantage on any Wisdom (Animal Handling) or Charisma check you make to befriend another imperial moth.</p>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_IMPERIAL_MOTH_STATBLOCK" />
+			</div>
+		</description>
+		<sheet alt="Eiganjo Moth" />
+	</element>
+
+	<element name="Imperial Moth" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_IMPERIAL_MOTH_STATBLOCK">
+		<description>
+			<p><em>Large beast, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 19 (3d10 + 3)</li>
+				<li><strong>Speed</strong> 5 ft., fly 60 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>15 (+2)</td><td>12 (+1)</td><td>9 (-1)</td><td>13 (+1)</td><td>10 (+0)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Skills</strong> Perception +5, Stealth +4</li>
+				<li><strong>Senses</strong> blindsight 60 ft., passive Perception 15</li>
+				<li><strong>Languages</strong> —</li>
+				<li><strong>Challenge</strong> 1/4 (50 XP) 	<strong>Proficiency Bonus</strong> +2</li>
+			</ul>
+			<p><strong><em>Flyby.</em></strong> The moth doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Proboscis.</em></strong> <em> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 4 (1d6 + 1) slashing damage.</p>
+			<p><strong><em>Silk (Recharge 5-6).</em></strong> <em> Ranged Weapon Attack:</em> +3 to hit, range 30/60 ft., one creature. <em>Hit:</em> The target is restrained by silk. While restrained this way, the target has three quarters cover against attacks and other effects outside the silk. As an action, the restrained target can make a DC 11 Strength check, bursting the silk on a success. The silk can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage).</p>
+		</description>
+	</element>
+
+	<!--Pilot-->
+	<element name="Pilot" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_PILOT">
+		<description>
+			<p>You are a skilled pilot, of mechs or other vehicles. Pilots are sought after by nearly every faction, and often make their own independent names for themselves as racers, criminals, or even vigilantes.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Arcana</li>
+				<li><strong>Tool Proficiencies:</strong> Navigator's tools, vehicles (land or air)</li>
+				<li><strong>Equipment:</strong> Navigator's tools, a pair of goggles, a lucky charm such as a maneki-neko, a pilot's jumpsuit (traveler's clothes), and a belt pouch containing 10 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_MECH_TECH" />
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Arcana, Navigator's Tools, Vehicle</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<select type="Proficiency" name="Vehicle Proficiency (Pilot)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND|ID_WOTC_ERLW_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_AIR_SEA" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_MECH_TECH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Mech Tech" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_MECH_TECH">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you make a Dexterity or Intelligence check related to piloting or repairing a vehicle with which you are proficient, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
+		</description>
+		<sheet alt="Mech Tech" />
+	</element>
+
+	<!--Reckoner-->
+	<element name="Reckoner" type="Background" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_RECKONER">
+		<description>
+			<p>The reckoner gangs of Kamigawa are ancient and feared. Perhaps you joined them seeking glory, or perhaps it was a necessity to survive in the Undercity. Your tattoos now mark you, with respect if you climb their ranks, or as a traitor if you try to leave.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Intimidation, plus one of your choice from either Athletics or Stealth</li>
+				<li><strong>Tool Proficiencies:</strong> Choose two from among one type of gaming set, tattooist's tools, poisoner's kit, and vehicles (land)</li>
+				<li><strong>Equipment:</strong> Your choice of tattooist's tools or a poisoner's kit, one gaming set, an oni mask, a dark set of common clothes including a hood or straw hat, and a belt pouch containing 15 gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGKND_BACKGROUND_FEATURE_RECKONING" />
+			<h5 class="caption">RECKONER GANGS</h5>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Gang</td></tr>
+				</thead>
+				<tr><td>1</td><td>Dokuchi—A ninja gang that silences and strikes from shadow</td></tr>
+				<tr><td>2</td><td>Hyozan—Specialize in poisons, illegal enhancements, and magic tattoos</td></tr>
+				<tr><td>3</td><td>Mukotai—Tech users that specialize in stealth and subterfuge</td></tr>
+				<tr><td>4</td><td>Okiba—An exclusively nezumi biker gang</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="short">Intimidation, Athletics or Stealth, 2 Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Proficiency" name="Skill Proficiency (Reckoner)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Proficiency" name="Tool Proficiency (Reckoner)" number="2" supports="Gaming Set||PSGKND Reckoner Tool" />
+			<grant type="Background Feature" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_MECH_TECH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	<append id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS">
+		<supports>PSGKND Reckoner Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT">
+		<supports>PSGKND Reckoner Tool</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND">
+		<supports>PSGKND Reckoner Tool</supports>
+	</append>
+
+	
+	<element name="Feature: Reckoning" type="Background Feature" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_BACKGROUND_FEATURE_RECKONING">
+		<supports>Background Feature</supports>
+		<description>
+			<p>No matter where you go, your tattoos mark you as a member of a reckoner gang. You can get away with minor criminal offenses, such as refusing to pay for food at a restaurant or breaking down a door at a local shop, if no legal authorities witness the crime. Most people are too daunted by you to report your wrongdoing to the Imperials.</p>
+		</description>
+		<sheet alt="Reckoning" />
+	</element>
+
+</elements>

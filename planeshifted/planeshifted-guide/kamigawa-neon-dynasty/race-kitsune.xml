@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-kitsune.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-kitsune.xml" />
+		</update>
+	</info>
+
+	<element name="Kitsune" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_KITSUNE">
+		<description>
+			<p>The kitsune of Kamigawa are cunning, tricksy masters of diplomacy and swordmanship. They are curious and fond of playing pranks, mostly harmless ones for their own amusement.</p>
+			<p class="indent">Kitsune are long-lived beings with very strong beliefs in their traditions. They tend to live in large, close-knit family clans related through blood and marriage. Kitsune are proud of their lineages and are able to trace their ancestry back through multiple generations.</p>
+			<p class="indent">The more a kitsune experiences, the more tails they grow, with the wisest elders having nine tails. The average kitsune is slighter and shorter than the average human, with the top of a kitsune's head coming up to a human's chin. They have white fur with red markings.</p>
+
+			<h4>KITSUNE NAMES</h4>
+			<p>Whatever a kitsune might be named at birth, a kitsune will often choose to change as it grows and gains more tails, reflecting its new understanding of the world and itself. Kitsune names are usually hyphenated and fixated on physical properties.</p>
+			<p class="indent"><strong>Example Names:</strong> Autumn-Tail, Iron-Claw, Light-Paws, Opal-Eye, Pearl-Ear, Rune-Tail, Silk-Eyes, Silver-Foot, Snow-Fur, Swift-Arm, Tender-Hand</p>
+
+			<h4>KITSUNE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Many Tails of Wisdom.</em></strong> You have a fox-like tail, and you grow more tails as you grow in knowledge and experience: two tails at 3rd level, three tails at 5th level, four tails at 7th level, five tails at 9th level, six tails at 11th level, seven tails at 13th level, eight tails at 15th level, and nine tails at 17th level.</p>
+			<p class="indent">If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your gained knowledge to gain a bonus to the roll equal to your proficiency bonus. You can use this trait a number of times equal to the number of tails you have, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Trickster Fox.</em></strong> You have proficiency in one of the following skills of your choice: Acrobatics, Deception, Perception, Sleight of Hand, Stealth, or Survival.</p>
+			<p class="indent"><strong><em>Vulpine Cunning.</em></strong> You have advantage on Intelligence (Investigation) checks you make to determine illusions, and on Wisdom (Insight) checks you make to determine whether someone is lying to you.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kitsune)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Kitsune)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_MANY_TAILS_OF_WISDOM" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_TRICKSTER_FOX" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_VULPINE_CUNNING" />
+		</rules>
+	</element>
+
+	<element name="Many Tails of Wisdom" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_MANY_TAILS_OF_WISDOM">
+		<description>
+			<p>You have a fox-like tail, and you grow more tails as you grow in knowledge and experience: two tails at 3rd level, three tails at 5th level, four tails at 7th level, five tails at 9th level, six tails at 11th level, seven tails at 13th level, eight tails at 15th level, and nine tails at 17th level.</p>
+			<p class="indent">If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your gained knowledge to gain a bonus to the roll equal to your proficiency bonus. You can use this trait a number of times equal to the number of tails you have, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>If you miss with an attack roll or fail an ability check or a saving throw, you can draw on your gained knowledge to gain a bonus to the roll equal to {{proficiency}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Trickster Fox" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_TRICKSTER_FOX">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Acrobatics, Deception, Perception, Sleight of Hand, Stealth, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Trickster Fox" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Trickster Fox)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Vulpine Cunning" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_KITSUNE_VULPINE_CUNNING">
+		<description>
+			<p>You have advantage on Intelligence (Investigation) checks you make to determine illusions, and on Wisdom (Insight) checks you make to determine whether someone is lying to you.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence (Investigation) checks you make to determine illusions, and on Wisdom (Insight) checks you make to determine whether someone is lying to you.</description>
+		</sheet>
+	</element>
+
+</elements>

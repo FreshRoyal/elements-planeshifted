@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Kami's Flare" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_KAMIS_FLARE">
+		<supports>Bard, Cleric, Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You call forth a Tiny kami of fire. It flits around you in your space for the duration, and sheds bright light in a 5 foot radius and dim light for an additional 5 feet. The kami grants you resistance to fire damage.</p>
+			<p class="indent">Once before the spell ends, you can use an action to direct the kami to throw a stream of flame in a 30-foot line. Each creature in that area must make a Dexterity saving throw, taking 2d6 fire damage on a failed save, or half as much damage on a successful one. The spell then ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Lucky Offering" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_LUCKY_OFFERING">
+		<supports>Bard, Cleric, Wizard</supports>
+		<description>
+			<p>You present the coin as an offering to a kami spirit, who bestows you a bit of luck in exchange. When you make an attack roll, an ability check, or a saving throw before the spell ends, you can dismiss this spell on yourself to gain advantage on the roll.</p>
+			<p class="indent">When you dismiss this spell on yourself, you gain temporary hit points equal to your spellcasting bonus.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a coin with a hole punched in the center, worth at least 1 cp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Malicious Malfunction" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_MALICIOUS_MALFUNCTION">
+		<supports>Artificer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You infuse a flask of oil with infectious magic from another plane and transfer it into technology around you. Choose one electronic device or magic item you can see in range. Until the spell ends, an affected electronic device is inoperable, and a magic item that isn't an artifact has its magical properties suppressed.</p>
+			<p class="indent">A creature holding or carrying the object when you cast the spell must succeed on a Constitution saving throw or become poisoned for the duration. While poisoned this way, the creature is unable to release or remove the chosen object.</p>
+			<p class="indent">At the end of each of the poisoned creature's turns, it must make a Constitution saving throw. On a failed save, the creature takes 4d6 necrotic damage. If it successfully saves against this spell three times, the spell ends on the creature.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 6th level or higher, you can target one additional object for each slot level above 5th.</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a flask of oil</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Okiba Salvage" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_OKIBA_SALVAGE">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>You magically repair a broken object, vehicle, or Construct you can see in range. If the target is a Construct that died within the last minute, it returns to life with 0 hit points and is unconscious. If the creature has been dead for longer than 1 minute, this spell has no effect.</p>
+			<p class="indent">If the target is an object or vehicle, it is repaired and regains hit points equal to 1d6 + your spellcasting modifier. If the target was broken apart, this spell reattaches the pieces, provided all the pieces are within range. This spell leaves no trace of damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wrench</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Seismic Wave" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_SEISMIC_WAVE">
+		<supports>Bard, Druid, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You slam the ground, causing a rippling shockwave to emit from you along the ground in a 15-foot cone. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 bludgeoning damage and is knocked prone. On a successful save, a creature takes half that damage and isn't knocked prone. Structures and objects in the area that aren't being worn or carried take double damage.</p>
+			<p class="indent">Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (15-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Short Circuit" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_SHORT_CIRCUIT">
+		<supports>Artificer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause an electronic device you can see within range to experience a power surge. If the device isn't being worn or carried, it ceases to function for 1 minute, or until it is restarted or repaired, and you choose to create either a shock or smoke.</p>
+			<p class="indent"><b><i>Shock.</i></b> Each creature within 5 feet of the device must succeed on a Dexterity saving throw or be paralyzed until the end of its next turn.</p>
+			<p class="indent"><b><i>Smoke.</i></b> Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Soul Transfer" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_SOUL_TRANSFER">
+		<supports>Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>This spell snatches the soul of a humanoid as it dies and allows you to transfer its energy in one of the following ways.</p>
+			<p class="indent"><b><i>Steal Life.</i></b> You transfer the energy to yourself and regain hit points equal to 2d8 + your spellcasting ability modifier.</p>
+			<p class="indent"><b><i>Revive.</i></b> You transfer the energy to a different creature within range that has died within the last minute, restoring it to life with 1 hit point. This spell can't restore any missing body parts.</p>
+			<p class="indent"><b><i>Animate.</i></b> You transfer the energy to the corpse of another Medium or Small humanoid within range that has been dead for longer than 1 minute, raising it as a zombie (the DM has the creature's statistics).</p>
+			<p class="indent">On each of your turns, you can use a bonus action to mentally command the zombie if it is within range. You decide what action the zombie will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the zombie only defends itself against hostile creatures. Once given an order, the zombie continues to follow it until its task is complete.</p>
+			<p class="indent">The zombie crumbles to dust after 1 minute, if it drops to 0 hit points, or if you create another zombie with this spell.</p>
+			<p class="indent"><b><i>Payment.</i></b> You transfer the energy of the soul to your patron, or to an oni, Fiend, or Fey with whom you have made a deal. Though you gain no special control or influence over the creature you pay the soul to, their disposition is likely more favorable toward you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take when a humanoid within 30 feet of you dies</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an oni figurine worth 100gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Summon Plant" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_SUMMON_PLANT">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You call forth a plant spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Plant Spirit stat block. When you cast the spell, choose a material: Bark, Fungus, or Vine. The creature resembles a Beast of your choice made of the chosen material, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_SUMMON_PLANT_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny forest in a handheld terrarium worth 400gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Plant Spirit" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_SUMMON_PLANT_STATBLOCK">
+		<description>
+			<p><em>Medium plant, unaligned</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 12 + the level of the spell (natural armor) + 2 (Bark only)</li>
+				<li><strong>Hit Points</strong> 40 + 15 for each spell level above 4th</li>
+				<li><strong>Speed</strong> 30 feet, climb 30 feet (Vines only)</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>10 (+0)</td><td>18 (+4)</td><td>10 (+0)</td><td>14 (+2)</td><td>9 (-1)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Vulnerabilities</strong> fire</li>
+				<li><strong>Damage Resistances</strong> poison; bludgeoning, piercing, and slashing from nonmagical weapons (Bark only)</li>
+				<li><strong>Condition Immunities</strong> blinded, deafened, exhaustion</li>
+				<li><strong>Languages</strong> understands the languages you speak</li>
+				<li><strong>Challenge</strong> — 	<strong>Proficiency Bonus</strong> equals your bonus.</li>
+			</ul>
+			<p><strong><em>Spores (Fungus Only).</em></strong> When a creature starts its turn within 10 feet of the plant, the plant can force it to make a Constitution saving throw against your spell save DC. On a failed save, the target is poisoned until the start of its next turn.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The plant makes a number of attacks equal to half this spell's level (rounded down).</p>
+			<p><strong><em>Slam.</em></strong> <em> Melee Weapon Attack:</em> your spell attack modifier to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + 4 + the spell's level bludgeoning damage.</p>
+			<p><strong><em>Grasp (Vines Only).</em></strong> <em> Melee Weapon Attack:</em> your spell attack modifier to hit, reach 10 ft., one target. <em>Hit:</em> The target is grappled. The plant has two grasping vines, each of which can grapple one target.</p>
+		</description>
+	</element>
+
+	<element name="Tamiyo's Safekeeping" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_TAMIYOS_SAFEKEEPING">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>You ward an object against harm and theft. The object, which only you can be holding and can weigh no more than 5 pounds, becomes immune to all damage for the duration. Any spell of 3rd level or lower can't affect the object even if the spell is cast using a higher level spell slot.</p>
+			<p class="indent">Until the spell ends, you can use your action to summon the object to your free hand.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Voltage Surge" type="Spell" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_SPELL_VOLTAGE_SURGE">
+		<supports>Artificer, Wizard, Spell Attack</supports>
+		<description>
+			<p>You hurl a bolt of crackling electricity at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 2d6 lightning damage.</p>
+			<p class="indent">If an electronic device is hit by this spell or worn or carried by a creature hit by this spell, that device ceases to function for 1 minute, or until it is restarted or repaired.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantanious</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a battery</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

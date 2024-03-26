@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Kitsune" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_KITSUNE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by kitsune.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Kitsune</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Orochi" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_OROCHI">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by orochi.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Orochi</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Nezumi-Tongue" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_NEZUMI_TONGUE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by nezumi.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Nezumi</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Ritual Tongue" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_RITUAL_TONGUE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by ogres and oni.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Ogres, Oni</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Phyrexian" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_PHYREXIAN">
+		<supports>Standard</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+</elements>

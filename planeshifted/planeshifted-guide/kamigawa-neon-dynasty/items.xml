@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/items.xml" />
+		</update>
+	</info>
+
+	<!--Adventuring Gear-->
+
+	<element name="Blinding Powder" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_BLINDING_POWDER">
+		<description>
+			<p>As an action, you can throw the powder in this pouch at a creature within 5 feet of you. Make a ranged attack against the creature, treating the sand as an improvised weapon. On a hit, the target is blinded. A creature can end this blinded condition by using its action to make a DC 10 Dexterity check to clear the powder from their eyes.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolas Bolt" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_BOLAS_BOLT">
+		<description>
+			<p>A large or smaller creature hit by a bolas bolt fired from a crossbow must succeed on a DC 10 Dexterity saving throw or be knocked prone and restrained. A creature can use its action to make a DC 10 Dexterity check, freeing itself or another creature within its reach on a success.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Credit Chip" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_CREDIT_CHIP">
+		<description>
+			<p>Credit chips are issued after someone makes a deposit of funds to a bank in Towashi. The chip serves to wirelessly access funds, preventing the need for carrying around large amounts of coins or bank notes.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Gohei" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_GOHEI">
+		<description>
+			<p>A gohei is a wand or staff with white paper streamers, used in rituals to worship the kami. A spellcaster who draws magic from kami can use a gohei as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+		</setters>
+	</element>
+
+	<!--Magic Items-->
+
+	<element name="Ancestral Katana" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ANCESTRAL_KATANA">
+		<description>
+			<p>While anyone can pass on a sword, an ancestral katana is one that has remained with a clan, tribe, or family line for generations, being well maintained and repaired. It is believed that the blade is connected to a kami that embodies the family's deeds and memory, and this kami gives the blade its strength.</p>
+			<p class="indent">An ancestral katana passes down from parent to child, though this relation does not have to be by blood. If the bearer dies, another heir can claim the blade. If no worthy heir exists, the sword loses its magic and becomes a normal longsword, fading into obscurity.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties.</p>
+			<p class="indent"><strong><em>Defensive.</em></strong> While you are holding this longsword, you gain a +1 bonus to AC.</p>
+			<p class="indent"><strong><em>Battōjutsu.</em></strong> When you draw this longsword as part of the first attack you make on your first turn in combat and hit a creature, the longsword deals an extra 3d8 damage.</p>
+			<p class="indent"><strong><em>You Are Already Dead.</em></strong> When you attack a Large or smaller creature with this longsword and roll a 20 on the attack roll, you cut straight through the creature, bisecting and slaying it. A creature is immune to this effect if it is immune to slashing damage, is formless, amorphous, or incorporeal, can regenerate, has legendary actions, or the DM otherwise decides the creature cannot be killed by bisection. Such a creature instead takes an extra 3d8 slashing damage from the hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement" addition="by a barbarian, fighter, paladin, ranger, or warlock">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Assassin's Ink Tattoo" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_TATTOO_ASSASSINS_INK_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts various beasts, kami, and oni in the ukiyo-e style.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Otherworldly Assassin.</em></strong> The tattoo has 3 charges, and it regains all expended charges daily at dawn. As an action while the tattoo is on your skin, you can expend 1 of the tattoo's charges to cause a kami to emerge from the tattoo and lunge at one creature you can see within 60 feet of you. The target must make a DC 14 Constitution saving throw. On a failed save, the creature takes 2d6 poison damage and is poisoned for 1 minute. On a successful save, the creature takes half damage and isn't poisoned. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Blade of the Oni" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_BLADE_OF_THE_ONI">
+		<description>
+			<p>A blade of the oni is an ogre-forged weapon of obsidian, fashioned with menacing spikes.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties.</p>
+			<p class="indent"><strong><em>Sentience.</em></strong> A blade of the oni is a sentient neutral evil weapon with an Intelligence of 14, a Wisdom of 12, and a Charisma of 15. It has hearing and darkvision out to a range of 120 feet.</p>
+			<p class="indent">The weapon communicates by transmitting emotions, sending a tingling sensation through the wielder's hand when it wants to communicate something it has sensed.</p>
+			<p class="indent"><strong><em>Personality.</em></strong> A blade of the oni is possessed by an oni, and as such embodies selfish aspects. It values these qualities in others and bonds well with a wielder who displays them, while showing contempt for wielders who are self-sacrificial for others.</p>
+			<p class="indent"><strong><em>Reconfigure.</em></strong> If you use an action to speak the command word and throw the sword to a point on the ground within 60 feet of you, the sword becomes an oni. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.</p>
+			<p class="indent">The oni exists for 1 hour. At the end of the duration, the creature reverts to its sword form. It reverts to a sword early if it drops to 0 hit points or if you use an action while touching it. When the creature becomes a sword again, its property can't be used again until the next dawn.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> This greatsword is cursed, and becoming attuned to it extends the curse to you. With each passing day while you are cursed, your physical appearance changes to become more like an oni spirit. After seven days, a third eye opens vertically on your forehead, recognizable as the mark of the oni. Thereafter, your creature type changes to Fiend for as long as you remain cursed.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+	</element>
+
+	<element name="Chōchin" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_CHOCHIN">
+		<description>
+			<p>The chōchin is a paper lantern that uses magic instead of oil. When lit, the lantern sheds bright light in a 30-foot radius and dim light for an additional 30 feet. As an action, you can turn the lantern light on or off.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Communicator" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_COMMUNICATOR">
+		<description>
+			<p>A communicator is a pocket-sized electronic device used for instantaneous communication. Each communicator has a unique number sequence used to contact it. The communicator can be keyed to a creature’s fingerprint or semblance. An unauthorized creature proficient with hacking tools can bypass this key with a successful DC 15 Intelligence check.</p>
+			<p class="indent"><strong><em>Send a Message.</em></strong> You can touch the communicator and use your action to cast the <i>sending</i> spell from it. The target is another communicator whose unique sequence of numbers you know. To do so, you type the message into the communicator's holographic interface. Your message appears in the holographic interface of the target communicator and can be viewed by any creature holding it. The message remains in the communicator until a creature uses its action to delete it.</p>
+			<p class="indent"><strong><em>Make a Call.</em></strong> You can touch the communicator and use your action to attempt to cast <i>magic mouth</i> from it. The target is another communicator whose unique sequence of numbers you know. A creature holding the target communicator may accept or refuse your call. If they accept, you cast the spell and it triggers immediately. The message does not repeat.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Cybernetic Limb" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_CYBERNETIC_LIMB">
+		<description>
+			<p>This item functions as a normal <i>prosthetic limb</i>. If you are attuned to it, you gain a +1 bonus to AC and saving throws while it is attached.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+
+	<element name="Divining Top" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_DIVINING_TOP">
+		<description>
+			<p>The divining top is a tiny brass spinning top with cryptic markings, connected to the spirit world. By spinning the top and watching how it spins and where it lands, you can predict the future.</p>
+			<p class="indent">The top has 3 charges, and regains all expended charges daily at dawn. You can cast the following spells from it, expending the necessary number of charges: augury (1 charge), find traps (1 charge), divination (2 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Eater of Virtue" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_EATER_OF_VIRTUE">
+		<description>
+			<p>This legendary katana is infamous for its curse. The eater of virtue has one rune on its blade for each creature that has died wielding it (typically 1d4 + 1). The first rune always grants a +1 bonus to attack and damage rolls made with this magic weapon. Each rune beyond the first grants the eater of virtue an additional property. The DM chooses each property or determines it randomly on the Eaten Virtues table.</p>
+			<h5 class="caption">EATEN VIRTUES</h5>
+			<table>
+				<thead>
+					<tr><td>d8</td><td>Property</td></tr>
+				</thead>
+				<tr><td>1</td><td>Increase the bonus to attack and damage rolls by 1, to a maximum of +3. Reroll if the eater of virtue already has a +3 bonus.</td></tr>
+				<tr><td>2</td><td>The eater of virtue functions as a <i>defender</i>.</td></tr>
+				<tr><td>3</td><td>The eater of virtue functions as a <i>weapon of warning</i>.</td></tr>
+				<tr><td>4</td><td>The eater of virtue functions as a <i>sword of life stealing</i>.</td></tr>
+				<tr><td>5</td><td>While you are holding the eater of virtue, you have a flying speed equal to your walking speed. If you already have a flying speed, that speed increases by 20 feet.</td></tr>
+				<tr><td>6</td><td>The eater of virtue functions as a <i>sword of sharpness</i>.</td></tr>
+				<tr><td>7</td><td>While you are holding the eater of virtue, you have advantage on saving throws against spells.</td></tr>
+				<tr><td>8</td><td>The eater of virtue has the thrown property with a normal range of 20 feet and a long range of 60 feet. Immediately after you make a ranged attack with this magic weapon, it flies back to your hand.</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Energy Blade" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ENERGY_BLADE_SWORD">
+		<description>
+			<p>This item appears to be a sword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of its normal damage type.</p>
+			<p class="indent">The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">any sword, radiant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type" addition="any sword">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+		</setters>
+	</element>
+	<element name="Energy Blade" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ENERGY_BLADE_DAGGER">
+		<description>
+			<p>This item appears to be a sword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear.</p>
+			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of its normal damage type.</p>
+			<p class="indent">The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, radiant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+	<element name="Komainu Battle Armor" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_CYBERNETIC_LIMB">
+		<description>
+			<p>Komainu are guardian lion statues often placed at kami shrines. While originally made of stone, the modern age of Kamigawa has seen them become mechanized constructs that can actually guard and defend the shrines. They can also transform into suits of armor to protect and empower kami intercessors.</p>
+			<p class="indent"><strong><em>Battle Armor.</em></strong> While you are attuned to the komainu and touching it, you can use an action to don or doff it.</p>
+			<p class="indent">While wearing the komainu battle armor, you gain the following benefits:</p>
+			<ul>
+				<li>The armor attaches to you and can't be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action.</li>
+				<li>Your walking speed is 50 ft.</li>
+				<li>You gain a +2 bonus to AC.</li>
+				<li>The armor includes gauntlets, which you can use to make unarmed strikes. If you hit with them, the strike deals 1d8 slashing damage, instead of bludgeoning damage normal for an unarmed strike.</li>
+			</ul>
+			<p class="indent"><strong><em>Reconfigure.</em></strong> If you use an action to speak the command word, the armor leaves you and becomes a lion, except it's a Construct, it's immune to poison damage and the poisoned condition, and it doesn't require air, food, drink, or sleep. The creature appears in an unoccupied space within 5 feet of you.</p>
+			<p class="indent">The creature is friendly to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.</p>
+			<p class="indent">The creature reverts to its magic item form if it drops to 0 hit points or if you use an action while touching it. When the creature becomes armor again, its property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Info Tablet" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_INFO_TABLET">
+		<description>
+			<p>This handheld device is approximately the size of a sheet of paper and is used to store and view vast amounts of data and perform calculations. The info tablet can be keyed to a creature’s fingerprint or semblance. An unauthorized creature proficient with hacking tools can bypass this key with a successful DC 15 Intelligence check.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Inkrise Tattoo" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_TATTOO_INKRISE_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts a pair of wings that cover your back.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Inkrise.</em></strong> While the tattoo is on your skin, you can use an action to cause the tattoo to extrude a pair of inky, glowing bat wings or bird wings on your back for 1 hour or until you use your action to retract them. The wings give you a flying speed of 30 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Kusari-Fundo" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_KUSARI_FUNDO">
+		<description>
+			<p>The kusari-fundo has 3 charges. When you hit a creature with an attack made with this weapon, you can expend one or more charges to deal an additional 1d6 force damage for each charge expended.</p>
+			<p class="indent">When you miss an attack with the kusari-fundo, it regains 1 charge.</p>
+		</description>
+		<setters>
+			<set name="keywords">chain whip, force</set>
+			<set name="category">Magic Weapons</set>
+			<set name="type" addition="chain whip">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Chain Whip</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Med-Tech Kit" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_MED_TECH_KIT">
+		<description>
+			<p>This medical kit contains bandages, splits, and stimulants. It functions as a normal healer's kit, with the following additional property: As an action, you can expend one use of the kit to cast one of the following spells from it: <i>cure wounds</i>, <i>detect poison and disease</i>, <i>lesser restoration</i>, or <i>protection from poison.</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Mistcloak" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_MISTCLOAK">
+		<description>
+			<p>This luminous cloak is woven with threads from the spirit world and has 3 charges. While wearing it, you can use an action to expend 1 of its charges to cast the <i>invisibility</i> spell on yourself from it.</p>
+			<p class="indent">The cloak regains 1d3 expended charges daily at dawn. If you expend the cloak's last charge, roll a d20. On a 1, the cloak falls to tatters and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="charges">1d3</set>
+		</setters>
+	</element>
+
+	<element name="Mnemonic Sphere" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_MNEMONIC_SPHERE">
+		<description>
+			<p>The mnemonic sphere is a device created by the Saiba Futurists to secretly store their secrets. It appears as a Tiny metal sphere with glowing lights, but it can be disguised or hidden inside another object.</p>
+			<p class="indent">While holding the mnemonic sphere, you can use your action to store a memory, idea, or message from your mind into the sphere. The sphere can hold only one such memory, idea, or message at a time.</p>
+			<p class="indent">If you use the mnemonic sphere while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as detect thoughts or modify memory), you can store the thoughts or memories you read, rather than your own.</p>
+			<p class="indent">Casting the identify or detect thoughts spell while holding a mnemonic sphere allows you to instantly receive whatever memory, idea, or message the mnemonic sphere contains.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Moonring Mirror" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_MOONRING_MIRROR">
+		<description>
+			<p>The moonring mirror is a handheld mirror made by the Soratami.</p>
+			<p class="indent"><strong><em>Reflection.</em></strong> You can see the reflection of invisible creatures in the mirror, and the reflections of shapechangers or creatures transformed by magic depict their true form.</p>
+			<p class="indent"><strong><em>Magic Mirror.</em></strong> The mirror has 6 charges, and regains 1d6 expended charges daily at dawn. While holding it, you can use an action to expend some of its charges to cast one of the following spells: <i>blink</i> (3 charges), <i>hallucinatory terrain</i> (4 charges), <i>mirror image</i> (2 charges).</p>
+			<p class="indent"><strong><em>Mirror Breaker.</em></strong> The mirror is a tiny object that has AC 13, 1 hit point, and immunity to psychic and poison damage.</p>
+			<p class="indent">If the mirror is destroyed while you are attuned to it, a reflection of you appears in an empty space within 5 feet of the mirror. The reflection's appearance, game statistics, and equipment are identical to yours. The reflection is a kami that manifests from Kakuriyo, and embodies either your best or worst qualities at the DM's discretion.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="charges">1d6</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" />
+			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
+		</rules>
+	</element>
+
+	<element name="Noise Suppressor" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_NOISE_SUPPRESSOR">
+		<description>
+			<p>The Noise Suppressor is a Tiny silencing device that can be held or incorporated into a wrist-mount. While holding it, you can use an action to make a 10 foot cube area centered on the device magically secure. Sound can't pass through the barrier at the edge of the cube. The cube lasts until you use an action to disengage it.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Retina Lenses" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_RETINA_LENSES">
+		<description>
+			<p>These translucent lenses are placed over the eyes and provide a heads-up display in your field of view. The lenses function as eyes of the eagle, eyes of minute seeing, and goggles of night. While wearing the lenses, you can use an action to cast one of the following spells from it: <i>detect magic</i>, <i>on/off</i>, or <i>remote access</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" id="ID_WOTC_UA20150803_SPELL_ON_OFF" />
+			<grant type="Spell" id="ID_WOTC_UA20150803_SPELL_REMOTE_ACCESS" />
+		</rules>
+	</element>
+
+	<element name="The Reality Chip" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_THE_REALITY_CHIP">
+		<description>
+			<p>The reality chip is an illegal bio-enhancement created by the moonfolk futurist Tameshi with help from a being from another plane. The chip is rumored to be able to influence the physics of reality. It appears as a Tiny computer chip with translucent wire-like arms. It superficially resembles a jellyfish.</p>
+			<p class="indent">While attuned to the reality chip, you gain a +3 bonus to AC, and you can read, write, and understand Phyrexian. When you attune to the reality chip, the chip's arms attach to your skin.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> The chip has 5 charges, and regains 1d4 + 1 expended charges daily at dawn. While holding it, you can use an action to expend some of its charges to cast one of the following spells: <i>dominate beast</i> (2 charges), <i>dominate person</i> (2 charges), <i>creation</i> (2 charges), <i>dominate monster</i> (3 charges), <i>reverse gravity</i> (3 charges).</p>
+			<p class="indent"><strong><em>Curse.</em></strong> While attuned to the reality chip, you suffer frequent visions and nightmares of the Phyrexian Jin-Gitaxis.</p>
+			<p class="indent"><strong><em>Reconfigure.</em></strong> If you use an action to speak the command word and throw the reality chip to a point on the ground within 60 feet of you, it becomes a creature with the statistics of a <strong>sea horse</strong>, except it's a Construct, it's immune to poison damage and the poisoned condition, and it doesn't require air, food, drink, or sleep.</p>
+			<p class="indent">The creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions.</p>
+			<p class="indent">The creature reverts to its magic item form if it drops to 0 hit points or if you use an action while touching it. When the creature becomes armor again, its property can't be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="charges">1d4+1</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" />
+			<grant type="Spell" id="ID_PHB_SPELL_CREATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" />
+			<grant type="Spell" id="ID_PHB_SPELL_REVERSE_GRAVITY" />
+		</rules>
+	</element>
+
+	<element name="Ventilating Mask" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_VENTILATING_MASK">
+		<description>
+			<p>This face mask depicts an oni, kitsune, or tengu and has glowing respirators near the mouth.</p>
+			<p class="indent">While wearing the mask, you have advantage on saving throws against harmful gases such as those created by a <i>cloudkill</i> spell, a <i>stinking cloud</i> spell, inhaled poisons, and gaseous breath weapons.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Wrist-Mount" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_WRIST_MOUNT">
+		<description>
+			<p>This wrist-mounted device functions as a simple data storage device, and can project images and video as three-dimensional holograms. It is commonly used to store a holo-ID, a credit chip, and access keycards. The wrist-mount can be keyed to a creature’s fingerprint or semblance. An unauthorized creature proficient with hacking tools can bypass this key with a successful DC 15 Intelligence check.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<!--Vehicles-->
+
+	<element name="Cyberbike" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_CYBERBIKE">
+		<description>
+			<p>A cyberbike is a two-wheeled vehicle built for speed, the horse of the modern age. It can serve as your mount, as described in the mounted combat rules in the <i>Player's Handbook</i>.</p>
+			<p class="indent"><strong><em>Crashing.</em></strong> The controller of a cyberbike can run the vehicle into another object or a creature by moving the vehicle into the target's space and making a special attack roll (1d20 + the controller's proficiency bonus) against the target's Armor Class. If the attack roll hits, a crash occurs; otherwise, the target moves out of the vehicle's path, avoiding the crash. If the DM decides that a crash is unavoidable, no attack roll is necessary, and the crash occurs automatically.</p>
+			<p class="indent">When a cyberbike crashes into something that could reasonably damage it, both the cyberbike and the creature or object it struck take bludgeoning damage based on the size of the struck object, as shown in the Crash Damage table. The cyberbike stops after crashing into a Gargantuan or immovable creature or object; otherwise, the cyberbike can continue moving if it has any movement left, and whatever it struck moves to the nearest unoccupied space that isn't in the cyberbike's path. If the cyberbike stops after crashing, its controller falls, landing prone in an unoccupied space within 5 feet of of the cyberbike.</p>
+			<h5 class="caption">CRASH DAMAGE</h5>
+			<table>
+				<thead>
+					<tr><td>Size</td><td>Crash Damage</td></tr>
+				</thead>
+				<tr><td>Small</td><td>1d6</td></tr>
+				<tr><td>Medium</td><td>1d8</td></tr>
+				<tr><td>Large</td><td>4d8</td></tr>
+				<tr><td>Huge</td><td>8d8</td></tr>
+				<tr><td>Gargantuan</td><td>16d8</td></tr>
+			</table>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_CYBERBIKE_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>			
+		</setters>
+	</element> 
+	<element name="Cyberbike" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_CYBERBIKE_STATBLOCK">
+		<description>
+			<p><em>Large vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 30</li>
+				<li><strong>Speed</strong> 60 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>18 (+4)</td><td>12 (+1)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but invisible and prone</li>
+			</ul>
+			<p><strong><em>Jump.</em></strong> If the cyberbike moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement.</p>
+		</description>
+	</element>
+
+	<!--Mech Suits-->
+	<element name="Mech Suit, Bankbuster" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_BANKBUSTER">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_RECKONER_BANKBUSTER_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>			
+		</setters>
+	</element>
+	<element name="Reckoner Bankbuster" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_RECKONER_BANKBUSTER_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 75</li>
+				<li><strong>Speed</strong> 50 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>18 (+4)</td><td>12 (+1)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<p><strong><em>Hauler.</em></strong> The bankbuster can carry up to 1 ton. Its design allows two other creatures to mount it while it has a pilot. The pilot maintains control of the bankbuster.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Claw.</em></strong> <em> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 11 (2d6 + 4) slashing damage.</p>
+			<p><strong><em>Siege.</em></strong> The bankbuster moves up to its speed towards an object or structure, dealing 4d10 bludgeoning damage to it if the bankbuster enters its space.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Brute Suit" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_BRUTE_SUIT">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_BRUTE_SUIT_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>			
+		</setters>
+	</element>
+	<element name="Brute Suit" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_BRUTE_SUIT_STATBLOCK">
+		<description>
+			<p><em>Large vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 17 (natural armor)</li>
+				<li><strong>Hit Points</strong> 50</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>12 (+1)</td><td>14 (+2)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The suit makes two Crushing Fist attacks.</p>
+			<p><strong><em>Crushing Fist.</em></strong> <em> Melee Weapon Attack:</em> +5 to hit, reach 10 ft., one target. <em>Hit:</em> 10 (2d6 + 3) bludgeoning damage.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Dragonfly Suit" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_DRAGONFLY_SUIT">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_DRAGONFLY_SUIT_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>			
+		</setters>
+	</element>
+	<element name="Dragonfly Suit" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_DRAGONFLY_SUIT_STATBLOCK">
+		<description>
+			<p><em>Large vehicle (air)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 17 (natural armor)</li>
+				<li><strong>Hit Points</strong> 50</li>
+				<li><strong>Speed</strong> 30 ft., fly 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>12 (+1)</td><td>18 (+4)</td><td>14 (+2)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> piercing, slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The suit makes two Strike attacks.</p>
+			<p><strong><em>Strike.</em></strong> <em> Melee Weapon Attack:</em> +6 to hit, reach 10 ft., one target. <em>Hit:</em> 15 (2d10 + 4) bludgeoning damage.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Futurist Sentinel" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_FUTURIST_SENTINEL">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_FUTURIST_SENTINEL_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>			
+		</setters>
+	</element>
+	<element name="Futurist Sentinel" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_FUTURIST_SENTINEL_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 1000</li>
+				<li><strong>Speed</strong> 50 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>10 (+0)</td><td>18 (+4)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> bludgeoning, fire, piercing, slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The suit makes two Sentinel Sword attacks.</p>
+			<p><strong><em>Sentinel Sword.</em></strong> <em> Melee Weapon Attack:</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 23 (3d12 + 4) slashing damage.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Imposter Mech" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_IMPOSTER_MECH">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_IMPOSTER_MECH_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>			
+		</setters>
+	</element>
+	<element name="Imposter Mech" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_IMPOSTER_MECH_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 75</li>
+				<li><strong>Speed</strong> 50 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>14 (+2)</td><td>12 (+1)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<p><strong><em>Shapechanger.</em></strong> The mech can use its action to polymorph into a Large, Huge, or Gargantuan creature it has seen, or back into its true form. Its statistics, other than its size, are the same in each form.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Multiattack.</em></strong> The mech makes two Slam attacks.</p>
+			<p><strong><em>Slam.</em></strong> <em> Melee Weapon Attack:</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 14 (3d6 + 4) damage of a type of the mech's choice: bludgeoning, piercing, slashing, or lightning.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Mechtitan" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_MECHTITAN">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_MECHTITAN_CORE_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>			
+		</setters>
+	</element>
+	<element name="Mechtitan Core" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_MECHTITAN_CORE_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (air)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 100</li>
+				<li><strong>Speed</strong> 50 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>18 (+4)</td><td>14 (+2)</td><td>18 (+4)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> bludgeoning, fire, piercing, slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Crushing FIst.</em></strong> <em> Melee Weapon Attack:</em> +8 to hit, reach 10 ft., one target. <em>Hit:</em> 14 (3d6 + 4) bludgeoning damage, or 34 (4d6 + 20) force damage if its Combine and Transform trait is active</p>
+			<p><strong><em>Combine and Transform.</em></strong> The mechtitan core combines with four other vehicles with willing pilots to become a size Gargantuan vehicle. It gains a flying speed of 100 ft., its current hit point total resets to 100 hit points, and it gains 100 temporary hit points. Each pilot can command the mechtitan on their turn.</p>
+		</description>
+	</element>
+
+	<element name="Mech Suit, Soulripper" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_SOULRIPPER">
+		<description>
+			<p>A mech suit is a technological suit of powered armor, capable of greatly enhancing the pilot's abilities. There are different kinds of mech suits in Kamigawa, each with a different purpose. The type of mech suit determines its statistics and rarity according to the table below.</p>
+			<p class="indent"><strong><em>Mech Suit.</em></strong> The suit's controls are accessed by a hatch in its upper back, which is easily opened while there are no creatures attuned to the artifact. Attuned creatures can open the hatch as easily as any other door. Other creatures can open the hatch as an action with a successful DC 25 Intelligence check using hacking tools. A knock spell cast on the hatch also opens it until the start of the caster's next turn.</p>
+			<p class="indent">A creature can enter or exit through the hatch by spending 10 feet of movement. Those inside the suit have total cover from effects originating outside it. The controls within it allow creatures to see outside without obstruction.</p>
+			<p class="indent">While you are inside the suit, you can command it by using the controls. During your turn, you can command it in the following ways:</p>
+			<ul>
+				<li>Open or close the hatch (no action required, once per turn)</li>
+				<li>Move the suit up to its speed (no action required)</li>
+				<li>As an action, you can command the suit to take one of the actions in its stat block or some other action.</li>
+			</ul>
+			<div class="reference">
+				<div element="ID_PSLE_PSGKND_INFORMATION_SOULRIPPER_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>			
+		</setters>
+	</element>
+	<element name="Soulripper" type="Information" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_INFORMATION_SOULRIPPER_STATBLOCK">
+		<description>
+			<p><em>Large vehicle (land)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 50</li>
+				<li><strong>Speed</strong> 30 ft., climb 30 ft.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>18 (+4)</td><td>12 (+1)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> slashing</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but incapacitated, invisible, and prone</li>
+			</ul>
+			<p><strong><em>Spider Climb.</em></strong> The soulripper climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+			<h5 class="caption">ACTIONS</h5>
+			<p><strong><em>Bite.</em></strong> <em> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 11 (2d6 +4) piercing damage.</p>
+			<p><strong><em>Grab.</em></strong> <em> Melee Weapon Attack:</em> ++6 to hit, reach 5 ft., one creature. <em>Hit:</em> the target is grappled.</p>
+			<p><strong><em>Soulrip.</em></strong> The soulripper makes a special Bite attack against a creature it is grappling. If it hits, the target takes an additional 7 (2d6) necrotic damage, and the soulripper gains a number of temporary hit points equal to the necrotic damage taken.</p>
+			<p class="indent">While these temporary hit points remain, the soulripper has advantage on all attack rolls, ability checks, and saving throws.</p>
+		</description>
+	</element>
+	<!--/Mech Suits-->
+
+	<!--Tools-->
+
+	<element name="Holo-Cards" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_TOOL_HOLO_CARDS">
+		<description>
+			<p>Holo-cards is a collectible trading card game, based on summoning creatures and casting spells depicted on cards, dealing damage to an opponent’s “life total” to reduce it from 20 to 0.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_GAMING_SET_PROFICIENCY_HOLO_CARDS</set>
+		</setters>
+	</element>
+
+	<element name="Koto" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_INSTRUMENT_KOTO">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>The koto is a plucked half-tube zither-like instrument. The most common type uses 13 strings strung over movable bridges used for tuning.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="10">10 lbs.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_KOTO</set>
+		</setters>
+	</element>
+
+	<element name="Onpu" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_INSTRUMENT_ONPU">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>A new and experimental technology, the onpu is a handheld globe device with numerous buttons on it, each of which plays a different electronic note.</p>
+		</description>
+		<setters>
+			<set name="category">Musical Instruments</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_ONPU</set>
+		</setters>
+	</element>
+
+	<element name="Hacking Tools" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_TOOL_HACKING_TOOLS">
+		<description>
+			<p>This kit contains the hardware and software necessary to allow access into most computer systems and electronic devices. Proficiency with hacking tools lets you add your proficiency bonus to any Intelligence checks you make to connect to or make use of a computer system or electronic device. The kit fits snugly in a backpack or toolbox.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS</set>
+		</setters>
+	</element>
+
+	<element name="Tattooist's Tools" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_TOOL_TATTOOISTS_TOOLS">
+		<description>
+			<p>These tools include ink, a tattoo pen, and a notebook of tattoo designs. Proficiency with tattooist's tools lets you add your proficiency bonus to any ability checks you make to tattoo. Tattooing can take a few hours of work, depending on the size and complexity of the tattoo.</p>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS</set>
+		</setters>
+	</element>
+
+	<!--Weapons-->
+
+	<element name="Chain Whip" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_CHAIN_WHIP">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_CHAIN_WHIP</supports>
+		<description>
+			<p></p>
+			<div element="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_CHAIN_WHIP" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="proficiency">ID_PSLE_PSGKND_WEAPON_PROFICIENCY_CHAIN_WHIP</set>
+		</setters>
+	</element>
+	<element name="Special (Chain Whip)" type="Weapon Property" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_CHAIN_WHIP">
+		<description>
+			<p>A chain whip counts as a monk weapon.</p>
+		</description>
+	</element>
+
+	<element name="Neko-te" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_NEKO_TE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_NEKO_TE</supports>
+		<description>
+			<p></p>
+			<div element="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_NEKO_TE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_PSLE_PSGKND_WEAPON_PROFICIENCY_NEKO_TE</set>
+		</setters>
+		<rules>
+			<stat name="speed:climb" value="speed" />
+		</rules>
+	</element>
+	<element name="Special (Neko-te)" type="Weapon Property" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_NEKO_TE">
+		<description>
+			<p>While wielding neko-te, you have a climbing speed equal to your walking speed, and your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage. You can't be disarmed of neko-te unless you are incapacitated.</p>
+		</description>
+	</element>
+
+	<element name="Rope Dart" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_ROPE_DART">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_ROPE_DART</supports>
+		<description>
+			<p></p>
+			<div element="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_ROPE_DART" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">10/20</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_PSLE_PSGKND_WEAPON_PROFICIENCY_ROPE_DART</set>
+		</setters>
+	</element>
+	<element name="Special (Rope Dart)" type="Weapon Property" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_ROPE_DART">
+		<description>
+			<p>After making a ranged attack with a rope dart, it immediately returns to your hand.</p>
+		</description>
+	</element>
+
+	<element name="Jitte" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_JITTE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_JITTE</supports>
+		<description>
+			<p></p>
+			<div element="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_JITTE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="proficiency">ID_PSLE_PSGKND_WEAPON_PROFICIENCY_JITTE</set>
+		</setters>
+	</element>
+	<element name="Special (Jitte)" type="Weapon Property" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_JITTE">
+		<description>
+			<p>While wielding a jitte, you can use your reaction to attempt to deflect a weapon when you are hit by a melee weapon attack. When you do so, the damage you take from the attack is reduced by 1d4 + your Dexterity modifier. If you are proficient with the sai dagger, you may also add your proficiency bonus to the roll. If you reduce the damage to 0, you may make a single melee weapon attack against the attacker, as part of the same reaction.</p>
+			<p class="indent">In addition, while wielding a jitte, you have advantage on saving throws you make to initiate a grapple.</p>
+		</description>
+	</element>
+
+	<element name="War Fan" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_WAR_FAN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_WAR_FAN</supports>
+		<description>
+			<p></p>
+			<div element="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_WAR_FAN" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="proficiency">ID_PSLE_PSGKND_WEAPON_PROFICIENCY_WAR_FAN</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" equipped="[shield:none]" />
+		</rules>
+	</element>
+	<element name="Special (War Fan)" type="Weapon Property" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_WAR_FAN">
+		<description>
+			<p>While wielding a war fan, you gain +1 bonus to AC. You cannot gain this benefit if you are using a shield.</p>
+		</description>
+	</element>
+
+	<element name="Plasma Cannon" type="Weapon" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PLASMA_CANNON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">40/120</set>
+			<set name="damage" type="radiant">1d12</set>
+			<set name="proficiency">ID_PSLE_PSGKND_PROFICIENCY_WEAPON_PLASMA_CANNON</set>
+		</setters>
+	</element>
+	<element name="Plasma Cartridge" type="Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_ITEM_PLASMA_CARTRIDGE">
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">3</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!--Tool Proficiencies-->
+
+	<element name="Tool Proficiency (Holo-Cards)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_PROFICIENCY_GAMING_SET_PROFICIENCY_HOLO_CARDS">
+		<supports>Gaming Set, Tool</supports>
+	</element>
+	<append id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_PROFICIENCY_GAMING_SET_PROFICIENCY_HOLO_CARDS" />
+		</rules>
+	</append>
+
+	<element name="Tool Proficiency (Koto)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_KOTO">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_KOTO" />
+		</rules>
+	</append>
+
+	<element name="Tool Proficiency (Onpu)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_ONPU">
+		<supports>Tool, ID_PROFICIENCY_MUSICAL_INSTRUMENT, Musical Instrument</supports>
+	</element>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_MUSICAL_INSTRUMENT">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_ONPU" />
+		</rules>
+	</append>
+
+	<element name="Tool Proficiency (Hacking Tools)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_HACKING_TOOLS">
+		<supports>Tool</supports>
+	</element>
+
+	<element name="Tool Proficiency (Tattooist's Tools)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+	</element>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_PROFICIENCY_TOOL_PROFICIENCY_TATTOOISTS_TOOLS" />
+		</rules>
+	</append>
+
+	<!--Weapon Proficiencies-->
+
+	<element name="Weapon Proficiency (Chain Whip)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_CHAIN_WHIP">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_CHAIN_WHIP</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_CHAIN_WHIP" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_PHB_CLASS_MONK">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_CHAIN_WHIP" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Neko-te)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_NEKO_TE">
+		<supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_NEKO_TE</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_NEKO_TE" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Rope Dart)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_ROPE_DART">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_ROPE_DART</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_ROPE_DART" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Jitte)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_JITTE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_JITTE</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_JITTE" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (War Fan)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_WAR_FAN">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_PSLE_PSGKND_WEAPON_PROPERTY_SPECIAL_WAR_FAN</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_WAR_FAN" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Plasma Cannon)" type="Proficiency" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_PLASMA_CANNON">
+		<supports>Weapon, Martial, Ranged, Firearm, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+	</element>
+	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_PSLE_PSGKND_WEAPON_PROFICIENCY_PLASMA_CANNON" />
+		</rules>
+	</append>
+
+</elements>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-ogre.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-ogre.xml" />
+		</update>
+	</info>
+
+	<element name="Ogre" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_OGRE">
+		<description>
+			<p>Known as o-bakemono, the ogres of Kamigawa are more intelligent than ogres of other worlds and possess considerable brute cunning. They originated in the Sokenzan Mountains, though most of their ancestors migrated to the swamps of Takenuma. They are taller than the other humanoids on average, with stockier builds. They have pointed ears and sharp nails, skin tones that range from reddish browns to purplish gray, and most have horns that protrude from their foreheads.</p>
+			<p class="indent">Traditionally, o-bakemono worshipped the oni, in contrast to the reverence of kami spirits by other cultures. Oni manifest from selfish and destructive concepts, which the o-bakemono view as necessary aspects of life. Their culture is defined by such concepts, valuing the power and strength of each individual. O-bakemono worshipped the oni with blood rites and sacrifices of living sentients in exchange for gifts of strength and supernatural powers. With the advent of the Kami War, the o-bakemono succeeded in freeing many of their oni masters from their spiritual prisons, together hoping to reshape Kamigawa on these principles.</p>
+			<p class="indent">In the modern day, o-bakemono culture has diversified. There are some villages and communities that still worship the oni, but many who do not, seeing the value in peace and community. Some o-bakemono even choose to become monks and worship the kami. O-bakemono who seek to distance themselves from the oni have a tradition of cutting off or shaving down their horns. Though they suffer a fearsome reputation, many seek to make peace and can be found in cities such as Towashi.</p>
+
+			<h4>OGRE NAMES</h4>
+			<p>Traditionally o-bakemono bear a single name given at birth. Some o-bakemono may be named after infamous oni, showing their reverence for the spirits.</p>
+			<p class="indent"><strong>Example Names:</strong> Goka, Hidetsugu, Kosei, Kuon, Muzan, Touma</p>
+			<p class="indent"><strong>Revered Oni Names:</strong> Kagemaro, Kuro, Kyoki, Seizan, Shimatsu, Yukora</p>
+
+			<h4>OGRE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Damage Dealer.</em></strong> When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Heavy-Handed.</em></strong> Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
+			<p class="indent"><strong><em>Sokenzan Born.</em></strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+			<p class="indent"><strong><em>Sokenzan Born.</em></strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+			<p class="indent"><strong><em>Natural Athlete.</em></strong> You have proficiency in the Athletics skill.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ogre)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Ogre)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_DAMAGE_DEALER" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_HEAVY_HANDED" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_SOKENZAN_BORN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_NATURAL_ATHLETE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_POWERFUL_BUILD" />
+		</rules>
+	</element>
+
+	<element name="Damage Dealer" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_DAMAGE_DEALER">
+		<description>
+			<p>When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Heavy-Handed" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_HEAVY_HANDED">
+		<description>
+			<p>Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal 1d6+{{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Sokenzan Born" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_SOKENZAN_BORN">
+		<description>
+			<p>You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+		</description>
+		<sheet>
+			<description>You naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Natural Athlete" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_NATURAL_ATHLETE">
+		<description>
+			<p>You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Natural Athlete)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Powerful Build" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_OGRE_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+</elements>

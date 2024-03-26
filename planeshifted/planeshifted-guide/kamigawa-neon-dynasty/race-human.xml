@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-human.xml" />
+		</update>
+	</info>
+
+	<element name="Human" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_HUMAN">
+		<description>
+			<p>Humans in Kamigawa are believed to come from the central plains of Towabara, where they were once ruled by the daimyo, feudal warlords. They are the progenitors and main citizens of the Empire, which was formed at the end of the Kami War to help Kyodai, the kami of the realm, to maintain the peace between the spirit and mortal worlds. Humans are also known for having befriended and trained the giant moths of Kamigawa as mounts, which the Imperials often ride into battle, and for having started Minamo Academy long before the Kami war.</p>
+			<p class="indent">In the modern era, humans can be found throughout Kamigawa in its many villages and cities, and among all of the various groups and factions found in the plane, showing their adaptability and versatility.</p>
+
+			<h4>HUMAN NAMES</h4>
+			<p>Kamigawa humans have names that often reflect the natural world around them. They are born into a clan, with some clan names being infamous and stretching deep into Kamigawa's history.</p>
+			<p class="indent"><strong>Male Names:</strong> Isshin, Kaito, Kenshi, Raiyuu, Satoru, Tatsunari, Toshiro</p>
+			<p class="indent"><strong>Female Names:</strong> Eiko, Heiko, Michiko, Kotose, Naomi, Norika, Risona, Satsuki</p>
+			<p class="indent"><strong>Clan Names:</strong> Hashimono, Hisoka, Hizawa, Kataniwa, Konda, Kumano, Kuromoto, Maruichi, Nitta, Sakashima, Sasabuchi, Shizuki, Takashi, Takeno, Tanae, Tategami, Umezawa, Yamazaki</p>
+
+			<h4>HUMAN TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Human Determination.</em></strong> When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Versatility.</em></strong> Humans have a wide range of natural talents. You have proficiency in one skill of your choice and with one tool of your choice.</p>
+
+			<div element="ID_PSLE_PSGKND_RACE_VARIANT_HUMAN_VARIANT"/>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Human)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Human)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_DETERMINATION" requirements="!ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" requirements="!ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" />
+			<select type="Race Variant" name="Variant Traits" supports="PSGKND Human" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Human Determination" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_DETERMINATION">
+		<description>
+			<p>When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll.</description>
+		</sheet>
+	</element>
+	
+	<element name="Versatility" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY">
+		<description>
+			<p>Humans have a wide range of natural talents. You have proficiency in one skill of your choice and with one tool of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Versatility" supports="Skill" />
+			<select type="Proficiency" name="Versatility" supports="Tool" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool, Versatility" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Variant Traits" type="Race Variant" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_VARIANT_HUMAN_VARIANT">
+		<supports>PSGKND Human</supports>
+		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+		<description>
+			<p>If your campaign uses the optional feat rules found in the <i>Player's Handbook</i>, your Dungeon Master might allow these variant traits, which replace your Human Determination and Versatility traits.</p>
+			<p class="indent"><strong><em>Resorceful.</em></strong> Whenever you finish a long rest, you are given inspiration, using the rules for inspiration provided in the <i>Player's Handbook</i>.</p>
+			<p class="indent"><strong><em>Feat.</em></strong> You gain one of the following feats from the <i>Player's Handbook</i>: Alert, Healer, Lucky, Magic Initiate, Savage Attacker, Skilled, or Tough.</p>
+		</description>
+		<sheet alt="Human" display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VARIANT_RESOURCEFUL" />
+			<select type="Feat" name="Feat (Variant Traits)" supports="ID_PHB_FEAT_ALERT|ID_PHB_FEAT_HEALER|ID_PHB_FEAT_LUCKY|ID_PHB_FEAT_MAGIC_INITIATE|ID_PHB_FEAT_SAVAGE_ATTACKER|ID_PHB_FEAT_SKILLED|ID_PHB_FEAT_TOUGH" />
+		</rules>
+	</element>
+
+	<element name="Resourceful" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VARIANT_RESOURCEFUL">
+		<description>
+			<p>Whenever you finish a long rest, you are given inspiration, using the rules for inspiration provided in the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you are given inspiration.</description>
+		</sheet>
+	</element>
+
+</elements>

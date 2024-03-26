@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+	<element name="Raccoonfolk" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_RACCOONFOLK">
+		<description>
+			<p>The raccoonfolk are, as the name implies, anthropomorphic raccoons native to Capenna. They are unique as being the most common race to still eek out a living on the blasted surface of Old Capenna. Their talents allow them to hide and forage for supplies better than others, so raccoonfolk families will often show up outside an elevator that leads to the city, looking for shelter.</p>
+			<p class="indent">While they have a negative reputation as bandits and thugs, many raccoonfolk make an "honest" living working for the crime families, using their small size and natural skills to their advantage.</p>
+
+			<h4>RACCOONFOLK TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+			<p class="indent"><strong><em>Raccoon Nimbleness.</em></strong> You can move through the space of any creature that is of a size larger than yours without expending extra movement.</p>
+			<p class="indent"><strong><em>Raccoon Talents.</em></strong> You have proficiency in the Perception and Stealth skills.</p>
+			<p class="indent"><strong><em>Natural Scavenger.</em></strong> You have advantage on Intelligence (Investigation), Wisdom (Perception), and Wisdom (Survival) checks you make to forage, scavenge, or find hidden items.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (RAccoonfolk)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Raccoonfolk)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_NIMBLE_ESCAPE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_RACCOON_NIMBLENESS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_RACCOON_TALENTS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_NATURAL_SCAVENGER" />
+		</rules>
+	</element>
+
+	<element name="Nimble Escape" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+		</sheet>
+	</element>
+
+	<element name="Raccoon Nimbleness" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_RACCOON_NIMBLENESS">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours without expending extra movement.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours without expending extra movement.</description>
+		</sheet>
+	</element>
+	
+	<element name="Raccoon Talents" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_RACCOON_TALENTS">
+		<description>
+			<p>You have proficiency in the Perception and Stealth skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Raccoon Talents)" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Natural Scavenger" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_RACCOONFOLK_NATURAL_SCAVENGER">
+		<description>
+			<p>You have advantage on Intelligence (Investigation), Wisdom (Perception), and Wisdom (Survival) checks you make to forage, scavenge, or find hidden items.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence (Investigation), Wisdom (Perception), and Wisdom (Survival) checks you make to forage, scavenge, or find hidden items.</description>
+		</sheet>
+	</element>
+	
+</elements>

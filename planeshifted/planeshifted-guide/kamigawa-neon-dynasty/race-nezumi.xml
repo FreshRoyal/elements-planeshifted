@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-nezumi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-nezumi.xml" />
+		</update>
+	</info>
+
+	<element name="Nezumi" type="Race" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACE_NEZUMI">
+		<description>
+			<p>The Nezumi are a race of anthropomorphic rats native to the Takenuma swamps. In times past, Kamigawa's other races ostracized and stereotyped the nezumi. Though in recent years the feelings toward the nezumi have softened, they are still oftentimes seen as outsiders in the Empire and its lands.</p>
+			<p class="indent">The nezumi traditionally live in independent swamp villages, or in roaming nezumi gangs. Nezumi did not have magical traditions until the theft of scrolls from Minamo Academy; nezumi then developed unique practices, such as that of the insect-shaman, sometimes called a miser, who can control swarms of Takenuma insects. These shamans also developed bone-reading, a type of divination. With the advent of technology, some nezumi samurai practice the bladeblessing, combining technology and magic to enhance their weaponry, while the nezumi of the legendary Okiba reckoner gang are renowned for being the best engineers and pilots of cyberbikes.</p>
+			<p class="indent">Nezumi have a wide range of gray and brown fur colors. They are characteristically smaller and lighter than other races, and so make naturally adept ninjas, spies, scouts, and pilots.</p>
+
+			<h4>NEZUMI NAMES</h4>
+			<p>Nezumi have their own language in which they name themselves, but they often use translated names in the common tongue when among others. Nezumi names are usually compound words that describe the physical characteristics, personality traits, or professional habits of the person.</p>
+			<p class="indent"><strong>Example Names:</strong> Ashcoat, Black-nose, Greasefang, Ink-eyes, Marrow-gnawer, Nighteyes, Silver-fur, Skullsnatcher, Stabwhisker, Split-tail</p>
+
+			<h4>NEZUMI TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Murine Talents.</em></strong> You have proficiency in the Perception and Stealth skills.</p>
+			<p class="indent"><strong><em>Nezumi Resilience.</em></strong> You have resistance to poison damage and immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Nezumi)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Nezumi)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_MURINE_TALENTS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_NEZUMI_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_NIMBLE_ESCAPE" />
+		</rules>
+	</element>
+
+	<element name="Murine Talents" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_MURINE_TALENTS">
+		<description>
+			<p>You have proficiency in the Perception and Stealth skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Murine Talents)" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	
+	<element name="Nezumi Resilience" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_NEZUMI_RESILIENCE">
+		<description>
+			<p>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Nimble Escape" type="Racial Trait" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_RACIAL_TRAIT_NEZUMI_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/source.xml" />
+		</update>
+	</info>
+
+	<element name="Planeshifted Guide to Kamigawa: Neon Dynasty" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_PSLE_KAMIGAWA_NEON_DYNASTY">
+		<description>
+			<p>Explore <i>Magic: the Gathering's</i> sci-fi plane of Kamigawa in this homebrew rules expansion and campaign setting guide.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PSGKND</set>
+			<set name="url">https://www.gmbinder.com/share/-MfyPCgIfjSY4Lgrl3gB</set>
+			<set name="image">https://preview.redd.it/s2g4h7auhmk91.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bd6d60fd14a44b5127080b1ddd6ec171cb03a322</set>
+			<set name="author" abbreviation="PSLE" url="https://www.reddit.com/user/letterephesus/">letterephesus</set>
+			<set name="homebrew">true</set>
+			<set name="release">20220904</set>
+		</setters>
+	</element>	
+</elements>
