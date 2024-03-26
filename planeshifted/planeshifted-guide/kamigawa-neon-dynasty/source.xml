@@ -13,7 +13,7 @@
 		<setters>
 			<set name="abbreviation">PSGKND</set>
 			<set name="url">https://www.gmbinder.com/share/-MfyPCgIfjSY4Lgrl3gB</set>
-			<set name="image">https://preview.redd.it/s2g4h7auhmk91.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=bd6d60fd14a44b5127080b1ddd6ec171cb03a322</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/PSGKND.jpg</set>
 			<set name="author" abbreviation="PSLE" url="https://www.reddit.com/user/letterephesus/">letterephesus</set>
 			<set name="homebrew">true</set>
 			<set name="release">20220904</set>
