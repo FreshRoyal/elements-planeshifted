@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/items.xml" />
 		</update>
 	</info>
@@ -144,7 +144,7 @@
 			<p class="indent"><strong><em>Make a Call.</em></strong> You can touch the communicator and use your action to attempt to cast <i>magic mouth</i> from it. The target is another communicator whose unique sequence of numbers you know. A creature holding the target communicator may accept or refuse your call. If they accept, you cast the spell and it triggers immediately. The message does not repeat.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="type">Wondrous Item</set>
@@ -181,7 +181,7 @@
 			<p class="indent">The top has 3 charges, and regains all expended charges daily at dawn. You can cast the following spells from it, expending the necessary number of charges: augury (1 charge), find traps (1 charge), divination (2 charges).</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type">Wondrous Item</set>
@@ -220,36 +220,20 @@
 		</setters>
 	</element>
 
-	<element name="Energy Blade" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ENERGY_BLADE_SWORD">
+	<element name="Energy Blade" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ENERGY_BLADE">
 		<description>
 			<p>This item appears to be a sword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear.</p>
 			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of its normal damage type.</p>
 			<p class="indent">The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet.</p>
 		</description>
 		<setters>
-			<set name="keywords">any sword, radiant</set>
+			<set name="keywords">any sword, dagger, radiant</set>
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">300</set>
-			<set name="type" addition="any sword">Weapon</set>
+			<set name="type" addition="dagger, greatsword, longsword, rapier, scimitar, or shortsword">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
-		</setters>
-	</element>
-	<element name="Energy Blade" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_ENERGY_BLADE_DAGGER">
-		<description>
-			<p>This item appears to be a sword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear.</p>
-			<p class="indent">You gain a +1 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of its normal damage type.</p>
-			<p class="indent">The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet.</p>
-		</description>
-		<setters>
-			<set name="keywords">dagger, radiant</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">300</set>
-			<set name="type" addition="dagger">Weapon</set>
-			<set name="rarity">Uncommon</set>
-			<set name="enhancement">1</set>
-			<set name="weapon">Dagger</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||Dagger</set>
 		</setters>
 	</element>
 
@@ -328,7 +312,7 @@
 			<p>This medical kit contains bandages, splits, and stimulants. It functions as a normal healer's kit, with the following additional property: As an action, you can expend one use of the kit to cast one of the following spells from it: <i>cure wounds</i>, <i>detect poison and disease</i>, <i>lesser restoration</i>, or <i>protection from poison.</i>.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">150</set>
 			<set name="type">Wondrous Item</set>
@@ -342,7 +326,7 @@
 			<p class="indent">The cloak regains 1d3 expended charges daily at dawn. If you expend the cloak's last charge, roll a d20. On a 1, the cloak falls to tatters and is destroyed.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
@@ -355,11 +339,11 @@
 		<description>
 			<p>The mnemonic sphere is a device created by the Saiba Futurists to secretly store their secrets. It appears as a Tiny metal sphere with glowing lights, but it can be disguised or hidden inside another object.</p>
 			<p class="indent">While holding the mnemonic sphere, you can use your action to store a memory, idea, or message from your mind into the sphere. The sphere can hold only one such memory, idea, or message at a time.</p>
-			<p class="indent">If you use the mnemonic sphere while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as detect thoughts or modify memory), you can store the thoughts or memories you read, rather than your own.</p>
-			<p class="indent">Casting the identify or detect thoughts spell while holding a mnemonic sphere allows you to instantly receive whatever memory, idea, or message the mnemonic sphere contains.</p>
+			<p class="indent">If you use the mnemonic sphere while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as <i>detect thoughts</i> or <i>modify memory</i>), you can store the thoughts or memories you read, rather than your own.</p>
+			<p class="indent">Casting the <i>identify</i> or <i>detect thoughts</i> spell while holding a mnemonic sphere allows you to instantly receive whatever memory, idea, or message the mnemonic sphere contains.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">100</set>
 			<set name="type">Wondrous Item</set>
@@ -376,18 +360,13 @@
 			<p class="indent">If the mirror is destroyed while you are attuned to it, a reflection of you appears in an empty space within 5 feet of the mirror. The reflection's appearance, game statistics, and equipment are identical to yours. The reflection is a kami that manifests from Kakuriyo, and embodies either your best or worst qualities at the DM's discretion.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement" addition="by a spellcaster">true</set>
 			<set name="charges">1d6</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_BLINK" />
-			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" />
-			<grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" />
-		</rules>
 	</element>
 
 	<element name="Noise Suppressor" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_NOISE_SUPPRESSOR">
@@ -408,17 +387,12 @@
 			<p>These translucent lenses are placed over the eyes and provide a heads-up display in your field of view. The lenses function as eyes of the eagle, eyes of minute seeing, and goggles of night. While wearing the lenses, you can use an action to cast one of the following spells from it: <i>detect magic</i>, <i>on/off</i>, or <i>remote access</i>.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
-			<grant type="Spell" id="ID_WOTC_UA20150803_SPELL_ON_OFF" />
-			<grant type="Spell" id="ID_WOTC_UA20150803_SPELL_REMOTE_ACCESS" />
-		</rules>
 	</element>
 
 	<element name="The Reality Chip" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_THE_REALITY_CHIP">
@@ -432,20 +406,13 @@
 			<p class="indent">The creature reverts to its magic item form if it drops to 0 hit points or if you use an action while touching it. When the creature becomes armor again, its property can't be used again until the next dawn.</p>
 		</description>
 		<setters>
-			<set name="keywords"></set>
+			<set name="keywords">spell</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Artifact</set>
 			<set name="attunement">true</set>
 			<set name="charges">1d4+1</set>
 		</setters>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_BEAST" />
-			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" />
-			<grant type="Spell" id="ID_PHB_SPELL_CREATION" />
-			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_MONSTER" />
-			<grant type="Spell" id="ID_PHB_SPELL_REVERSE_GRAVITY" />
-		</rules>
 	</element>
 
 	<element name="Ventilating Mask" type="Magic Item" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_MAGIC_ITEM_VENTILATING_MASK">
