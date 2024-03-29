@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-human.xml" />
 		</update>
 	</info>
@@ -38,8 +38,8 @@
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Language (Human)" supports="Standard||Exotic" />
 
-			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_DETERMINATION" requirements="!ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" />
-			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" requirements="!ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_DETERMINATION" requirements="!ID_PSLE_PSGKND_RACE_VARIANT_HUMAN_VARIANT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGKND_RACIAL_TRAIT_HUMAN_VERSATILITY" requirements="!ID_PSLE_PSGKND_RACE_VARIANT_HUMAN_VARIANT" />
 			<select type="Race Variant" name="Variant Traits" supports="PSGKND Human" optional="true" />
 		</rules>
 	</element>
