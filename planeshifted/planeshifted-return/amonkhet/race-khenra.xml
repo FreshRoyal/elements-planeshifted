@@ -30,6 +30,7 @@
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_TWIN" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Khenra)" supports="Standard||Exotic" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 		</rules>
 	</element>
@@ -49,7 +50,8 @@
 			<description>You have advantage on any Wisdom (Perception) check that relies on hearing or smell.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Khenra Keen Hearing and Smell)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
 	<element name="Khenra Twin" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_TWIN">
@@ -64,7 +66,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Trait" name="Khenra Twin Trait" supports="PSRA Khenra" />
+			<select type="Racial Trait" name="Khenra Twin Trait" supports="PSRA Khenra" />
 		</rules>
 	</element>
 
@@ -81,7 +83,7 @@
 			<description>You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
 		</sheet>
 	</element>
-	<element name="Twin Tactics" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_TWINLESS">
+	<element name="Twinless" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_TWINLESS">
 		<supports>PSRA Khenra</supports>
 		<description>
 			<p>You are immune to the frightened condition.</p>

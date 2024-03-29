@@ -27,6 +27,7 @@
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_FLIGHT" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Angel)" supports="Standard||Exotic" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 		</rules>
 	</element>
@@ -69,8 +70,8 @@
 			<p>You know the light cantrip. Starting at 5th level, you can cast the tomb of disgrace spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher. Your spellcasting for this feature is Intelligence.</p>
 		</description>
 		<sheet alt="Blessing of the God-Pharaoh">
-			<description>You know the light cantrip. Wisdom is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. </description>
-			<description level="5">You know the light cantrip and tomb of disgrace spell. Wisdom is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</description>
+			<description>You know the light cantrip. Charisma is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. </description>
+			<description level="5">You know the light cantrip and tomb of disgrace spell. Charisma is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</description>
 		</sheet>
 	</element>
 

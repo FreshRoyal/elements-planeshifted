@@ -33,6 +33,7 @@
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_SHED_SKIN" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Naga)" supports="Standard||Exotic" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 		</rules>
 	</element>
@@ -57,7 +58,7 @@
 			<p>As an action, you can make a special unarmed strike with your Bite. If the strike hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus or or be poisoned until the start of your next turn.</p>
 			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet usage="{{proficiency}}/Long Rest">
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
 			<description>As an action, you can make a special unarmed strike with your Bite. If the strike hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against (DC {{naga poison:dc}}) or or be poisoned until the start of your next turn.</description>
 		</sheet>
 		<rules>

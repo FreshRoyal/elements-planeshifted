@@ -29,6 +29,7 @@
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_RAM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Minotaur)" supports="Standard||Exotic" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 		</rules>
 	</element>

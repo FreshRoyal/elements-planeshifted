@@ -46,7 +46,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Heaven to Earth" type="Spell" source="" id="ID_PSLE_PSRA_SPELL_HEAVEN_TO_EARTH">
+	<element name="Heaven to Earth" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_HEAVEN_TO_EARTH">
 		<supports>Cleric, Paladin, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You cause a meteoric mass of rock to plummet to the ground at a point you can see within range. Each creature in a 20-foot radius cylinder centered on that point must make a Dexterity saving throw. On a failed save, a creature takes 20d6 bludgeoning damage, is knocked prone, and is trapped beneath the rock. A trapped creature is restrained, and can use its action to make a Strength check against your spell save, freeing itself on a success. On a successful save, the creature takes half as much damage and doesn't fall prone or become trapped. The ground in the area becomes a crater of difficult terrain.</p>
@@ -67,7 +67,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Hapatra's Mark" type="Spell" source="" id="ID_PSLE_PSRA_SPELL_HAPATRAS_MARK">
+	<element name="Hapatra's Mark" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_HAPATRAS_MARK">
 		<supports>Artificer, Cleric, Druid, Paladin, Ranger</supports>
 		<description>
 			<p>A glowing tattoo of a coiled snake appears around your arm and lasts for the duration. Until the spell ends, you are immune to poison damage and the poisoned condition, you can't be the target of spells of 3rd level or lower, and you have advantage on saving throws against spells.</p>
@@ -87,7 +87,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Lay Bare the Heart" type="Spell" source="" id="ID_PSLE_PSRA_SPELL_LAY_BARE_THE_HEART">
+	<element name="Lay Bare the Heart" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_LAY_BARE_THE_HEART">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You reach out to a creature you can see within range that has an Intelligence score of 4 or greater. The spell creates an illusion of the target's heart leaving their chest.</p>
@@ -108,7 +108,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Pull from Tomorrow" type="Spell" source="" id="ID_PSLE_PSRA_SPELL_PULL_FROM_TOMORROW">
+	<element name="Pull from Tomorrow" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_PULL_FROM_TOMORROW">
 		<supports>Artificer, Wizard</supports>
 		<description>
 			<p>You reach forward through time, pulling arcane energy from your future self. You regain one expended spell slot of 3rd level or lower. When you finish your next long rest, you immediately expend a spell slot of equivalent level.</p>
@@ -129,7 +129,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Supernatural Stamina" type="Spell" source="" id="ID_PSLE_PSRA_SPELL_SUPERNATURAL_STAMINA">
+	<element name="Supernatural Stamina" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_SUPERNATURAL_STAMINA">
 		<supports>Cleric, Paladin</supports>
 		<description>
 			<p>A glowing mark of Bontu appears on your chest and lasts for the duration. Until the start of your next turn, the next time you are reduced to 0 hit points as the result of taking damage from an attack, you drop to 1 hit point instead. When the spell ends, your exhaustion level is reduced by 1.</p>
