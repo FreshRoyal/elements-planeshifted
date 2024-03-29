@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-anointed.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-anointed.xml" />
 		</update>
 	</info>
 	
 	<element name="Anointed" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_ANOINTED">
 		<description>
-			<p>Anointed are servile mummies, the dead who did not fully complete the trials of the gods but are able to serve the city of Naktamun in their afterlife. You can learn more about anointed in Plane Shift: Amonkhet.</p>
-			<h4>Anointed Traits</h4>
+			<p>Anointed are servile mummies, the dead who did not fully complete the trials of the gods but are able to serve the city of Naktamun in their afterlife. You can learn more about anointed in <i>Plane Shift: Amonkhet</i>.</p>
+			<h4>ANOITED TRAITS</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a undead.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
@@ -17,7 +17,6 @@
 			<p class="indent"><strong><em>Deathless Nature.</em></strong> You have resistance to poison damage and immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You don't need to eat, drink, or breathe.</p>
 			<p class="indent"><strong><em>Relentless Endurance.</em></strong> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
 			<p class="indent"><strong><em>Sleepless.</em></strong> You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</p>
-			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/items.xml" />
 		</update>
 	</info>
 	
-	<element name="Chariot" type="Item" source="Planeshifted to Amonkhet" id="ID_PSLE_PSRA_ITEM_CHARIOT">
+	<element name="Chariot" type="Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_ITEM_CHARIOT">
 		<description>
 			<p>Chariots and the creatures pulling them work like controlled mounts, as described in the mounted combat rules in the Player's Handbook, but with the following differences:</p>
 			<ul>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-minotaur.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-minotaur.xml" />
 		</update>
 	</info>
 	
 	<element name="Minotaur" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_MINOTAUR">
 		<description>
-			<p>Minotaur are hulking oxen humanoids. Amonkhet minotaur have the innate power to call flame. You can learn more about minotaur in Plane Shift: Amonkhet.</p>
-			<h4>Minotaur Traits</h4>
+			<p>Minotaur are hulking oxen humanoids. Amonkhet minotaur have the innate power to call flame. You can learn more about minotaur in <i>Plane Shift: Amonkhet</i>.</p>
+			<h4>MINOTAUR TRAITS</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
@@ -22,7 +22,6 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Minotaur)" supports="Custom Ability Score Improvement Option" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_FLAMING_FURY" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_HORNS" />

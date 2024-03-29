@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-naga.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-naga.xml" />
 		</update>
 	</info>
@@ -9,7 +9,7 @@
 	<element name="Naga" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_NAGA">
 		<description>
 			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in Plane Shift: Amonkhet.</p>
-			<h4>Naga Traits</h4>
+			<h4>NAGA TRAITS</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
@@ -24,7 +24,6 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Naga)" supports="Custom Ability Score Improvement Option" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BITE" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BLINDSIGHT" />

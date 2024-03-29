@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-human.xml" />
 		</update>
 	</info>
 
 	<element name="Human" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_HUMAN">
 		<description>
-			<p>Humans of Amonkhet are similar to their counterparts in other worlds. You can learn more about Amonkhet humans in Plane Shift: Amonkhet.</p>
+			<p>Humans of Amonkhet are similar to their counterparts in other worlds. You can learn more about Amonkhet humans in <i>Plane Shift: Amonkhet</i>.</p>
 			<h4>HUMAN TRAITS</h4>
 			<p>You have the following racial traits. </p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
