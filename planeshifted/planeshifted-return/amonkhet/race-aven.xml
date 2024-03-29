@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-aven.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-aven.xml" />
+		</update>
+	</info>
+	
+	<element name="Aven" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_ANOINTED">
+		<description>
+			<p>Aven are winged humanoids who bear the heads of birds—falcons or ibises. You can learn more about aven in Plane Shift: Amonkhet.</p>
+			<h4>Aven Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Beak.</em></strong> You have a beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Aven Subrace.</em></strong> You gain an additional benefit based on one of the following options (choose when you select this race):</p>
+			<div element="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_FALCONHEADED" />
+			<div element="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_IBISHEADED" />
+			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Aven)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_BEAK" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_FLIGHT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_HEAD" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+	<element name="Beak" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_BEAK">
+		<description>
+			<p>You have a beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have a beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+	<element name="Flight" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_FLIGHT">
+		<description>
+			<p>Because of your wings, you have a flying speed equal to your walking speed. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>Because of your wings, you have a flying speed equal to {{innate speed}}. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+	<element name="Aven Subrace" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_HEAD">
+		<description>
+			<p>You gain an additional benefit based on one of the following options (choose when you select this race):</p>
+			<div element="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_FALCONHEADED" />
+			<div element="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_IBISHEADED" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Aven Head" supports="PSRA Amonkhet Subrace" />
+		</rules>
+	</element>
+	
+	<element name="Falcon-Headed" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_FALCONHEADED">
+		<description>
+			<p>You have proficiency in the Perception skill, and you have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on sight. In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Ibis-Headed" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_AVEN_IBISHEADED">
+		<description>
+			<p>You have proficiency with two of the following skills of your choice: Arcana, History, Nature, or Religion. In addition, you can speak, read, and write an additional language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Selection (Ibis-Headed)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATUREàID_PROFICIENCY_SKILL_RELIGION" number="2" />
+			<select type="Language" name="Language (Ibis-Headed)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-naga.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-naga.xml" />
+		</update>
+	</info>
+	
+	<element name="Naga" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_NAGA">
+		<description>
+			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in Plane Shift: Amonkhet.</p>
+			<h4>Naga Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Blindsight.</em></strong> You can perceive your surroundings within 10 feet of you without relying on sight. You can't detect Constructs or Undead this way.</p>
+			<p class="indent"><strong><em>Poison Bite.</em></strong> As an action, you can make a special unarmed strike with your Bite. If the strike hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus or or be poisoned until the start of your next turn.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Serpentine Build.</em></strong> You can use your serpentine body to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple this way.</p>
+			<p class="indent"><strong><em>Shed Skin.</em></strong> As a bonus action, you can end one condition on yourself from among blinded, deafened, grappled, paralyzed, poisoned, or restrained. Once you use this trait, you can't do so again until you finish a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Naga)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BITE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BLINDSIGHT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_POISON_BITE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_SERPENTINE_BUILD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_SHED_SKIN" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+	<element name="Bite" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BITE">
+		<description>
+			<p>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+	<element name="Blindsight" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BLINDSIGHT">
+		<description>
+			<p>You can perceive your surroundings within 10 feet of you without relying on sight. You can't detect Constructs or Undead this way.</p>
+		</description>
+		<sheet>
+			<description>You can perceive your surroundings within 10 feet of you without relying on sight. You can't detect Constructs or Undead this way.</description>
+		</sheet>
+	</element>
+	<element name="Poison Bite" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_POISON_BITE">
+		<description>
+			<p>As an action, you can make a special unarmed strike with your Bite. If the strike hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus or or be poisoned until the start of your next turn.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>As an action, you can make a special unarmed strike with your Bite. If the strike hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against (DC {{naga poison:dc}}) or or be poisoned until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="naga poison:dc" value="8" />
+			<stat name="naga poison:dc" value="proficiency" />
+			<stat name="naga poison:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Serpentine Build" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_SERPENTINE_BUILD">
+		<description>
+			<p>You can use your serpentine body to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple this way.</p>
+		</description>
+		<sheet>
+			<description>You can use your serpentine body to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple this way.</description>
+		</sheet>
+	</element>
+	<element name="Shed Skin" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_SHED_SKIN">
+		<description>
+			<p>As a bonus action, you can end one condition on yourself from among blinded, deafened, grappled, paralyzed, poisoned, or restrained. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>As a bonus action, you can end one condition on yourself from among blinded, deafened, grappled, paralyzed, poisoned, or restrained. Once you use this trait, you can't do so again until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>
