@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Planeshifted Return to Amonkhet Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/source.xml" />
+		</update>
+	</info>
+	
+	<element name="Planetshifted Return to Amonkhet" type="Source" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SOURCE">
+		<description>
+			<p>This book is a quick supplemental guide to be used with Plane Shift: Amonkhet, which provides rules and options for playing Dungeons &amp; Dragons 5th edition in the Amonkhet setting from Magic: the Gathering. This book provides updated character options and a selection of new spells.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PSRA</set>
+			<set name="url">https://www.gmbinder.com/share/-NB-3L3n0CluKtrbzm2v</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/PSRA.jpg</set>
+			<set name="author" abbreviation="PSRA" url="https://www.reddit.com/user/letterephesus/">letterephesus</set>
+			<set name="official">false</set>
+			<set name="supplement">false</set>
+			<set name="playtest">false</set>
+			<set name="third-party">false</set>
+			<set name="homebrew">true</set>
+			<set name="league">false</set>
+			<set name="release">20220102</set>
+		</setters>
+	</element>
+
+	<!-- celestial type is missing from internals.xml, will remove this once fixed -->
+	<element name="Celestial" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSRA_RACIAL_TRAIT_TYPE_CELESTIAL">
+		<supports>Creature Type</supports>
+		<description>
+			<p>Your creature type is Celestial.</p>
+			<div class="reference">
+				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
+			</div>
+		</description>
+		<sheet alt="Creature Type">
+			<description>Celestial.</description>
+		</sheet>
+	</element>
+	
+</elements>

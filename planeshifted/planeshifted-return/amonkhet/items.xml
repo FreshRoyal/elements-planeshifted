@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/items.xml" />
+		</update>
+	</info>
+	
+	<element name="Chariot" type="Item" source="Planeshifted to Amonkhet" id="ID_PSLE_PSRA_ITEM_CHARIOT">
+		<description>
+			<p>Chariots and the creatures pulling them work like controlled mounts, as described in the mounted combat rules in the Player's Handbook, but with the following differences:</p>
+			<ul>
+				<li>Mounting or dismounting a chariot costs you 5 feet of movement, rather than a number of feet equal to half your speed.</li>
+				<li>Being mounted on a chariot grants you half cover.</li>
+				<li>A chariot's speed is equal to the speed of the slowest creature pulling it.</li>
+				<li>If multiple creatures are pulling the chariot, they all act on the same initiative, and they must take the same action on their turn.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="100" excludeEncumbrance="true">100 lb.</set>
+			<set name="type">Vehicle</set>
+		</setters>
+	</element>
+	<element name="Crook of Condemnation" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_CROOK_OF_RAO">
+		<description>
+			<p>This crook is used by angels to strip initiates of their cartouches.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">Using this magic weapon, you have advantage on attack rolls you make as part of the Disarm action on your turn. You can also use the Disarm action to remove a cartouche from around a target's neck.</p>
+		</description>
+		<setters>
+			<set name="keywords">crook, cartouch</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">onehand</set>
+			<set name="rarity">Artifact</set>
+			<set name="weapon">Lance</set>
+		</setters>
+	</element>
+	<element name="Dagger of the Worthy" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_DAGGER_OF_THE_WORTHY">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">While the dagger is on your person, you can't be charmed or frightened.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, charm, frightened</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Dagger</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Embalming Tools" type="Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_ITEM_TOOL_EMBALMING_TOOLS">
+		<description>
+			<p>Embalming tools are a set of artisan's tools. If your campaign uses the Tool Proficiencies rules found in Xanathar's Guide to Everything, embalming tools have the following description:</p>
+			<p class="indent"><i>Embalming tools enable a character to prepare a body for mummification and burial.</i></p>
+			<p class="indent"><i><b>Components. </b></i>Embalming tools include salts, a metal hook, knives, canopic jars, thread, needles, and scraps of linen.</p>
+			<p class="indent"><i><b>Arcana, Religion. </b></i>Proficiency with embalming tools aids you when determining the nature and origin of Undead creatures.</p>
+			<p class="indent"><i><b>Medicine. </b></i>This tool proficiency grants additional insight when treating life-threatening wounds.</p>
+			<p class="indent"><i><b>Prepare Annointed. </b></i>As part of a long rest, you can use embalming tools to prepare the corpse of one Large or smaller creature. The creature is protected against the Curse of Wandering, and if it becomes Undead, it becomes a docile anointed.</p>
+			<h5>EMBALMING TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Determing an Undead's nature</td><td>10</td></tr>
+				<tr><td>Preserve Organig Material</td><td>15</td></tr>
+				<tr><td>Treat a lingering injury</td><td>20</td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PSLE_PSRA_PROFICIENCY_TOOL_PROFICIENCY_EMBALMING_TOOLS</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Embalming Tools)" type="Proficiency" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_PROFICIENCY_TOOL_PROFICIENCY_EMBALMING_TOOLS">
+		<supports>Tool</supports>
+	</element>
+
+	<element name="Lazotep Armor" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_LAZOTEP_ARMOR">
+		<supports>Armor</supports>
+		<description>
+			<p>Lazotep is a magical blue mineral found only on Amonkhet, mined from deep below the sands. It is a channel for blue mana, giving it antimagic properties. It can be worked into medium or heavy armor.</p>
+			<p class="indent">The lazotep version of a suit of armor costs 1,000gp more than the normal version. While wearing lazotep armor, you have the following trait.</p>
+			<p class="indent"><strong><em>Magic Resistance.</em></strong> You have advantage on saving throws against spells, and spell attack rolls made against you have disadvantage.</p>
+		</description>
+		<setters>
+			<set name="keywords">medium, heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">body</set>
+			<set name="type" addition="medium or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">(ID_INTERNAL_ARMOR_GROUP_MEDIUM||ID_INTERNAL_ARMOR_GROUP_HEAVY)</set>
+			<set name="name-format">Lazotep {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Cartouche" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_ARMOR_CARTOUCHE">
+		<description>
+			<p>A cartouche is a magical emblem awarded to initiates for each trial of the gods they complete. They are also used to control both the anointed mummies and dissidents.</p>
+			<p class="indent"><b><i>Anointing.</i></b> If you die while wearing a cartouche, you are protected from the curse of wandering. A creature with proficiency with embalming tools can turn you into an anointed as a 1-hour ritual. At the end of the ritual, you return to life with all your hit points as an anointed. You replace your racial traits with those of the anointed race.</p>
+			<p class="indent"><b><i>Control Magic.</i></b> As an action while holding the cartouche, you can attempt to wrestle it around the neck of a creature that is hostile to you. Make a Strength (Athletics) contested by the target's Strength (Athletics) or Dexterity (Acrobatics) (their choice). If you succeed, the cartouche is placed around the target's neck.</p>
+			<p class="indent">At the start of each of its turns while the cartouche is around its neck, a non-Undead creature must succeed on a DC 13 Constitution saving throw or be paralyzed until the start of its next turn.</p>
+			<p class="indent">An Undead creature with a cartouche placed around its neck by you is charmed by you until the cartouche is removed. When the cartouche is removed, the Undead takes 6d6 force damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">cartouche, control, undead, anoint</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Traveler's Amulet" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_ARMOR_TRAVELERS_AMULET">
+		<description>
+			<p>This amulet depicts the jackal head of the god Hazoret. While you are outdoors during the day, you can hold the amulet towards the sun and cast the find the path spell from it at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">guidance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+</elements>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="planeshifted.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted.index" />
 		</update>
 	</info>
 	<files>
 		<file name="planeshifted-guide.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide.index" />
+		<file name="planeshifted-return.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return.index" />
 	</files>
 </index>

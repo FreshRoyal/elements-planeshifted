@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Commit to Memory" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_COMMIT_TO_MEMORY">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>This spell records complex information that you can see, such as a detailed map or a long sequence of symbols. Until the spell ends, you can use your action to create an illusory duplicate of the information recorded. If you cast this spell again before it ends, the first information recorded is lost.</p>
+		</description>
+		<setters>
+			<set name="keywords">divination, cantrip, self,</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 Action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 month</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dispossess" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_DISPOSSESS">
+		<supports>Cleric, Paladin, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You attempt to banish one Large or smaller object you can see within range to the space between the planes. If the object is being worn or carried by a creature, that creature must make a Wisdom saving throw. On a failed save, or if the object isn't being worn or carried, the object is banished until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Artifacts are unaffected by this spell.</p>
+			<p class="indent"><b><i>At Higher Levels. </i></b>When you cast this spell using a spell slot of 5th level or higher, you can target one additional object for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">abjuration, cantrip, self,</set>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Heaven to Earth" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_HEAVEN_TO_EARTH">
+		<supports>Cleric, Paladin, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You cause a meteoric mass of rock to plummet to the ground at a point you can see within range. Each creature in a 20-foot radius cylinder centered on that point must make a Dexterity saving throw. On a failed save, a creature takes 20d6 bludgeoning damage, is knocked prone, and is trapped beneath the rock. A trapped creature is restrained, and can use its action to make a Strength check against your spell save, freeing itself on a success. On a successful save, the creature takes half as much damage and doesn't fall prone or become trapped. The ground in the area becomes a crater of difficult terrain.</p>
+			<p class="indent">Structures and nonmagical objects that aren't being worn or carried within the spell's area also take damage. If part of a nonmagical structure would prevent the mass of rock from reaching the ground, that part of the structure is destroyed. An object that is completely within the spell's area is buried beneath the rock, requiring a successful Strength check against your spell save DC to unearth.</p>
+		</description>
+		<setters>
+			<set name="keywords">9th</set>
+			<set name="level">9</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">120 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shard of ice and a small flame</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hapatra's Mark" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_HAPATRAS_MARK">
+		<supports>Artificer, Cleric, Druid, Paladin, Ranger</supports>
+		<description>
+			<p>A glowing tattoo of a coiled snake appears around your arm and lasts for the duration. Until the spell ends, you are immune to poison damage and the poisoned condition, you can't be the target of spells of 3rd level or lower, and you have advantage on saving throws against spells.</p>
+			<p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the spell blocks spells of one level higher for each slot level above 4th.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentraton, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lay Bare the Heart" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_LAY_BARE_THE_HEART">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You reach out to a creature you can see within range that has an Intelligence score of 4 or greater. The spell creates an illusion of the target's heart leaving their chest.</p>
+			<p class="indent">You learn the target's current emotional state. The target must succeed on a Charisma saving throw or you also learn the target's alignment and a flaw or secret about the target. Celestials, Fiends, and Undead automatically fail this saving throw.</p>
+		</description>
+		<setters>
+			<set name="keywords">emotion</set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 Action</set>
+			<set name="range">10 feet</set>
+			<set name="duration">Instaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crocodile tooth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Pull from Tomorrow" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_PULL_FROM_TOMORROW">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>You reach forward through time, pulling arcane energy from your future self. You regain one expended spell slot of 3rd level or lower. When you finish your next long rest, you immediately expend a spell slot of equivalent level.</p>
+			<p class="indent">If you cast this spell again before 24 hours have passed, it has no effect.</p>
+		</description>
+		<setters>
+			<set name="keywords">arcane, spell</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">Instaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an hourglass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Supernatural Stamina" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_SUPERNATURAL_STAMINA">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>A glowing mark of Bontu appears on your chest and lasts for the duration. Until the start of your next turn, the next time you are reduced to 0 hit points as the result of taking damage from an attack, you drop to 1 hit point instead. When the spell ends, your exhaustion level is reduced by 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">mark, hit point</set>
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take when you are hit by an attack</set>
+			<set name="range">Self</set>
+			<set name="duration">1 round</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Tomb of Disgrace" type="Spell" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_SPELL_TOMB_OF_DISGRACE">
+		<supports>Artificer, Cleric, Paladin</supports>
+		<description>
+			<p>You choose a Medium or smaller creature you can see within range and conjure a sarcophagus around it, which lasts for the duration. The target must succeed on a Dexterity saving throw or be trapped inside the sarcophagus. While trapped, the target is blinded and restrained and has full cover from attacks originating outside the sarcophagus. Likewise, creatures and objects outside the sarcophagus have full cover from the trapped target.</p>
+			<p class="indent">A trapped creature can use its action to make a Strength check against your spell save DC, ending the spell on a success. The sarcophagus can also be destroyed by dealing damage to it, ending the spell (AC 17; hp 20; damage threshold 10; immunity to poison and psychic damage).</p>
+			<p class="indent">If you concentrate on this spell for the full possible duration, the spell lasts until it is dispelled or until the sarcophagus is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">trap, dexterity, saving throw</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concetration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a canopic jar</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

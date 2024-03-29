@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/backgrounds.xml" />
+		</update>
+	</info>
+
+	<!--Anointer-->
+	<element name="Anointer" type="Background" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_ANOINTER">
+		<description>
+			<p>As an anointer, you have studied under the priests of Naktamun and learned the ancient process of mummification of the honored dead, the process used to create the anointed undead servants of the city.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Arcana, Medicine</li>
+				<li><strong>Tool Proficiencies:</strong> Embalming tools, Weaver's tools</li>
+				<li><strong>Equipment:</strong> Embalming tools, a set of robes, and a belt pouch containing 10gp</li>
+			</ul>
+			<div element="ID_PSLE_PSRA_BACKGROUND_FEATURE_ANOINTED" />
+		</description>
+		<setters>
+			<set name="short">Arcana, Medicine, Embalming Tools, Weaver's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PSLE_PSRA_PROFICIENCY_TOOL_PROFICIENCY_EMBALMING_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_ANOINTED" />
+		</rules>
+	</element>
+	<element name="Feature: Anointed" type="Background Feature" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_ANOINTED">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have acquired the service of an anointed servant. It uses the zombie stat block. The servant acts independently of you, but treats you as an ally. The servant can perform mundane tasks for you, but it will not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if it is frequently endangered or abused.</p>
+		</description>
+		<sheet alt="Anointed" />
+	</element>
+
+	<!-- Charioteer -->
+	<element name="Charioteer" type="Background" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_CHARIOTEER">
+		<description>
+			<p>Chariots are used both to travel the desert sands and to engage in the trials. You have practiced this art extensively, and any crop would cherish having one with your skills among their ranks.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Vehicles (land), Navigator's Tools</li>
+				<li><strong>Equipment:</strong> A whip, a chariot, a draft horse, 10 days of animal feed, and a set of traveler's clothes.</li>
+			</ul>
+			<div element="ID_PSLE_PSRA_BACKGROUND_FEATURE_CHARIOT_DRIVER" />
+			<div class="sidebar">
+				<h5>Chariots</h5>
+				<p>Chariots and the creatures pulling them work like controlled mounts, as described in the mounted combat rules in the <i>Player's Handbook</i>, but with the following differences:</p>
+				<ul>
+					<li>Mounting or dismounting a chariot costs you 5 feet of movement, rather than a number of feet equal to half your speed.</li>
+					<li>Being mounted on a chariot grants you half cover.</li>
+					<li>A chariot's speed is equal to the speed of the slowest creature pulling it.</li>
+					<li>If multiple creatures are pulling the chariot, they all act on the same initiative, and they must take the same action on their turn.</li>
+				</ul>
+			</div>
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Perception, Vehicles (land), Navigator's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_CHARIOT_DRIVER" />
+		</rules>
+	</element>
+	<element name="Feature: Chariot Driver" type="Background Feature" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_CHARIOT_DRIVER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have advantage on any Wisdom (Animal Handling) check, Dexterity-based ability check, or Dexterity saving throw you make to maintain control of a chariot or a creature pulling it.</p>
+		</description>
+		<sheet alt="Chariot Driver" />
+	</element>
+
+	<!-- Excavator -->
+	<element name="Excavator" type="Background" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_EXCAVATOR">
+		<description>
+			<p>The deserts of Amonkhet, and in particular the Ramunap Broken Lands, hold many secrets of civilizations long lost, and many treasures worth uncovering. You have dedicated your life to traveling the wastes in search of these secrets.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> History, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Cartographer's Tools or Navigator's Tools</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> A scroll case, a bullseye lantern, a miner's pick, a shovel, a two-person tent, a piece of lazotep ore, a set of traveler's clothes, and a belt pouch containing 5gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSRA_BACKGROUND_FEATURE_DESERT_SECRETS" />
+			<div class="sidebar">
+				<h5>Lazotep</h5>
+				<p>Lazotep is a magical blue mineral found only on Amonkhet, mined from deep below the sands. It is a channel for blue mana, giving it antimagic properties. It can be worked into medium or heavy armor.</p>
+				<p class="indent">The lazotep version of a suit of armor costs 1,000gp more than the normal version. While wearing lazotep armor, you have the following trait.</p>
+				<p class="indent"><strong><em>Magic Resistance.</em></strong> You have advantage on saving throws against spells, and spell attack rolls made against you have disadvantage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="short">History, Survival, Cartographer's Tools or Navigator's Tools, language of your choice</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Excavator (Tools)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<select type="Language" name="Language (Excavator)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_DESERT_SECRETS" />
+		</rules>
+	</element>
+	<element name="Feature: Desert Secrets" type="Background Feature" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_BACKGROUND_FEATURE_DESERT_SECRETS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders. In addition, you can determine the monetary value of art objects more than a century old.</p>
+		</description>
+		<sheet alt="Desert Secrets" />
+	</element>
+</elements>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-angel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-angel.xml" />
+		</update>
+	</info>
+	
+	<element name="Angel" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_ANGEL">
+		<description>
+			<p>Angels are celestial creatures that reflect the powerful dragon planeswalker Nicol Bolas. They keep order in the city of Naktamun and enact the will of the gods. You can learn more about angels in <i>Plane Shift: Amonkhet</i>.</p>
+			<h4>Angel Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a celestial.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Blessing of the God-Pharaoh.</em></strong> You know the <i>light</i> cantrip. Starting at 5th level, you can cast the <i>tomb of disgrace</i> spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_PSRA_RACIAL_TRAIT_TYPE_CELESTIAL" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Angel)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_BLESSING_OFTHE_GODPHARAOH" />
+			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_FLIGHT" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Angel)" supports="Standard||Exotic" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+		</rules>
+	</element>
+	
+	<element name="Blessing of the God-Pharaoh" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_BLESSING_OFTHE_GODPHARAOH">
+		<description>
+			<p>You know the <i>light</i> cantrip. Starting at 5th level, you can cast the <i>tomb of disgrace</i> spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+			<grant type="Spell" id="ID_PSLE_PSRA_SPELL_TOMB_OF_DISGRACE" level="5" />
+			<select type="Racial Trait" name="Blessing of the God-Pharaoh Spellcasting Ability (Angel)" supports="Angel Blessing PSRA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_BLESSING_INTELLIGENCE">
+		<supports>Angel Blessing PSRA</supports>
+		<description>
+			<p>You know the light cantrip. Starting at 5th level, you can cast the tomb of disgrace spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher. Your spellcasting for this feature is Intelligence.</p>
+		</description>
+		<sheet alt="Blessing of the God-Pharaoh">
+			<description>You know the light cantrip. Intelligence is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. </description>
+			<description level="5">You know the light cantrip and tomb of disgrace spell. Intelligence is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_WISDOM">
+		<supports>Angel Blessing PSRA</supports>
+		<description>
+			<p>You know the light cantrip. Starting at 5th level, you can cast the tomb of disgrace spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher. Your spellcasting for this feature is Intelligence.</p>
+		</description>
+		<sheet alt="Blessing of the God-Pharaoh">
+			<description>You know the light cantrip. Wisdom is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. </description>
+			<description level="5">You know the light cantrip and tomb of disgrace spell. Wisdom is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_BLESSING_CHARISMA">
+		<supports>Angel Blessing PSRA</supports>
+		<description>
+			<p>You know the light cantrip. Starting at 5th level, you can cast the tomb of disgrace spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher. Your spellcasting for this feature is Intelligence.</p>
+		</description>
+		<sheet alt="Blessing of the God-Pharaoh">
+			<description>You know the light cantrip. Charisma is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. </description>
+			<description level="5">You know the light cantrip and tomb of disgrace spell. Charisma is your spellcasting ability for this feature. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 3rd level or higher.</description>
+		</sheet>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_FLIGHT">
+		<description>
+			<p>Because of your wings, you have a flying speed equal to your walking speed. You can’t use this flying speed if you’re wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>Because of your wings, you have a flying speed equal to {{innate speed}}. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+</elements>
