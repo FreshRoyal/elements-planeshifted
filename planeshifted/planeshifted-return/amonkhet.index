@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="amonkhet.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet.index" />
 		</update>
 	</info>
 	<files>
 		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/backgrounds.xml" />
-		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/languages.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/items.xml" />
 		<file name="race-angel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-angel.xml" />
 		<file name="race-anointed.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-anointed.xml" />
 		<file name="race-aven.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-aven.xml" />
