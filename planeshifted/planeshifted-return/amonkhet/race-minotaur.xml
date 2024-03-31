@@ -22,6 +22,7 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Minotaur)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_FLAMING_FURY" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_HORNS" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_RAM" />
@@ -45,7 +46,7 @@
 			<p>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+			<description>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing.</description>
 		</sheet>
 	</element>
 	<element name="Ram" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_RAM">

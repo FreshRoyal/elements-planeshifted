@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-khenra.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-khenra.xml" />
 		</update>
 	</info>
@@ -29,6 +29,7 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Khenra)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_BITE" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_KEEN_HEARING_AND_SMELL" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_TWIN" />
@@ -43,7 +44,7 @@
 			<p>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+			<description>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing.</description>
 		</sheet>
 	</element>
 	<element name="Keen Hearing and Smell" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_KHENRA_KEEN_HEARING_AND_SMELL">
