@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-tuskiri.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-tuskiri.xml" />
+		</update>
+	</info>
+
+	<element name="Tuskeri" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_TUSKERI">
+		<description>
+			<p>Tuskeri society is chaotic and revolves around glory and boasting. They are driven to complete dangerous feats and go on wild adventures—the kind of adventures that become sagas sung for generations. They all aim to perform bigger, better feats than anyone else in all the realms and goad each other into attempting outlandish tests of strength and skill. They frequently visit Axgard in search of dwarf skalds to accompany them on their never-ending adventures, since the word of a skald is the closest possible thing to proof of a story's veracity.</p>
+			<p class="indent">The Tuskeri like to go to war and usually don't need any excuse beyond being bored, realizing they haven't had a good fight in a while, or hearing someone say something more insulting than usual. They are very enthusiastic but disorganized fighters, with no appetite for strategy or careful tactics. Rather, each individual fighter attempts the most over-the-top heroic feats they can dream up, regardless of what their allies are doing. Nothing is more glorious to them than dying heroically in battle; not coincidentally, Tuskeri warriors are also more likely than those of any other clan to be spirited away by the Valkyries to the glory of Starnheim.</p>
+			<p class="indent">Leadership among the Tuskeri falls to the clan member who is seen as the strongest, boldest, and most accomplished at any given time. The position of leader can be bestowed as a reward for particularly remarkable feats, which means that the office can pass at any time to the next warrior who achieves something incredible.</p>
+
+			<h4>BESKIR TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Goad.</em></strong> You can cast the <i>compelled duel</i> spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 1st level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>For Glory.</em></strong> If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3).</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Mountain Born.</em></strong>  You naturally acclimate to high altitudes. This includes elevations above 20,000 feet.</p>
+			<p class="indent"><strong><em>Stout Resilience.</em></strong> You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Tuskeri)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Tuskeri)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_FOR_GLORY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_MOUNTAIN_BORN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_STOUT_RESILIENCE" />
+		</rules>
+	</element>
+
+	<element name="Goad" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD">
+		<description>
+			<p>You can cast the <i>compelled duel</i> spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 1st level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast it with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMPELLED_DUEL" />
+			<select type="Racial Trait" name="Spellcasting Ability (Goad)" supports="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_INTELLIGENCE|ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_WISDOM|ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Intelligence.</p>
+		</description>
+		<sheet alt="Goad">
+			<description display="false" />
+			<description>You can cast the compelled duel spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for this spell is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Wisdom.</p>
+		</description>
+		<sheet alt="Goad">
+			<description display="false" />
+			<description>You can cast the compelled duel spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for this spell is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_GOAD_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Charisma.</p>
+		</description>
+		<sheet alt="Goad">
+			<description display="false" />
+			<description>You can cast the compelled duel spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for this spell is Charisma.</description>
+		</sheet>
+	</element>
+	
+	<element name="For Glory" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_FOR_GLORY">
+		<description>
+			<p>If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3).</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll equal to the number of allies you can see within 30 feet of you (maximum bonus of +3).</description>
+		</sheet>
+	</element>
+	
+	<element name="Mountain Born" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_MOUNTAIN_BORN">
+		<description>
+			<p> You naturally acclimate to high altitudes. This includes elevations above 20,000 feet.</p>
+		</description>
+		<sheet>
+			<description> You naturally acclimate to high altitudes. This includes elevations above 20,000 feet.</description>
+		</sheet>
+	</element>
+	
+	<element name="Stout Resilience" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TUSKERI_STOUT_RESILIENCE">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You also have resistance to poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+</elements>

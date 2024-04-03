@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Alrund's Epiphany" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_ALRUNDS_EPIPHANY">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>You gain a limited ability to see into the immediate future. For the duration, you have advantage on attack rolls and saving throws, except for Constitution saving throws you make to maintain concentration on this spell. Additionally, other creatures have disadvantage on attack rolls against you for the duration.</p>
+			<p class="indent">If you maintain your concentration on this spell for the entire possible duration, Hakka appears in an unoccupied space of the DM's choice within 100 feet of you. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a raven feather</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Bind Monster" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_BIND_MONSTER">
+		<supports>Artificer, Cleric, Druid, Paladin, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You summon a magical chain to bind a creature you touch. The creature must make a Strength saving throw. On a failed save, the creature has the restrained condition for the duration, and may immediately use its reaction to make an attack against you. On a successful save, the creature isn't affected.</p>
+			<p class="indent">The chain prevents the creature from using any method of extradimensional movement, including teleportation or travel to a different plane of existence. A creature restrained by the chain or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed.</p>
+			<p class="indent">If you cast this spell again, the target of the first casting is immediately freed from its chain, and the first chain vanishes.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the sound of a cat's footsteps, the breath of a fish, and the spittle of a bird, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Blessing of Frost" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_BLESSING_OF_FROST">
+		<supports>Druid, Ranger, Wizard</supports>
+		<description>
+			<p>An aurora-like shield engulfs your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.</p>
+			<p class="indent">For the duration, you gain the following benefits:</p>
+			<ul>
+				<li>You gain 10 temporary hit points.</li>
+				<li>You have resistance to cold damage.</li>
+				<li>Your melee weapon attacks deal an extra 1d6 cold damage on a hit.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of snow or ice</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Demon Bolt" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_DEMON_BOLT">
+		<supports>Sorcerer, Warlock, Wizard, Spell Attack</supports>
+		<description>
+			<p>You shoot a roiling bolt of smoke, flame, and lightning at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d6 fire damage, 1d6 lightning damage, and 1d6 poison damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the target takes an extra 1d6 fire, lightning, or poison damage (your choice) for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the skull of a creature killed by a demon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Demonic Gifts" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_DEMONIC_GIFTS">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You draw on the powers of Immersturm, gaining horns and fiendish attributes. You gain the following benefits until the spell ends:</p>
+			<ul>
+				<li>You are immune to fire, lightning, and poison damage.</li>
+				<li>You are immune to the poisoned condition.</li>
+				<li>You have a +1 bonus to AC.</li>
+				<li>All your weapon attacks are magical, and when you make a weapon attack, you can use your spellcasting ability modifier, instead of Strength or Dexterity, for the attack and damage rolls.</li>
+				<li>When you hit a target with a weapon attack, that target takes an extra 2d12 fire damage.</li>
+			</ul>
+			<p class="indent">If you are reduced to 0 hit points before the spell ends, you drop to 1 hit point instead, and the spell immediately ends.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutaion</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an object engraved with the runes of Immersturm, worth at least 500gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Mists of Littjara" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_MISTS_OF_LITTJARA">
+		<supports>Druid, Ranger, Spell Saving Throw</supports>
+		<description>
+			<p>You summon the mists of Littjara around a creature you can see within range. The target must make a Dexterity saving throw. On a failed save, the mists spread to fill a 5-foot radius sphere centered on the target for the duration. The area is heavily obscured. The mists emanate from the target and move with it. On a successful save, the target isn't affected.</p>
+			<p class="indent">At the end of each of its turns, the target can make a Dexterity saving throw to attempt to free itself from the mists. On a success, the spell ends.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Ravenform" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_RAVENFORM">
+		<supports>Druid, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You invoke a curse on one creature that you can see within range. The creature must succeed on a Wisdom saving throw or be magically transformed into a raven for the duration. The spell has no effect on a shapechanger or a creature with 0 hit points.</p>
+			<p class="indent">The target's game statistics are replaced by the statistics of the new form, but it retains its alignment, personality, and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, the creature returns to the number of hit points it had before it transformed.</p>
+			<p class="indent">The creature is limited in the actions it can perform by the nature of its new form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>
+			<p class="indent">The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment.</p>
+			<p class="indent">If you concentrate on this spell for the full possible duration, the transformation lasts until it is dispelled. A <i>remove curse</i> spell cast on the creature dispels the transformation.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Transmutaion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the preserved heart of a Humanoid slain in battle, worth 1gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Roots of Wisdom" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_ROOTS_OF_WISDOM">
+		<supports>Druid, Ranger, Wizard</supports>
+		<description>
+			<p>You draw on the wisdom of the Einir elves sealed in the Jaspera trees. Until the spell ends, you have advantage on Wisdom checks and saving throws, and no creature within 30 feet of you can make an attack roll with advantage against you.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an elven ear or a piece of Jaspera bark</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Skull Raid" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_SKULL_RAID">
+		<supports>Bard, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You ask a creature a question, attempting to force the truth from it. If the creature you choose has an Intelligence of 3 or lower or doesn't speak any language, the creature is unaffected.</p>
+			<p class="indent">The target must make a Wisdom saving throw. On a failure, you probe the target's mind for the answer to your question, reading its thoughts. If the information you obtain pertains to events the target experienced within the last 24 hours and that lasted no more than 10 minutes, you can choose to permanently eliminate that information from the target's mind.</p>
+			<p class="indent">A <i>remove curse</i> or <i>greater restoration</i> spell cast on the target restores the creature's true memory.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Shackles of Treachery" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_SHACKLES_OF_TREACHERY">
+		<supports>Artificer, Bard, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>One creature of your choice that you can see within range must succeed on a Wisdom saving throw or be charmed by you for the duration, or until you or your companions do anything harmful to it. While the target is charmed in this way, flaming shackles bind to its arms, and its eyes glow a fiery red. Until the spell ends, you can use a bonus action on each of your turns to force the charmed target to make a melee attack against a creature other than itself that you mentally choose, using its movement to approach the creature if necessary. The spell ends if you don't choose a creature.</p>
+			<p class="indent">The target can repeat the Wisdom saving throw at the end of each of its turns. On a success, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wolf's tears</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Tergrid's Shadow" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_TERGRIDS_SHADOW">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You call forth the shadow of Tergrid, the god of fright. It manifests in an unoccupied space that you can see within range It has the statistics of a shadow (the DM has the creature's statistics), except it is immune to effects that turn undead, and it can't create more shadows. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Withercrown" type="Spell" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_SPELL_WITHERCROWN">
+		<supports>Artificer, Cleric, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>When you cast this spell, your eyes glow a violet color and an ethereal violet crown appears around your head for the duration. You force a creature you can see within range to make a Wisdom saving throw. On a failed save, the creature is cursed for the duration. While cursed, a similar ethereal crown appears around the target's head.</p>
+			<p class="indent">While the creature is cursed, it has disadvantage on attack rolls, Strength-based ability checks, and Strength and Constitution saving throws. At the start of each of its turns, it must succeed on a Wisdom saving throw or take 1d10 necrotic damage. If this damage reduces the creature to 0 hit points, its spirit is claimed by Egon, the god of death.</p>
+			<p class="indent">A <i>remove curse</i> spell ends this effect.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If you cast this spell using a spell slot of 5th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 6th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 6th level or higher grants a duration that doesn't require concentration.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>

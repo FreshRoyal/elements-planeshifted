@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-hagitroll.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-hagitroll.xml" />
+		</update>
+	</info>
+
+	<element name="Hagi Troll" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_HAGI_TROLL">
+		<description>
+			<p>The ancient ruins of the realm of Gnottvold provide some degree of shelter to two distinct varieties of troll. The smaller, more aggressive Hagi trolls run wild across the realm, hunting in disorganized packs. They like to harass the larger Torga trolls, who live in family groups and can sleep for years at a time. Despite their apparently somnolent nature, a Torga troll that is unexpectedly awakened from its slumber rises in a rage and sets out on a destructive rampage that can last for weeks until the troll is spent and looks for a new place to sleep.</p>
+			<p class="indent">Hagi trolls are both smaller and meaner than the Torga, although some Hagi can grow to impressive sizes. They aren't particularly intelligent, and their motivations are basic and primal: get the most food, have the best lair, find the best stuff. To that end, they travel in loose packs and sleep in crowded warrens.</p>
+			<p class="indent">Over the course of generations, the Hagi have scavenged what they could from many of the old ruins, and they continue to search for unplundered barrows and cairns. They use no form of currency, but shards of swords, rune-stamped metalwork, or broken chalices have become treasured commodities among their clans. Although they don't have a written language of their own, they have deciphered some of the old giants' runes and gradually developed a kind of crude rudimentary magic that they can barely control, which tends to be unexpectedly explosive.</p>
+			<p class="indent">Mostly, the Hagi fight hand-to-hand or with pieces of ancient weapons. If they need to raid another Hagi clan or attack a Torga family group that has something they want, they strap a rock onto a stick or fashion some other crude weapon, but their interest in crafts ends there.</p>
+
+			<h4>DWARF TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Giant.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> 750 years on average.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Damage Dealer.</em></strong> When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Regeneration.</em></strong> As a bonus action, you can spend one Hit Die. You regain a number of hit points equal to a roll of the die + your Constitution modifier (minimum of 1 hit point).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Hagi Troll)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_GIANT" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Hagi Troll)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_HAGI_TROLL_DAMAGE_DEALER" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_HAGI_TROLL_REGENERATION" />
+		</rules>
+	</element>
+
+	<element name="Damage Dealer" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_HAGI_TROLL_DAMAGE_DEALER">
+		<description>
+			<p>When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Regeneration" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_HAGI_TROLL_REGENERATION">
+		<description>
+			<p>As a bonus action, you can spend one Hit Die. You regain a number of hit points equal to a roll of the die + your Constitution modifier (minimum of 1 hit point).</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can spend one Hit Die. You regain a number of hit points equal to a roll of the die + {{hagi troll:regeneration}}.</description>
+		</sheet>
+		<rules>
+			<stat name="hagi troll:regeneration" value="constitution:modifier" bonus="bonus" />
+			<stat name="hagi troll:regeneration" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+</elements>

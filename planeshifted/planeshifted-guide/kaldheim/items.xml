@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/items.xml" />
+		</update>
+	</info>
+
+	<element name="Casting Runes" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_CASTING_RUNES">
+		<description>
+			<p><i>Casting runes</i> are tiny stones carved with various runes and bind runes, usually kept in a small leather pouch. To attune to the runes, you must roll them and spend time divining their meaning. While you are holding this item, you can use it as a spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting focus</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+		</setters>
+	</element>
+
+	<element name="Cosmos Elixir" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_COSMOS_ELIXIR">		
+		<description>
+			<p>This potion looks like a glowing, shimmering aurora, brewed from the sap of the World Tree. When you drink this potion, you gain the following benefits for 1 year's time:</p>
+			<ul>
+				<li>You are immune to the effects of aging, and cannot be aged magically.</li>
+				<li>You are immune to poison damage, the poisoned condition, and disease.</li>
+				<li>You suffer no ill effects from traveling the cosmos or between the realms.</li>
+				<li>You cannot die. You stabilize whenever you are dying at the start of your turn, and you cannot be killed outright. If you suffer a mortal wound, the wound is immediately closed and any missing limbs are restored.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">immunity</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Draugr's Helm" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_DRAUGRS_HELM">
+		<description>
+			<p>While wearing this ancient helmet, you have a +1 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons.</p>
+		</description>
+		<setters>
+			<set name="keywords">damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Dwarven Hammer" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_DWARVEN_HAMMER">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon. If the target of the attack is a giant, you have an additional +1 bonus to damage rolls.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Warhammer</set>
+		</setters>
+	</element>
+
+	<element name="Elven Bow" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_ELVEN_BOW">
+		<description>
+			<p>Whenever you have advantage on an attack roll using this magic weapon, you can reroll one of the dice once.</p>
+		</description>
+		<setters>
+			<set name="keywords">longbow</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longbow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Longbow</set>
+		</setters>
+	</element>
+
+	<element name="Esika's Chariot" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_ESIKAS_CHARIOT">
+		<description>
+			<p>This ornate wooden chariot is owned by Esika, goddess of the World Tree.</p>
+			<p class="indent">While touching the chariot, you can use your action to magically summon Tregul and Bygul, two tomcats bound to Esika's chariot. They have the statistics of cats, except they both have an Intelligence of 10. The cats appear in unoccupied spaces within 10 feet of the chariot. When either cat drops to 0 hit points, it disappears into the cosmos until you use your action to summon it again. You can also dismiss one or both of the cats back into the cosmos by using your action while touching the chariot.</p>
+			<p class="indent">Tregul and Bygul are friendly to you and your allies. They will willingly pull the chariot into battle, but they will not fight for you.</p>
+			<p class="indent">When Trygul and Bygul pull the chariot, they have a speed of 60 feet and can move up to two Medium or smaller creatures riding in the chariot. In combat, both cats act on the same initiative and take the same action each turn. Creatures riding in the chariot while Trygul and Bygul are pulling it have half cover.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="attunement">true</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type" addition="land vehicle">Wondrous Item</set>
+			<set name="rarity">Artifact</set>			
+		</setters>
+	</element>
+
+	<element name="Galdrimel" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_GALDRIMEL">
+		<description>
+			<p>This dwarf-crafted axe was wielded by Halvar, the god of battle, during the Skoti's war against the Einir. It can can sever any subtance, even the cosmos. Halvar even used it to sever the elven race into two clans.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties.</p>
+			<p class="indent"><strong><em>Severing Spells.</em></strong> This magic weapon has 4 charges, and regains 1d4 expended charges daily at dawn. You can cast the following spells from the weapon, expending the necessary number of charges: <i>dispel evil and good</i> (2 charges), <i>dispel magic</i> (1 charge), <i>enemies abound</i> (1 charge), <i>feeblemind</i> (3 charges).</p>
+			<p class="indent"><strong><em>Severing Blade.</em></strong> This magic weapon functions as a <i>vorpal sword</i>.</p>
+		</description>
+		<setters>
+			<set name="keywords">greataxe, spells</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greataxe">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="charges">4</set>
+			<set name="weapon">Greataxe</set>
+		</setters>
+	</element>
+
+	<element name="Giant's Amulet" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_GIANTS_AMULET">
+		<description>
+			<p>While wearing this amulet, you have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Goldvein Pick" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_GOLDVEIN_PICK">
+		<description>
+			<p>This lucky miner's pick is inlaid with gold.</p>
+			<p class="indent">Whenever an attack made with this magic weapon hits an object, the hit is a critical hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">war pick</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="war pick">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">War Pick</set>
+		</setters>
+	</element>
+
+	<element name="Harnfell, Horn of Bounty" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_HARNFELL_HORN_OF_BOUNTY">
+		<description>
+			<p>This mead horn is etched with runes inlaid with gold. It is the personal mead horn of Birgi, the god of storytelling. Sloshing sounds can be heard from within the horn when it is shaken, even if the horn is empty.</p>
+			<p class="indent">The horn functions as an <i>alchemy jug</i>. If you use an action to name a liquid and choose fresh or salt water, the horn functions as a <i>decanter of endless water</i> until the next dawn.</p>
+			<p class="indent">When you use an action to name a liquid with the horn, you can choose one of the following additional potion liquids: <i>Potion of cold resistance</i>, <i>potion of fire resistance</i>, <i>potion of greater healing</i>, <i>potion of growth</i>, <i>potion of hill giant strength</i>, <i>potion of water breathing</i>. The horn produces one ounce of these potion liquids, which is enough for one creature to drink and gain the magical effect that potion produces. Once the jug produces a potion liquid, it can't produce more potion liquid or another potion liquid until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>			
+		</setters>
+	</element>
+
+	<element name="Kaldring, the Rimestaff" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_KALDRING_THE_RIMESTAFF">
+		<description>
+			<p>This spiral staff appears to be made of wood and steel, and a number of large ice crystals have been fitted to the top of it. A glowing, shifting aurora can be seen inside each of the crystals. Kaldring is the personal staff of Jorn, the god of winter.</p>
+			<p class="indent">The staff is a <i>staff of frost</i>. While holding it, you gain access to the following additional properties:</p>
+			<ul>
+				<li>You ignore difficult terrain made of ice and snow.</li>
+				<li>You have a burrow speed equal to your walking speed. While burrowing through snow, you don't disturb the material you move through.</li>
+				<li>You can cast the following spells from the staff, expending the necessary number of charges: <i>freezing sphere</i> (6 charges), <i>ray of frost</i> (no charges), <i>sleet storm</i> (3 charges).</li>
+				<li>You can expend the necessary number of charges as an action and use the staff to create either an inanimate ice object (2 charges) or an animated ice creature (4 charges), which appears in an unoccupied space within 60 feet of you. It melts into a pool of normal water after 24 hours or when it drops to 0 hit points. In extreme heat, it loses 5 (1d10) hit points per minute as it melts.
+				The ice object can't have any moving parts, must be able to fit inside a 10-foot cube, and the object must be of a form that you have seen before. The ice creature must be modeled after a beast with a challenge rating of 2 or less. The ice creature has the same statistics as the beast it models, except it's a Construct, it has vulnerability to fire damage, immunity to cold and poison damage, and immunity to the following conditions: charmed, exhaustion, frightened, paralyzed, petrified, and poisoned. The ice creature obeys only its creator's commands.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting focus, spells</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+		<rules>
+			<stat name="speed:burrow" value="speed" />
+		</rules>
+	</element>
+
+	<element name="Raven Wings" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_HARNFELL_RAVEN_WINGS">
+		<description>
+			<p>These Large wings are constructed from a bronze frame and raven wings, and attach to your back. You can use them to fly, provided your weight (including whatever you are wearing or carrying) doesn't exceed 300 pounds. They have a flying speed of 30 feet, and can't hover. If the the raven wings lose their rider while airborne, they fall.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>			
+		</setters>
+	</element>
+
+	<element name="Replicating Ring" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_REPLICATING_RING">
+		<description>
+			<p>This magical ring was forged by a dwarf craftsman as a gift for Alrund, god of the cosmos, and appears as an ever shining ring of ice.</p>
+			<p class="indent">The ring is a <i>ring of cold resistance</i>. While you are attuned to the ring, after every eight days and nights it magically produces eight other rings, which appear to drip from the original ring like water from ice. Each new ring is a ring of spell storing that can hold only 1 level worth of spells at a time. These rings disappear after eight days and nights.</p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Runes" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_HARNFELL_RUNES">
+		<description>
+			<p>Runes are glyphs of arcane power that can be inscribed upon a surface, or upon a nonmagical weapon, armor, piece of clothing, or other object. They can also be tattooed or carved into a creature's skin.</p>
+			<p class="indent">While you are wearing or carrying a rune-marked object, or while it is on your skin, you can cast the spell associated with the rune without using a spell slot or material components. Once you cast that spell with it, you can't do so again until the next dawn.</p>
+			<p class="indent">A wizard spell associated with a found rune can be copied just as spells in spellbooks can be copied.</p>
+			<h5 class="caption">RUNE SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Rune</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>Cloud</td><td><i>Fog cloud</i></td></tr>
+				<tr><td>Enemy</td><td><i>Bane</i></td></tr>
+				<tr><td>Fire</td><td><i>Burning hands</i></td></tr>
+				<tr><td>Flight</td><td><i>Fly</i></td></tr>
+				<tr><td>Friend</td><td><i>Bless</i></td></tr>
+				<tr><td>Frost</td><td><i>Armor of agathys</i></td></tr>
+				<tr><td>Life</td><td><i>Cure wounds</i></td></tr>
+				<tr><td>Might</td><td><i>Enhance ability</i></td></tr>
+				<tr><td>Mortality</td><td><i>Inflict wounds</i></td></tr>
+				<tr><td>Shield</td><td><i>Shield</i></td></tr>
+				<tr><td>Speed</td><td><i>Expeditious retreat</i></td></tr>
+				<tr><td>Stone</td><td><i>Sanctuary</i></td></tr>
+				<tr><td>Storm</td><td><i>Thunderwave</i></td></tr>
+				<tr><td>Sustenance</td><td><i>Vampiric touch</i></td></tr>
+				<tr><td>War</td><td><i>Heroism</i></td></tr>
+				<tr><td>Wind</td><td><i>Feather fall</i></td></tr>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">spells</set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>			
+		</setters>
+	</element>
+
+	<element name="Scorn Pole" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_SCORN_POLE">
+		<description>
+			<p>The scorn pole is used by raiders of the skelle clan to keep conquered villages in submission. As an action, you can plant the haft end of the staff into the ground. Each creature that finishes a long a rest within 300 feet of a planted scorn pole has disadvantage on Strength and Charisma ability checks and saving throws for 24 hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">spellcasting focus</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Serpent's Soul Jar" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_SERPENTS_SOUL_JAR">
+		<description>
+			<p>The Serpent's Soul Jar is a black earthenware jar with a ornate lid carved into the shape of a coiled snake. The mouth of the snake is open, and a glowing purple mist emanates from it. The jar is used by shadow elf priests of Koma to return fallen elves to life.</p>
+			<p class="indent">A serpent's soul jar has 3 charges. When a humanoid dies within 60 feet of the serpent's soul jar, it regains 1 charge as the soul is trapped within. While holding the jar, you can use your action to expend 1 charge from the jar and use it to cast <i>raise dead</i>. When you do, roll a d20. On a 1, instead of returning the willing soul of the dead creature, the target of raise dead is possessed by one of the souls trapped within the jar.</p>
+		</description>
+		<setters>
+			<set name="keywords">spells</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement" addition="by a Creature who Worships Koma">true</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+	<element name="Snakeskin Veil" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_SNAKESKIN_VEIL">
+		<description>
+			<p>This translucent cloak was fashioned by the elves of Skemfar from the shed skin and scales of Koma, the cosmos serpent.</p>
+			<p class="indent">While wearing this cloak, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	
+	<element name="Spectral Steel" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_SPECTRAL_STEEL">
+		<description>
+			<p>Spectral steel is a ghostly, translucent material from Istfell, the realm of the dishonored dead. When found, it appears as a single ingot.</p>
+			<p class="indent">As a bonus action while holding the spectral steel, you can shape it into a new form. That form can be a shield or melee weapon you have seen before. You are proficient with it while you wield it.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Sword of the Realms" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_SWORD_OF_THE_REALMS">
+		<description>
+			<p>The sword of the realms is the weapon of Halvar, god of battle. It was forged from tyrite, derived from the sap of the world tree, and its blade appears as a glimmering aurora.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the following additional properties.</p>
+			<p class="indent"><strong><em>Cut Through the Cosmos.</em></strong> While wielding this magic weapon, you can use your action to open an omenpath linking a space within your reach to a precise location on another realm of Kaldheim. The omenpath is a circular portal 5 feet in diameter, and it lasts for 1 minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Greatsword</set>
+		</setters>
+	</element>
+
+	<element name="Tegrid's Lantern" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_TEGRIDS_LANTERN">
+		<description>
+			<p>This hooded lantern seems to contain an aurora, and is the personal lantern of Tergrid, god of fright.</p>
+			<p class="indent">The lantern burns indefinitely, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. You can use an action to lower the hood, reducing the light to dim light in a 5-foot radius.</p>
+			<p class="indent">If the lantern's bright light overlaps with an area of darkness created by a spell, the spell that created the darkness is dispelled. Invisible creatures and objects are visible as long as they are in the lantern's bright light, and the bright light reveals the true form of shapechangers and creatures transformed by magic.</p>
+			<p class="indent">Undead and fiends cannot willingly enter the the lantern's light. If a <strong>shadow</strong>, or an Undead or Fiend associated with shadows and darkness, starts its turn in the lantern's bright light, it must make a Constitution saving throw. On a failed save, a creature takes 10d12 radiant damage and has the blinded condition. On a successful save, it takes half as much damage and suffers no other effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">saving throw</set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+
+	<element name="The Ringhart Crest" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_THE_RINGHART_CREST">
+		<description>
+			<p>This torc-shaped crest is made of silver inlaid with diamonds, and was forged by the dwarven smith Koll for Kolvori, the god of kinship.</p>
+			<p class="indent">While wearing the crest, you have advantage on Charisma-based ability checks and Charisma saving throws. You are also under the effects of a <i>sanctuary</i> spell. Making an attack, casting a spell that affects an enemy, or dealing damage to another creature doesn't end this effect.</p>
+			<p class="indent">The crest has 6 charges, and regains 1d6+3 charges daily at dawn. While wearing the crest, you can cast the following spells from it, expending the necessary number of charges: <i>animal friendship</i> (1 charge), <i>animal messenger</i> (2 charges), <i>conjure animals</i> (3 charges), <i>conjure fey</i> (6 charges), <i>locate animals or plants</i> (2 charges), <i>speak with animals</i> (1 charge), <i>speak with plants</i> (3 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, saving throw</set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+
+	<element name="Toralf's Hammer" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_TORALFS_HAMMER">
+		<description>
+			<p>This hammer is the personal weapon of Toralf, god of fury.</p>
+			<p class="indent">You gain a +3 bonus to attack and damage rolls made with this magic weapon. It has the thrown property with a normal range of 20 feet and a long range of 60 feet, and it returns to your hand immediately after it is used to make a ranged attack. When you hit with an attack using this weapon, it deals an extra 3d10 lightning damage.</p>
+			<p class="indent">When you hit with a ranged attack using this weapon, it unleashes a thunderclap audible out to 300 feet. The target and every creature within 30 feet of it must succeed on a DC 17 Constitution saving throw or have the stunned and deafened conditions until the end of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">warhammer, lightning, saving throw</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="warhammer">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="enhancement">3</set>
+			<set name="attunement" addition="by a Creature the Hammer Deems Worthy">true</set>
+			<set name="weapon">Warhammer</set>
+		</setters>
+	</element>
+
+		<element name="Valkmira, Protector's Shield" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_VALKMIRA_PROTECTORS_SHIELD">
+		<description>
+			<p>Valkmira is the personal shield of Reidane, god of justice. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC. While holding this shield, you gain the following benefits:</p>
+			<ul>
+				<li>You have advantage on saving throws against spells.</li>
+				<li>Spell attacks have disadvantage against you.</li>
+				<li>You have resistance to all damage but psychic.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">shield, advantage, resistance</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="enhancement" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Valkyrie's Sword" type="Magic Item" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_VALKYRIES_SWORD">
+		<description>
+			<p>When you hit with a melee attack using this longsword, it deals an extra 1d8 damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Weathered Runestone" type="Magic Item"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_MAGIC_ITEM_WESTHERED_RUNESTONE">
+		<description>
+			<p>The runestone has 3 charges. While holding it, if you fail a saving throw against a necromancy spell or a harmful effect originating from an undead creature, you can use your reaction to expend 1 charge and turn the failed save into a successful one. The runestone regains 1d3 expended charges daily at dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="charges">3</set>
+		</setters>
+	</element>
+
+</elements>

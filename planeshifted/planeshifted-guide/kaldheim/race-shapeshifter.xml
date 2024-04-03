@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-shapeshifter.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-shapeshifter.xml" />
+		</update>
+	</info>
+
+	<element name="Shapeshifter" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_SHAPESHIFTER">
+		<description>
+			<p>The shapeshifters of the realm of Littjara are mysterious, masked beings with the ability to change their physical form at will. They wear beautifully carved masks and heavy traveling cloaks to obscure their true faces and forms. They can take any form necessary to blend into their surroundings—including a shifting aurora form that enables them to move freely through the Cosmos.</p>
+			<p class="indent">Gladewalkers prefer the forms of wild beasts over any humanoid identity. Bears are a favorite form, but any stag, lynx, bird, or squirrel spotted in the woodlands could be a Gladewalker in disguise. Covewalkers are fascinated with water. They often take on the form of marine animals such as seals or dolphins. They also frequently adopt the identities of mariners, seafaring raiders, fishers, lighthouse keepers, and other humanoids who dwell on or near the waters.</p>
+			<p class="indent">Shapeshifters aren't born; new masks are carved from the maskwood nexus tree and sent to float downriver to the Mirrorlake, from which Shapeshifters emerge and to which they return. Curious and adaptable, they often spend only the few years of a brief childhood in Littjara before venturing out into the Cosmos to see and learn about other realms.</p>
+
+			<h4>SHAPESHIFTER TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are an Fey.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Shapechanger.</em></strong> As an action, you can magically assume the form of a Beast that you have seen before. The Beast must have a CR of 1/4 or lower. Your statistics, other than your Size, are the same in each form. While transformed, you can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Beast form. Your clothing and equipment merge into your new form and have no effect until you leave the form, and you retain your mask and mist-like features beneath it in each form. You stay in the new form until you use an action to revert to your true form or until you die.</p>
+			<p class="indent">If you have the Wild Shape feature from the druid class, you can use your Wild Shape one additional time between rests.</p>
+			<p class="indent"><strong><em>Realmwalk.</em></strong> Starting at 5th level, you can shapeshift into a glowing aurora form, which you can use to walk between the realms. As an action, you and up to eight willing creatures are transported to a realm of Kaldheim that you have been to before, or to the cosmos between realms. You can specify a target destination in general terms, such as the Mirrorlake in the realm of Littjara, and you appear in or near that destination, at the DM's discretion. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Shapeshifter)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Shapeshifter)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_SHAPECHANGER" requirements="!ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_SHAPECHANGER_DRUID" requirements="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_REALMWALK" level="5" />
+		</rules>
+	</element>
+
+	<element name="Shapechanger" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_SHAPECHANGER">
+		<description>
+			<p>As an action, you can magically assume the form of a Beast that you have seen before. The Beast must have a CR of 1/4 or lower. Your statistics, other than your Size, are the same in each form. While transformed, you can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Beast form. Your clothing and equipment merge into your new form and have no effect until you leave the form, and you retain your mask and mist-like features beneath it in each form. You stay in the new form until you use an action to revert to your true form or until you die.</p>
+			<p class="indent">If you have the Wild Shape feature from the druid class, you can use your Wild Shape one additional time between rests.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can magically assume the form of a Beast that you have seen before. The Beast must have a CR of 1/4 or lower. Your statistics, other than your Size, are the same in each form. While transformed, you can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Beast form. Your clothing and equipment merge into your new form and have no effect until you leave the form, and you retain your mask and mist-like features beneath it in each form. You stay in the new form until you use an action to revert to your true form or until you die.</description>
+		</sheet>
+	</element>
+	<element name="Shapechanger" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_SHAPECHANGER_DRUID">
+		<compendium display="false" />
+		<description>
+			<p>As an action, you can magically assume the form of a Beast that you have seen before. The Beast must have a CR of 1/4 or lower. Your statistics, other than your Size, are the same in each form. While transformed, you can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Beast form. Your clothing and equipment merge into your new form and have no effect until you leave the form, and you retain your mask and mist-like features beneath it in each form. You stay in the new form until you use an action to revert to your true form or until you die.</p>
+			<p class="indent">If you have the Wild Shape feature from the druid class, you can use your Wild Shape one additional time between rests.</p>
+		</description>
+		<sheet>
+			<description>As an action, you can magically assume the form of a Beast that you have seen before. The Beast must have a CR of 1/4 or lower. Your statistics, other than your Size, are the same in each form. While transformed, you can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your Beast form. Your clothing and equipment merge into your new form and have no effect until you leave the form, and you retain your mask and mist-like features beneath it in each form. You stay in the new form until you use an action to revert to your true form or until you die. &#13;
+			You can use your Wild Shape 1 additional time between rests.</description>
+		</sheet>
+	</element>
+
+	<element name="Realmwalk" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SHAPESHIFTER_REALMWALK">
+		<description>
+			<p>Starting at 5th level, you can shapeshift into a glowing aurora form, which you can use to walk between the realms. As an action, you and up to eight willing creatures are transported to a realm of Kaldheim that you have been to before, or to the cosmos between realms. You can specify a target destination in general terms, such as the Mirrorlake in the realm of Littjara, and you appear in or near that destination, at the DM's discretion. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You and up to 8 willing creatures are transported to a realm of Kaldheim that you have been to before, or to the cosmos between realms. You can specify a target destination in general terms, such as the Mirrorlake in the realm of Littjara, and you appear in or near that destination, at the DM's discretion.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-valkyrie.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-valkyrie.xml" />
+		</update>
+	</info>
+
+	<element name="Valkyrie" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_VALKYRIE">
+		<description>
+			<p>The valkyries dwell in Starnheim, where fallen heroes rest. Older than the Skoti, the Valkyries do not serve the gods. They were formed at the beginning of time, birthed from Valkmir, the black lake of the first valkyrie's blood in Starnheim. Valkyries judge the fallen, and do not allow their judgment to be clouded by the banal relationships, family ties, and petty squabbling that practically define the nature of the gods.</p>
+			<p class="indent">Valkyries carry out their missions of judgment in pairs, a Shepherd and a Reaper travel together. Shepherds guide the honored dead to Starnheim, while Reapers take cowards to the realm of Istfell, branding them with a rune that marks their shame. Both Valkyries in a pair must agree on each fallen warrior's fate before it can be enacted.</p>
+			<p class="indent">Though valkyries becoming involved in outside affairs is rare, some sagas describe the valkyries joining the gods in a worthy battle, and valkyries will readily fly into battle against demons.</p>
+
+			<h4>VALKYRIE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Celestial.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Valkyries don't age as other races do. You are immune to the effects of aging and can't be aged magically.</p>
+			<p class="indent"><strong><em>Battlefield Angel.</em></strong> You have proficiency with one martial weapon of your choice.</p>
+			<p class="indent"><strong><em>Chooser of the Slain.</em></strong> You know the <i>spare the dying</i> cantrip. Starting at 3rd level, you can cast the <i>gentle repose</i> spell as a ritual with this trait, without requiring a material component. Starting at 5th level, you can also cast the <i>invisibility</i> spell with this trait, without requiring a material component.</p>
+			<p class="indent">Once you cast <i>invisibility</i> with this trait, you can't do so again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Spirit Guide.</em></strong> As an action, you can detect the distance and direction to the closest omenpath that leads to either Istfell, Starnheim, or Bretaguard (choose the destination when you use this trait). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<div class="sidebar">
+				<h5>VALKYRIE CHARACTERS</h5>
+				<p>Valkyries hold special significance in Kaldheim and may not be suited to all class options, background options, or campaigns. Speak with your DM about the implications of playing a valkyrie before choosing this race.</p>
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Valkyrie)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<!--change to the internal one for Legacy once added-->
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_CELESTIAL" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Valkyrie)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_BATTLEFIELD_ANGEL" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_CHOOSER_OF_THE_SLAIN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_FLIGHT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_SPIRIT_GUIDE" />
+		</rules>
+	</element>
+
+	<element name="Battlefield Angel" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_BATTLEFIELD_ANGEL">
+		<description>
+			<p>You have proficiency with one martial weapon of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Martial Weapon (Battlefield Angel)" supports="Simple||Tool" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple/Martial Weapon or Tool (Battlefield Angel)" supports="Weapon||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Chooser of the Slain" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_CHOOSER_OF_THE_SLAIN">
+		<description>
+			<p>You know the <i>spare the dying</i> cantrip. Starting at 3rd level, you can cast the <i>gentle repose</i> spell as a ritual with this trait, without requiring a material component. Starting at 5th level, you can also cast the <i>invisibility</i> spell with this trait, without requiring a material component.</p>
+			<p class="indent">Once you cast <i>invisibility</i> with this trait, you can't do so again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+		</description>
+		<sheet>
+			<description>You know the spare the dying cantrip.</description>
+			<description level="3">You know the spare the dying cantrip, and you know the gentle repose spell as a ritual.</description>
+			<description level="5">You know the spare the dying cantrip, and you know the gentle repose spell as a ritual. You can also cast the invisibility spell once per long rest. You can also the invisibility spell using any spell slots you have of the appropriate level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+			<grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="5" />
+		</rules>
+	</element>
+	
+	<element name="Flight" type="Racial Trait"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_FLIGHT">
+		<description>
+			<p>You have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{innate speed}} feet. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Spirit Guide" type="Racial Trait"  source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_VALKYRIE_SPIRIT_GUIDE">
+		<description>
+			<p>As an action, you can detect the distance and direction to the closest omenpath that leads to either Istfell, Starnheim, or Bretaguard (choose the destination when you use this trait). You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can detect the distance and direction to the closest omenpath that leads to either Istfell, Starnheim, or Bretaguard (choose the destination when you use this trait).</description>
+		</sheet>
+	</element>
+
+</elements>
