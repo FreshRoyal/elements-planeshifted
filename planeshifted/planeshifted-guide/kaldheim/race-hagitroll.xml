@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-hagitroll.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-hagitroll.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 			<p class="indent">Over the course of generations, the Hagi have scavenged what they could from many of the old ruins, and they continue to search for unplundered barrows and cairns. They use no form of currency, but shards of swords, rune-stamped metalwork, or broken chalices have become treasured commodities among their clans. Although they don't have a written language of their own, they have deciphered some of the old giants' runes and gradually developed a kind of crude rudimentary magic that they can barely control, which tends to be unexpectedly explosive.</p>
 			<p class="indent">Mostly, the Hagi fight hand-to-hand or with pieces of ancient weapons. If they need to raid another Hagi clan or attack a Torga family group that has something they want, they strap a rock onto a stick or fashion some other crude weapon, but their interest in crafts ends there.</p>
 
-			<h4>DWARF TRAITS</h4>
+			<h4>HAGI TROLL TRAITS</h4>
 			<p>You have the following racial traits. </p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Giant.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
