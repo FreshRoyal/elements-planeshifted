@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/backgrounds.xml" />
 		</update>
 	</info>
@@ -311,7 +311,7 @@
 	<element name="Urchin" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="D_PSLE_PSGK_BACKGROUND_URCHIN">
 		<description>
 			<p>You grew up without a home, on the streets of your village or city. You have learned to fend for yourself, how to stay out of sight, and who you should trust. Even when you're not in your home city, you're at home in a village or city on any realm.</p>
-			<ul>
+			<ul class="unstyled">
 				<li><strong>Skill Proficiencies:</strong> Insight, Stealth</li>
 				<li><strong>Tool Proficiencies:</strong>  One type of gaming set, thieves' tools</li>
 				<li><strong>Equipment:</strong>  A gaming set (one of your choice), thieves' tools, a bedroll, a dagger, a set of common clothes, and a pouch containing 5gp</li>
@@ -422,7 +422,7 @@
 	
 	<!--Valkyrie-->
 	<element name="Valkyrie" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_VALKYRIE">
-		<prerequisite>Valkyrie Race</prerequisite>
+		<prerequisite>Prerequisite: Valkyrie Race</prerequisite>
 		<requirements>ID_PSLE_PSGK_RACE_VALKYRIE</requirements>
 		<description>
 			<p>Some valkyries might have long ago joined the gods or mortals in a noble fight against demons or some other evil; but not you. You have faithfully judged the fallen for eons, alongside your paired valkyrie companion, determining the fate of countless mortals.</p>
