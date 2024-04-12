@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-naga.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-naga.xml" />
 		</update>
 	</info>
 	
 	<element name="Naga" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_NAGA">
 		<description>
-			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in Plane Shift: Amonkhet.</p>
+			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in <i>Plane Shift: Amonkhet</i>.</p>
 			<h4>NAGA TRAITS</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
