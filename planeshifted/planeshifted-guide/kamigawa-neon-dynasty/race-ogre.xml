@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-ogre.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-ogre.xml" />
 		</update>
 	</info>
@@ -26,7 +26,6 @@
 			<p class="indent"><strong><em>Damage Dealer.</em></strong> When you roll a 1 on a damage die for a melee attack, you can reroll the die and use the new roll.</p>
 			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
 			<p class="indent"><strong><em>Heavy-Handed.</em></strong> Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
-			<p class="indent"><strong><em>Sokenzan Born.</em></strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
 			<p class="indent"><strong><em>Sokenzan Born.</em></strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
 			<p class="indent"><strong><em>Natural Athlete.</em></strong> You have proficiency in the Athletics skill.</p>
 			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
