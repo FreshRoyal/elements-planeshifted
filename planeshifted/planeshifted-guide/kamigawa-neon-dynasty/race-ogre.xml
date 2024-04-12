@@ -64,7 +64,7 @@
 			<p>Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
 		</description>
 		<sheet>
-			<description>Your unarmed strikes deal 1d6+{{strength:modifier}} bludgeoning damage.</description>
+			<description>Your unarmed strikes deal 1d6 + {{strength:modifier}} bludgeoning damage.</description>
 		</sheet>
 	</element>
 	
