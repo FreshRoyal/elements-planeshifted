@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/languages.xml" />
+		</update>
+	</info>
+	
+	<element name="Aven" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_AVEN">
+		<supports>PSRA Aven Language</supports>
+		<description>
+			<p>The language of the Aven.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Aven</set>
+			<set name="script">Aven</set>
+		</setters>
+	</element>
+	<element name="Khenra" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_KHENRA">
+		<supports>PSRA Khenra Language</supports>
+		<description>
+			<p>The language of the Khenra.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Khenra</set>
+			<set name="script">Khenra</set>
+		</setters>
+	</element>
+	<element name="Minotaur" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_MINOTAUR">
+		<supports>PSRA Minotaur Language</supports>
+        <description>
+            <p>Typically spoken by minotaurs.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Minotaurs</set>
+        </setters>
+    </element>
+	<element name="Naga" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_NAGA">
+		<supports>PSRA Naga Language</supports>
+		<description>
+			<p>Typically spoken by Nagas.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Nagas</set>
+			<set name="script">Naga</set>
+		</setters>
+	</element>
+	
+</elements>
