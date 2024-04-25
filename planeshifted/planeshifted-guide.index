@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="planeshifted-guide.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide.index" />
 		</update>
 	</info>
 	<files>
+		<file name="kaldheim.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim.index" />
 		<file name="kamigawa-neon-dynasty.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty.index" />
 		<file name="phyrexia.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia.index" />
 	</files>
