@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/languages.xml" />
+		</update>
+	</info>
+	
+	<element name="Phyrexian" type="Language" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_LANGUAGE_PHYREXIA">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Phyrexians.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Phyrexians</set>
+		</setters>
+	</element>
+	
+</elements>

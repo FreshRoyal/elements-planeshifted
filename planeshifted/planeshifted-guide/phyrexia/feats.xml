@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/feats.xml" />
+		</update>
+	</info>
+	
+	<element name="Phyrexian Mana" type="Feat" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_PHYREXIAN_MANA">
+		<prerequisite>Spellcasting or Pact Magic</prerequisite>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic</em></p>
+			<p>You can transform unexpended hit die into one spell slot as a bonus action on your turn. This requires expending a number of hit die equal to 1 + the level of the spell slot created and taking an amount of necrotic damage equal to one roll of each expended die. This damage cannot be reduced or prevented in any way. Your hit point maximum is reduced by the amount of necrotic damage taken. The hit point reduction lasts until you finish a long rest. The created spell slot must be of a level which you can cast and no higher in level than 5th. The created spell slots vanish at the end of a short or long rest.</p>
+			<p class="indent">For example, if you are a 3rd-level cleric, you can create a 2nd level spell slot by expending all three of your hit die. Because a cleric has a d8 hit die, you would then take 3d8 necrotic damage, and your hit point maximum would be reduced by the amount of necrotic damage taken until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can transform unexpended hit die into one spell slot as a bonus action on your turn. This requires expending a number of hit die equal to 1 + the level of the spell slot created and taking an amount of necrotic damage equal to one roll of each expended die. This damage cannot be reduced or prevented in any way. Your hit point maximum is reduced by the amount of necrotic damage taken. The hit point reduction lasts until you finish a long rest. The created spell slot must be of a level which you can cast and no higher in level than 5th. The created spell slots vanish at the end of a short or long rest.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Planeshifted Guide to Phyrexia Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/source.xml" />
+		</update>
+	</info>
+	
+	<element name="Planeshifted Guide to Phyrexia" type="Source" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SOURCE">
+		<description>
+			<p>This book is a quick supplemental guide to be used with Plane Shift: Amonkhet, which provides rules and options for playing Dungeons &amp; Dragons 5th edition in the Amonkhet setting from Magic: the Gathering. This book provides updated character options and a selection of new spells.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">PSGP</set>
+			<set name="url">https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/PSGP.jpg</set>
+			<set name="author" abbreviation="PSGP" url="https://www.reddit.com/user/letterephesus/">letterephesus</set>
+			<set name="homebrew">true</set>
+			<set name="release">20230301</set>
+		</setters>
+	</element>
+</elements>
