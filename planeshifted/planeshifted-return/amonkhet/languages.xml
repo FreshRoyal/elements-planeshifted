@@ -7,7 +7,7 @@
 	</info>
 	
 	<element name="Aven" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_AVEN">
-		<supports>PSRA Aven Language</supports>
+		<supports>Exotic</supports>
 		<description>
 			<p>The language of the Aven.</p>
 		</description>
@@ -18,7 +18,7 @@
 		</setters>
 	</element>
 	<element name="Khenra" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_KHENRA">
-		<supports>PSRA Khenra Language</supports>
+		<supports>Exotic</supports>
 		<description>
 			<p>The language of the Khenra.</p>
 		</description>
@@ -29,7 +29,7 @@
 		</setters>
 	</element>
 	<element name="Minotaur" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_MINOTAUR">
-		<supports>PSRA Minotaur Language</supports>
+		<supports>Exotic</supports>
         <description>
             <p>Typically spoken by minotaurs.</p>
         </description>
@@ -39,7 +39,7 @@
         </setters>
     </element>
 	<element name="Naga" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_NAGA">
-		<supports>PSRA Naga Language</supports>
+		<supports>Exotic</supports>
 		<description>
 			<p>Typically spoken by Nagas.</p>
 		</description>
@@ -47,6 +47,17 @@
 			<set name="exotic">true</set>
 			<set name="speakers">Nagas</set>
 			<set name="script">Naga</set>
+		</setters>
+	</element>
+	<element name="Sphinx" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_SPHINX">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Sphinxes.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Sphinxes</set>
+			<set name="script">none</set>
 		</setters>
 	</element>
 	
