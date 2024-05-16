@@ -17,6 +17,17 @@
 			<set name="script">Aven</set>
 		</setters>
 	</element>
+	<element name="Fiendish" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_FIENDISH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by demons.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Demons</set>
+			<set name="script">Celestial</set>
+		</setters>
+	</element>
 	<element name="Khenra" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_KHENRA">
 		<supports>Exotic</supports>
 		<description>
