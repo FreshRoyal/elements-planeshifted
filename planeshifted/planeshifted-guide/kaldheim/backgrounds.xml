@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/backgrounds.xml" />
+		</update>
+	</info>
+
+	<!--If possible, maybe revamp the spellcasting features to actually have the ability selections. I genuinely had no energy for this.-->
+	
+	<!--Acolyte-->
+	<element name="Acolyte" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_ACOLYTE">
+		<description>
+			<p>You have devoted yourself to a god or other powerful figure, spending time in a temple to that deity in a village or sacred site. You served under a priest of that deity and studied scrolls and texts, learning about religion and the divine.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Religion, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> Calligrapher's supplies (includes a 1-ounce bottle of ink, 12 sheets of parchment, and 3 quills), a holy symbol of your deity, a book of lore (your deity), and a pouch containing 5gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_DIVINE_INITIATE" />
+		</description>
+		<setters>
+			<set name="short">Religion, Persuasion, Calligrapher's Supplies, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<select type="Language" name="Language (Acolyte)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_DIVINE_INITIATE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Divine Initiate" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_DIVINE_INITIATE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You know the <i>thaumaturgy</i> cantrip. You can also cast the <i>ceremony</i> spell with this feature. Once you cast the ceremony spell with this feature, you can't do so again until you finish a long rest. You always have this spell prepared and can also cast it using any spell slots you have of 1st level or higher. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this feature (choose when you select this background).</p>
+		</description>
+		<sheet alt="Divine Initiate" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+			<grant type="Spell" id="ID_WOTC_XGTE_SPELL_CEREMONY" />
+		</rules>
+	</element>
+
+	<!--Artisan-->
+	<element name="Artisan" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_ARTISAN">
+		<description>
+			<p>You apprenticed under a master craftsman before setting out as an artisan of your own. You have learned to create basic crafts, and have also learned the skillful art of haggling.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Investigation, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> One type of artisan's tools</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> A set of artisan's tools (one of your choice), an abacus, a merchant's scale, a set of traveler's clothes, and a pouch containing 25gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_CRAFTER" />
+		</description>
+		<setters>
+			<set name="short">Investigation, Persuasion, 1 Artisan's Tool, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Artisan's Tool (Artisan)" supports="Artisan tools" />
+			<select type="Language" name="Language (Artisan)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_CRAFTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Crafter" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_CRAFTER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you buy a nonmagical item, you receive a 20 percent discount on it. Additionally, when you craft an item using a tool with which you have proficiency, the required crafting time is reduced by 20 percent.</p>
+		</description>
+		<sheet alt="Crafter" />
+	</element>
+
+	<!--Augur-->
+	<element name="Augur" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_AUGUR">
+		<description>
+			<p>An augur is one who divines the future. You have sequestered yourself away from the world, in a monastery or alone in sacred place, in order to uncover the mysteries of fate, either through quiet contemplation or careful study of ancient texts.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Arcana, History</li>
+				<li><strong>Tool Proficiencies:</strong> Calligrapher's Supplies</li>
+				<li><strong>Languages:</strong> Giant</li>
+				<li><strong>Equipment:</strong> Calligrapher's supplies (includes a 1-ounce bottle of ink, 12 sheets of parchment, and 3 quills), a quarterstaff or wand, a book of lore (the history of one realm), and a pouch containing 8gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_DISCOVERY" />
+		</description>
+		<setters>
+			<set name="short">Arcana, History, Calligrapher's Supplies, Giant Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_DISCOVERY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Discovery" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_DISCOVERY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>After much searching and divining, you have uncovered a unique and powerful discovery. It might be a great truth about the cosmos, the gods, or the forces of nature. It could be a site that no one else has ever seen. You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history. It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.</p>
+			<p class="indent">Work with your DM to determine the details of your discovery and its impact on the campaign.</p>
+		</description>
+		<sheet alt="Discovery" />
+	</element>
+
+	<!--Noble-->
+	<element name="Noble" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_NOBLE">
+		<description>
+			<p>You were raised in wealth, honor, and privilege—none of it earned. Your family saw that you received an education, and you have learned a bit about leadership after watching your family lead their charges.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> History, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> One type of gaming set</li>
+				<li><strong>Languages:</strong> Giant</li>
+				<li><strong>Equipment:</strong> A gaming set (one of your choice), a vial of perfume, a signet ring, a set of fine clothes, and a pouch containing 25gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_RETAINER" />
+			<div class="sidebar">
+				<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_SKILLED" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">History, Persuasion, 1 Gaming Set, Giant Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Gaming Set (Noble)" supports="Gaming Set" />
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_RETAINER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGK Skilled" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Retainer" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_RETAINER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have the service of a <strong>noble</strong> (the DM has the creature's statistics), a retainer loyal to your family. The noble acts independently as the DM deems appropriate, but regards you as an ally and will obey your commands. The noble will leave your service if it is frequently endangered or abused. Your DM might allow your retainer to become a Sidekick. The rules for Sidekicks appear in <i>Tasha's Cauldron of Everything</i>.</p>
+		</description>
+		<sheet alt="Retainer" />
+	</element>
+	
+	<element name="Variant Feature: Skilled" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_SKILLED">
+		<supports>Background Feature, PSGK Skilled</supports>
+		<description>
+			<p>If your campaign uses the optional feat rules found in the <i>Player's Handbook</i>, a character with the noble background may select this background feature instead of Retainer.</p>
+			<p class="indent">You gain the Skilled feat from the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet alt="Skilled" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<grant type="Feat" id="ID_PHB_FEAT_SKILLED" />
+		</rules>
+	</element>
+
+	<!--Outlander-->
+	<element name="Outlander" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_OUTLANDER">
+		<description>
+			<p>You have spent most of your time away from villages and civilization, prefering to live in the wilds of your home realm. You have learned to live off the land, surviving by finding a balance in nature.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Nature, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Herbalsim kit</li>
+				<li><strong>Languages:</strong> Elvish</li>
+				<li><strong>Equipment:</strong> An herbalism kit, a hunting trap, a fishing tackle, a net, a bedroll, a blanket, a lamp, 3 flasks of oil, a set of traveler's clothes, and a pouch containing 5gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_WANDERER" />
+			<div element="ID_PSLE_PSGK_BACKGROUND_VARIANT_OUTLANDER_OUTRIDER" />
+			<div class="sidebar">
+				<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_WILD_MOUNT" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Nature, Survival, Herbalism Kit, Elvish Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" requirements="!ID_PSLE_PSGK_BACKGROUND_VARIANT_OUTLANDER_OUTRIDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_PSLE_PSGK_BACKGROUND_VARIANT_OUTLANDER_OUTRIDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Language" id="ID_LANGUAGE_ELVISH" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_WANDERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Variant" name="Variant Outlander" supports="PSGK Variant Outlander" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGK Wild Mount" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Wanderer" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_WANDERER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you make a Wisdom (Survival) check to navigate terrain, forage for food and water, or hunt wild game, you are considered proficient in the Survival skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus. In addition, whenever you succeed on a check to forage, you find a day's worth of food and water for you and your traveling companions.</p>
+		</description>
+		<sheet alt="Wanderer" />
+	</element>
+
+	<element name="Variant Outlander: Outrider" type="Background Variant" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_VARIANT_OUTLANDER_OUTRIDER">
+		<supports>PSGK Variant Outlander</supports>
+		<description>
+			<p>Your time spent in the wilds has brought you close to the beasts who inhabit it. Replace one of the skill proficiencies granted by this background with Animal Handling.</p>
+		</description>
+		<sheet alt="Outrider" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Outrider)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
+		</rules>
+	</element>
+	
+	<element name="Variant Feature: Wild Mount" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_WILD_MOUNT">
+		<supports>Background Feature, PSGK Wild Mount</supports>
+		<description>
+			<p>With the DM's permission, a character with the outlander background may select this background feature instead of Wanderer.</p>
+			<p class="indent">You gain the companionship of either a <strong>black bear</strong> or <strong>elk</strong> that can serve as your mount. The mount acts independently of you, but regards you as an ally. If you have the incapacitated condition, the mount flees. If the mount dies, you have advantage on any Wisdom (Animal Handling) or Charisma check you make to gain the companionship of another black bear or elk.</p>
+			<p class="indent">With the DM's permission, a paladin's Wild Mount can can be summoned by the <i>find steed</i> spell, or a Beast Master's Wild Mount can serve as as Ranger's Companion.</p>
+		</description>
+		<sheet alt="Wild Mount" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+		</rules>
+	</element>
+
+	<!--Shieldmate-->
+	<element name="Shieldmate" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_SHIELDMATE">
+		<description>
+			<p>You have trained for war from a young age, and found a name for yourself fighting alongside your peers. You have been either a defender of your home realm, a sword for hire, or a member of a band of thieves.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Athletics, Intimidation</li>
+				<li><strong>Tool Proficiencies:</strong>  One type of gaming set, tinker's tools</li>
+				<li><strong>Equipment:</strong> A gaming set (one of your choice), tinker's tools, a healer's kit, a hooded lantern, a flask of oil, a set of common clothes, and a pouch containing 10gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_SAVAGE_ATTACKER" />
+		</description>
+		<setters>
+			<set name="short">Athletics, Intimidation, Gaming Set, Tinker's Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Proficiency" name="Gaming Set (Shieldmate)" supports="Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_SAVAGE_ATTACKER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Savage Attacker" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_SAVAGE_ATTACKER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the Savage Attacker feat, which appears in the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet alt="Savage Attacker" />
+		<rules>
+			<grant type="Feat" id="ID_PHB_FEAT_SAVAGEATTACKER" />
+		</rules>
+	</element>
+
+	<!--Skald-->
+	<element name="Skald" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_SKALD">
+		<description>
+			<p>You may not be a dwarf, but you were certainly trained by one. A skald is dwarven storyteller, often a cleric of war, who hold a special place in dwarven society as the chief storytellers; repositories of sagas and fables as the dwarves keep no written history. You have traveled the realm as a teller of stories or singer of songs.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Deception, Performance</li>
+				<li><strong>Tool Proficiencies:</strong>One type of musical instrument</li>
+				<li><strong>Languages:</strong> Dwarvish</li>
+				<li><strong>Equipment:</strong> A musical instrument (one of your choice), a disguise kit, a vial of perfume, a steel mirror, a set of costume clothes, and a pouch containing 15gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_BARDIC_ARTS" />
+			<div class="sidebar">
+				<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_INSPIRING_LEADER" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Deception, Performance, 1 Musical Instrument, Dwarvish Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<select type="Proficiency" name="Musical Instrument (Skald)" supports="Musical Instrument" />
+			<grant type="Language" id="ID_LANGUAGE_DWARVISH" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_BARDIC_ARTS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGK Inspiring Leader" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Bardic Arts" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_BARDIC_ARTS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As part of a short or long rest, you can tell a story or perform a song, accompanied by a musical instrument you are proficient with and have on hand. At the end of the rest, your allies who heard the story or song are given inspiration, using the rules for inspiration provided in the Player's Handbook. The number of allies you can affect in this way equals your proficiency bonus.</p>
+		</description>
+		<sheet alt="Bardic Arts" />
+	</element>
+	
+	<element name="Variant Feature: Inspiring Leader" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_INSPIRING_LEADER">
+		<supports>Background Feature, PSGK Inspiring Leader</supports>
+		<description>
+			<p>If your campaign uses the optional feat rules found in the <i>Player's Handbook</i>, a character with the skald background may select this background feature instead of Bardic Arts.</p>
+			<p class="indent">You gain the Inspiring Leader feat from the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet alt="Inspiring Leader" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<grant type="Feat" id="ID_PHB_FEAT_INSPIRINGLEADER" />
+		</rules>
+	</element>
+
+	<!--Urchin-->
+	<element name="Urchin" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="D_PSLE_PSGK_BACKGROUND_URCHIN">
+		<description>
+			<p>You grew up without a home, on the streets of your village or city. You have learned to fend for yourself, how to stay out of sight, and who you should trust. Even when you're not in your home city, you're at home in a village or city on any realm.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Insight, Stealth</li>
+				<li><strong>Tool Proficiencies:</strong>  One type of gaming set, thieves' tools</li>
+				<li><strong>Equipment:</strong>  A gaming set (one of your choice), thieves' tools, a bedroll, a dagger, a set of common clothes, and a pouch containing 5gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_CITY_SECRETS" />
+			<div class="sidebar">
+				<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_LUCKY" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Sleight of Hand, Stealth, Disguise Kit, Thieves’ Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Proficiency" name="Gaming Set (Urchin)" supports="Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_CITY_SECRETS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGK Lucky" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: City Secrets" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_CITY_SECRETS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>When you are not in combat, you (and companions you lead) can travel between any two locations in the city twice as fast as your speed would normally allow. In addition, you can find a temporary place to hide, rest, or recuperate among other urchins, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.</p>
+		</description>
+		<sheet alt="City Secrets" />
+	</element>
+
+	<element name="Variant Feature: Lucky" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_LUCKY">
+		<supports>Background Feature, PSGK Lucky</supports>
+		<description>
+			<p>If your campaign uses the optional feat rules found in the <i>Player's Handbook</i>,  a character with the urchin background may select this background feature instead of City Secrets.</p>
+			<p class="indent">You gain the Lucky feat from the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet alt="Lucky" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<grant type="Feat" id="ID_PHB_FEAT_LUCKY" />
+		</rules>
+	</element>
+
+	<!--Viking-->
+	<element name="Viking" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_VIKING">
+		<description>
+			<p>You have lived your life on the sea, wind at your back and decks swaying beneath your feet. Perhaps you sailed a noble longship, or perhaps you made a living as a raider and terror of the waves.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Acrobatics, Perception</li>
+				<li><strong>Tool Proficiencies:</strong> Navigator's tools, vehicles (water)</li>
+				<li><strong>Equipment:</strong> Navigator's tools, fishing tackle, silk rope (50 feet), a net, a dagger, a set of traveler's clothes, and a pouch containing 10gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_SHIPS_PASSAGE" />
+			<div element="ID_PSLE_PSGK_BACKGROUND_VARIANT_VIKING_RAIDER" />
+			<div class="sidebar">
+				<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_WILD_MOUNT" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Perception, Navigator's Tools, Vehicles (Water)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" requirements="!ID_PSLE_PSGK_BACKGROUND_VARIANT_VIKING_RAIDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_PSLE_PSGK_BACKGROUND_VARIANT_VIKING_RAIDER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_SHIPS_PASSAGE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Variant" name="Variant Viking" supports="PSGK Variant Viking" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGK Tavern Brawler" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Ship's Passage" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_SHIPS_PASSAGE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You can secure free passage on a longship for you and your traveling companions. You might sail on the ship you served on, or another ship you have good relations with (perhaps one captained by a former crewmate). Your Dungeon Master will determine how long it takes to get where you need to go. In return for your free passage, you and your companions are expected to assist the crew during the voyage.</p>
+		</description>
+		<sheet alt="Ship's Passage" />
+	</element>
+
+	<element name="Variant Viking: Raider" type="Background Variant" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_VARIANT_VIKING_RAIDER">
+		<supports>PSGK Variant Viking</supports>
+		<description>
+			<p>You were a scourge of the Kirda seas. Replace one of the skill proficiencies granted by this background with Intimidation.</p>
+		</description>
+		<sheet alt="Raider" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Raider)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" />
+		</rules>
+	</element>
+	
+	<element name="Variant Feature: Tavern Brawler" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_TAVERN_BRAWLER">
+		<supports>Background Feature, PSGK Tavern Brawler</supports>
+		<description>
+			<p>With the DM's permission, a character with the viking background may select this background feature instead of Ship's Passage.</p>
+			<p class="indent">You gain the following benefits:</p>
+			<ul>
+				<li>Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</li>
+				<li>Whenever you roll a damage die for an unarmed strike or improvised weapon attack, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+				<li>You are proficient with improvised weapons.</li>
+			</ul>
+		</description>
+		<sheet alt="Tavern Brawler" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+		</rules>
+	</element>
+	
+	<!--Valkyrie-->
+	<element name="Valkyrie" type="Background" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_VALKYRIE">
+		<prerequisite>Prerequisite: Valkyrie Race</prerequisite>
+		<requirements>ID_PSLE_PSGK_RACE_VALKYRIE</requirements>
+		<description>
+			<p>Some valkyries might have long ago joined the gods or mortals in a noble fight against demons or some other evil; but not you. You have faithfully judged the fallen for eons, alongside your paired valkyrie companion, determining the fate of countless mortals.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Insight, Intimidation</li>
+				<li><strong>Languages:</strong>Celestial, plus one of your choice</li>
+				<li><strong>Equipment:</strong>A gaming set (one of your choice), a horn, a hooded lantern, 3 flasks of oil, and a pouch containing 25gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGK_BACKGROUND_FEATURE_PRISMATIC_PATH" />
+		</description>
+		<setters>
+			<set name="short">Insight, Intimidation, Celestial Language, 1 Other Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<select type="Language" name="Language (Valkyrie)" supports="Standard||Exotic" />
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+			<grant type="Background Feature" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_PRISMATIC_PATH" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Prismatic Path" type="Background Feature" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_BACKGROUND_FEATURE_PRISMATIC_PATH">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you slay a Humanoid or Beast with a weapon with which you are proficient, you can cause its spirit to rise as a <strong>specter</strong>. You gain no special power over the specter, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you. After it helps you, or if you don't require its help, an aurora-like bridge flows from your wings and carries the specter to its afterlife in Starnheim or Istfell.</p>
+		</description>
+		<sheet alt="Prismatic Path" />
+	</element>
+
+</elements>
+

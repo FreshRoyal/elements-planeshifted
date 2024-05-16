@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/deities.xml" />
+		</update>
+	</info>
+
+	<element name="Alrund" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_ALRUND">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Knowledge</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Birgi" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_BIRGI">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">-</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Cosima" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_COSIMA">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Tempest</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Egon" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_EGON">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Death</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Esika" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_ESIKA">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Life</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Firja" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_FIRJA">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Grave</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Halvar" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_HALVAR">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">War</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Kolvori" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_KOLVORI">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Nature, Peace</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Reidane" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_REIDANE">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Order</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Tergrid" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_TERGRID">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Twilight</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Toralf" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_TORALF">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Tempest, War</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Valki" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_VALKI">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">Trickery</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+	<element name="Varragoth" type="Deity" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_DEITY_VARRAGOTH">
+		<description />
+		<setters>
+			<set name="setting">Kaldheim</set>
+			<set name="alignment">-</set>
+			<set name="domains">-</set>
+			<set name="symbol">-</set>
+		</setters>
+		<sheet />
+	</element>
+
+</elements>

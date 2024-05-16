@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-minotaur.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-minotaur.xml" />
 		</update>
 	</info>
@@ -18,11 +18,11 @@
 			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
 			<p class="indent"><strong><em>Horns.</em></strong> You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 			<p class="indent"><strong><em>Ram.</em></strong> If you move at least 30 feet straight toward a target and then hit it with your Horns on the same turn, the target must succeed on a Strength saving throw with a DC equal to 8 + your proficiency bonus + your Strength modifier or be knocked prone or pushed 5 feet away from you (your choice).</p>
-			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Minotaur)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_FLAMING_FURY" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_HORNS" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_RAM" />
@@ -46,7 +46,7 @@
 			<p>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+			<description>You can use your horns to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing.</description>
 		</sheet>
 	</element>
 	<element name="Ram" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_MINOTAUR_RAM">

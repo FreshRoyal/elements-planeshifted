@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-omenseeker.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-omenseeker.xml" />
+		</update>
+	</info>
+
+	<element name="Omenseeker" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_OMENSEEKER">
+		<description>
+			<p>Driven by a desire to understand the secrets of the Cosmos, the fearless Omenseekers cross both the seas of Bretagard and the space between realms in search of arcane knowledge and new wonders. These mystic navigators follow sky maps inscribed with runic magic, showing both the stars of the ordinary night sky and the mystical Light of Starnheim that shines from the heights of the World Tree. Through careful charting and bold exploration, the Omenseekers hope to predict the Doomskars that occur when two realms overlap. They meet in Bretagard's Kirda Pillars once each season to share secrets they have gleaned from other realms, but they are most at home on their longships and consider themselves residents of the Cosmos. The Omenseekers are led by Inga Rune-Eyes, a blind seer who possesses all the knowledge gleaned by the clan on their voyages.</p>
+			<p class="indent">The Vedrune are an elite group of Omenseeker wizards who use elements from the natural world, such as ocean currents, wind, and the lights of the aurora, to predict future events as well as navigate through the Cosmos to other realms. The most powerful Vedrune wizards can open Omenpaths to other realms, and they believe that exposure to more realms expands the power of their magic.</p>
+
+			<h4>OMENSEEKER TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Child of the Sea.</em></strong> You have advantage on saving throws you make to avoid or end the prone condition.</p>
+			<p class="indent"><strong><em>Read the Stars.</em></strong> You can cast the <i>augury</i> spell an unlimited number of times with this trait, without requiring material components, provided you are outdoors and can see the Light of Starnheim.</p>
+			<p class="indent"><strong><em>Rune Eyes.</em></strong> You can use this trait to take the Help action as a bonus action. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Confidence.</strong> You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Exploit.</strong> Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Retreat.</strong> You and the creature you help don't provoke opportunity attacks until the start of your next turn.</li>
+			</ul>
+			<p class="indent"><strong><em>Seeker's Insight.</em></strong> You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Omenseeker)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Omenseeker)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_CHILD_OF_THE_SEA" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_READ_THE_STARS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_SEEKERS_INSIGHT" />
+		</rules>
+	</element>
+
+	<element name="Child of the Sea" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_CHILD_OF_THE_SEA">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the prone condition.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the prone condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Read the Stars" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_READ_THE_STARS">
+		<description>
+			<p>You can cast the <i>augury</i> spell an unlimited number of times with this trait, without requiring material components, provided you are outdoors and can see the Light of Starnheim.</p>
+		</description>
+		<sheet>
+			<description>You can cast the augury spell an unlimited number of times with this trait, without requiring material components, provided you are outdoors and can see the Light of Starnheim.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+		</rules>
+	</element>
+
+	<element name="Rune Eyes" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES">
+		<description>
+			<p>You can use this trait to take the Help action as a bonus action. You can do so a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">Starting at 3rd level, choose one of the options below each time you take the Help action with this trait:</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Confidence.</strong> You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Exploit.</strong> Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Retreat.</strong> You and the creature you help don't provoke opportunity attacks until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can take the Help action as a bonus action.</description>
+			<description level="3">You can take the Help action as a bonus action. &#13;
+			Choose one of the options below each time you take the Help action with this trait:</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_CONFIDENCE" level="3" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_EXPLOIT" level="3" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_RETREAT" level="3" />
+		</rules>
+	</element>
+	<element name="Confidence" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_CONFIDENCE">
+		<description>
+			<p>You and the creature you help each gain a number of temporary hit points equal to 1d6 plus your proficiency bonus.</p>
+		</description>
+		<sheet usage="Rune Eyes">
+			<description>You and the creature you help each gain a number of temporary hit points equal to 1d6 + {{proficiency}}.</description>
+		</sheet>
+	</element>
+	<element name="Exploit" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_EXPLOIT">
+		<description>
+			<p>Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</p>
+		</description>
+		<sheet usage="Rune Eyes">
+			<description>Until the start of your next turn, the first time the creature you help hits a target with an attack roll, that target has disadvantage on the next attack roll it makes within the next minute.</description>
+		</sheet>
+	</element>
+	<element name="Retreat" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_RUNE_EYES_RETREAT">
+		<description>
+			<p>You and the creature you help don't provoke opportunity attacks until the start of your next turn.</p>
+		</description>
+		<sheet usage="Rune Eyes">
+			<description>You and the creature you help don't provoke opportunity attacks until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Seeker's Insight" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_OMENSEEKER_SEEKERS_INSIGHT">
+		<description>
+			<p>You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</p>
+		</description>
+		<sheet>
+			<description>You always know which direction is north, and you have advantage on any Wisdom (Survival) check you make to navigate or track.</description>
+		</sheet>
+	</element>
+	
+</elements>

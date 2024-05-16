@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Fiendish" type="Language" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_LANGUAGE_FIENDISH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by demons and skelle.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Demons, Skelle</set>
+			<set name="script">Celestial</set>
+		</setters>
+	</element>
+
+	<element name="Littjaran" type="Language" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_LANGUAGE_LITTJAREN">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by shapeshifters.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Shapeshifters</set>
+			<set name="script">Littjaran</set>
+		</setters>
+	</element>
+
+	<element name="Phyrexian" type="Language" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_LANGUAGE_PHYREXIAN">
+		<supports>Exotic</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Trollish" type="Language" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_LANGUAGE_NEZUMI_TONGUE">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by trolls.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Trolls</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+</elements>

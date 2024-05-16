@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-kannah.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-kannah.xml" />
+		</update>
+	</info>
+
+	<element name="Kannah" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_KANNAH">
+		<description>
+			<p>The Aldergard forest is home to the nomadic Kannah clan, who maintain temporary settlements in the forest but regularly send groups on exploratory expeditions. The Aldergard is so large that some Kannah wander for years without ever leaving the forest.</p>
+			<p class="indent">Near the eastern edge of the forest, in the highlands rising into the Tusk Mountains, stands the Cursed Tree—a massive oak that is perpetually covered in snow. Kannah sagas say that this is the site where a god cursed them to remain forever in the Aldergard, with no hope of entering the hallowed halls of Starnheim. If the Kannah leave the forest, winter follows them and torments them with constant, increasing snowfall, eventually making forward progress impossible and forcing them to turn back. The Kannah maintain a small settlement near the Cursed Tree, where they perform runic rituals in hopes that one day the curse will be lifted.</p>
+			<p class="indent">Thanks to their ill treatment at the hands of divine beings, the Kannah despise anything related to gods, including the Cosmos monsters. They believe that killing the Cosmos Serpent will give them enough power to rise up and destroy the Skoti, end the curse at last, and claim Starnheim for themselves.</p>
+			<p class="indent">The Kannah are led by Fynn Fangbearer, formerly Snakehunter. He was the only human who ever managed to wound the Cosmos Serpent, and ultimately defeated it after it was compleated during the Phyrexian invasion.</p>
+
+			<h4>KANNAH TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Aldergard Born.</em></strong> You can move across difficult terrain made of snow or ice without expending extra movement, and you have advantage on ability checks you make to avoid the prone condition from slippery ice.</p>
+			<p class="indent"><strong><em>Curse of the Tree.</em></strong> The curse of the Cursed Tree follows you wherever you go. When you finish a long rest, the weather around you changes as with the <i>control weather</i> spell, changing the stage of all weather conditions up by one.</p>
+			<p class="indent"><strong><em>Magic of the Tree.</em></strong> Starting at 3rd level, you can cast the armor of agathys spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Starnheim Denied.</em></strong> You have advantage on saving throws against spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Kannah)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Kannah)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_ALDERGARD_BORN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_CURSE_OF_THE_TREE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_STARNHEIM_DENIED" />
+		</rules>
+	</element>
+
+	<element name="Aldergard Born" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_ALDERGARD_BORN">
+		<description>
+			<p>You can move across difficult terrain made of snow or ice without expending extra movement, and you have advantage on ability checks you make to avoid the prone condition from slippery ice.</p>
+		</description>
+		<sheet>
+			<description>You can move across difficult terrain made of snow or ice without expending extra movement, and you have advantage on ability checks you make to avoid the prone condition from slippery ice.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Tree" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_CURSE_OF_THE_TREE">
+		<description>
+			<p>The curse of the Cursed Tree follows you wherever you go. When you finish a long rest, the weather around you changes as with the <i>control weather</i> spell, changing the stage of all weather conditions up by one.</p>
+		</description>
+		<sheet>
+			<description>When you finish a long rest, the weather around you changes as with the control weather spell, changing the stage of all weather conditions up by one.</description>
+		</sheet>
+	</element>
+	
+	<element name="Magic of the Tree" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE">
+		<description>
+			<p>Starting at 3rd level, you can cast the armor of agathys spell with this trait. Once you cast it with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS" level="3" />
+			<select type="Racial Trait" name="Spellcasting Ability (Magic of the Tree)" supports="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_INTELLIGENCE|ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_WISDOM|ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Intelligence.</p>
+		</description>
+		<sheet alt="Magic of the Tree">
+			<description display="false" />
+			<description level="3">You can cast the armor of agathys spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Wisdom.</p>
+		</description>
+		<sheet alt="Magic of the Tree">
+			<description display="false" />
+			<description level="3">You can cast the armor of agathys spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_MAGIC_OF_THE_TREE_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for this spell is Charisma.</p>
+		</description>
+		<sheet alt="Magic of the Tree">
+			<description display="false" />
+			<description level="3">You can cast the armor of agathys spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Starnheim Denied" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_KANNAH_STARNHEIM_DENIED">
+		<description>
+			<p>You have advantage on saving throws against spells.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells.</description>
+		</sheet>
+	</element>
+	
+</elements>

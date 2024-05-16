@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/languages.xml" />
+		</update>
+	</info>
+	
+	<element name="Aven" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_AVEN">
+		<supports>Exotic</supports>
+		<description>
+			<p>The language of the Aven.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Aven</set>
+			<set name="script">Aven</set>
+		</setters>
+	</element>
+	<element name="Fiendish" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_FIENDISH">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by demons.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Demons</set>
+			<set name="script">Celestial</set>
+		</setters>
+	</element>
+	<element name="Khenra" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_KHENRA">
+		<supports>Exotic</supports>
+		<description>
+			<p>The language of the Khenra.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Khenra</set>
+			<set name="script">Khenra</set>
+		</setters>
+	</element>
+	<element name="Minotaur" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_MINOTAUR">
+		<supports>Exotic</supports>
+        <description>
+            <p>Typically spoken by minotaurs.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Minotaurs</set>
+        </setters>
+    </element>
+	<element name="Naga" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_NAGA">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Nagas.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Nagas</set>
+			<set name="script">Naga</set>
+		</setters>
+	</element>
+	<element name="Sphinx" type="Language" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_LANGUAGE_SPHINX">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Sphinxes.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Sphinxes</set>
+			<set name="script">none</set>
+		</setters>
+	</element>
+	
+</elements>

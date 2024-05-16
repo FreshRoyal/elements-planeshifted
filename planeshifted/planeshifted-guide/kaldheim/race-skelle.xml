@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-skelle.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-skelle.xml" />
+		</update>
+	</info>
+
+	<element name="Skelle" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_SKELLE">
+		<description>
+			<p>Once a band of violent outcasts, the Skelle clan decided long ago that it was easier to take resources from other clans by force than it was to scratch out a meager living in the swamp. Vicious and supernaturally quick, they can carry out raids miles away from their home base in the Skelle Mire then disappear without a trace even in the open grasslands. They are by far the most feared clan in Bretagard, to the point where many believe that even speaking their name can bring doom to one's village.</p>
+			<p class="indent">The Skelle rely not just on berserker ferocity but also on sinister magic to conquer villages and exact tribute from them. They make regular rounds to their conquests, demanding tribute of food, valuable goods, and money in exchange for the "privilege" of being allowed to live. Any village that refuses to pay tribute is immediately and utterly destroyed.</p>
+			<p class="indent">The Skelle clan became the terrible force it is today under the tutelage of Varragoth, a demon who escaped from Immersturm. The demon has long since been banished back to Immersturm, but the Skelle still revere him, follow his violent ways, practice his deadly magic, and even costume themselves in his likeness. They believe the demon will return one day and lead them in finishing the work that he began, wiping out or subjugating the other clans entirely, so only the Skelle remain.</p>
+
+			<h4>SKELLE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Gift of Varragoth.</em></strong> You can cast the <i>hex</i> spell with this trait. Starting at 3rd level, you can cast the <i>fog cloud</i> spell with it, without requiring material components. Starting at 5th level, you can cast the <i>pass without trace</i> spell it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Mire Born.</em></strong> You can move across difficult terrain made of mud or muck without expending extra movement.</p>
+			<p class="indent"><strong><em>Supernatural Speed.</em></strong> You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Skelle)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Skelle)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_MIRE_BORN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_SUPERNATURAL_SPEED" />
+		</rules>
+	</element>
+
+	<element name="Gift of Varragoth" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH">
+		<description>
+			<p>You can cast the <i>hex</i> spell with this trait. Starting at 3rd level, you can cast the <i>fog cloud</i> spell with it, without requiring material components. Starting at 5th level, you can cast the <i>pass without trace</i> spell it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_HEX" />
+			<grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Gift of Varragoth)" supports="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_INTELLIGENCE|ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_WISDOM|ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Gift of Varragoth">
+			<description>You can cast the hex spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="3">You can cast the hex and fog cloud spells once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You can cast the hex, fog cloud, and pass without trace spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Gift of Varragoth">
+			<description>You can cast the hex spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="3">You can cast the hex and fog cloud spells once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You can cast the hex, fog cloud, and pass without trace spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_GIFT_OF_VARRAGOTH_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Gift of Varragoth">
+			<description>You can cast the hex spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="3">You can cast the hex and fog cloud spells once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You can cast the hex, fog cloud, and pass without trace spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Mire Born" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_MIRE_BORN">
+		<description>
+			<p>You can move across difficult terrain made of mud or muck without expending extra movement.</p>
+		</description>
+		<sheet>
+			<description>You can move across difficult terrain made of mud or muck without expending extra movement.</description>
+		</sheet>
+	</element>
+
+	<element name="Supernatural Speed" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_SKELLE_SUPERNATURAL_SPEED">
+		<description>
+			<p>You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can take the Dash action as a bonus action.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-dwarf.xml" />
+		</update>
+	</info>
+
+	<element name="Dwarf" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_DWARF">
+		<description>
+			<p>The dwarves of the realm of Axgard are renowned through all the realms for two things: perfect weapons and exquisite storytelling. They are passionately creative, with an insatiable longing to constantly improve their craft. They strive to create the sharpest swords, the most beautiful jewelry, the strongest chains—and then immortalize their deeds in song and story. They seek to build things that last, to make their mark on the world so future generations remember them.</p>
+			<p class="indent">Dwarven society takes the form of sprawling, loose-knit clans that congregate in certain sections of the underground city. Different clans specialize in different crafts, and though they coexist amicably enough, they also have a strong competitive streak that sometimes sets them at odds. For dwarves, a warrior and a skilled artisan are one and the same. The art of combat and the art of creation draw from the same principles of focus, patience, and constant self-improvement.</p>
+			<h4>IRON CURRENCY</h4>
+			<p>Thanks to the Goldmaw Chasm, an endless supply of bubbling liquid gold in the dwarven realm of Axgard, gold is so readily available as to be nearly worthless in dwarven culture. Axgard currency is made from iron, valued for its utility, rather than its rarity.</p>
+			<h4>DWARF NAMES</h4>
+			<p>Every dwarf artisan spends their youth forging a single weapon and infusing it with runic magic, preparing to carry it for their entire life. These weapons are their creators' pride and joy, and many dwarves design their clothing and armor to match their weapon. On a dwarf's 100th birthday, marking the start of adulthood, they will reveal the weapon and their new last name, chosen based on their great creation.</p>
+			<p class="indent"><strong>Example Last Names:</strong> Bloodhammer, Goldstaff, Hammershine, Fireshield, Realmsword</p>
+
+			<h4>DWARF TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> 500 years on average.</p>
+			<p class="indent"><strong><em>Axgard Battlecry.</em></strong> As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Dwarven Resilience.</em></strong> You have resistance to poison damage. You also have advantage on saving throws you make to avoid or end the poisoned or frightened condition on yourself.</p>
+			<p class="indent"><strong><em>Dwarven Toughness.</em></strong> Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+			<p class="indent"><strong><em>Forge Wise.</em></strong> You have proficiency with two of the following artisan's tools of your choice: Brewer's supplies, jewler's tools, mason's tools, smith's tools, or tinker's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Dwarf)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DWARF" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Dwarf)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_AXGARD_BATTLECRY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_DWARVEN_RESILIENCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_DWARVEN_TOUGHNESS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_FORGE_WISE" />
+		</rules>
+	</element>
+
+	<element name="Axgard Battlecry" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_AXGARD_BATTLECRY">
+		<description>
+			<p>As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You let out a cry at your enemies within 10 ft of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you.</description>
+		</sheet>
+	</element>
+
+	<element name="Dwarven Resilience" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_DWARVEN_RESILIENCE">
+		<description>
+			<p>You have resistance to poison damage. You also have advantage on saving throws you make to avoid or end the poisoned or frightened condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the poisoned or frightened condition on yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Dwarven Toughness" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_DWARVEN_TOUGHNESS">
+		<description>
+			<p>Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+	
+	<element name="Forge Wise" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DWARF_FORGE_WISE">
+		<description>
+			<p>You have proficiency with two of the following artisan's tools of your choice: Brewer's supplies, jewler's tools, mason's tools, smith's tools, or tinker's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Forge Wise" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool, Forge Wise" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+</elements>

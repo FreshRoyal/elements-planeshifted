@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-draugr.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-draugr.xml" />
+		</update>
+	</info>
+
+	<element name="Draugr" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_DRAUGR">
+		<description>
+			<p>The draugr are an ancient race of undead lords and their subjects, animated by their pathological lust for wealth and power. The draugr jealously guard their vaults against intruders who come to the realm of Karfell seeking the ancient treasures and powerful magic items the draugr have stockpiled. Occasionally, the undead venture forth in their strange stone ships to raid other realms and bring back yet more wealth to add to their overflowing vaults.</p>
+			<p class="indent">Generations ago, King Narfi betrayed his people and led the god of death to transform all Karfell's nobles and their subjects into undead. They retain some or all memories and intelligence they had in life, and in death, they are motivated by the same desire for wealth and power that drove them before. The ancient nobles remember the time when the elves possessed godlike power, and they witnessed the huge battle that led to the downfall of the elves and the rise of the Skoti. Their undead subjects retain fewer memories of their existence and now mindlessly serve their lords.</p>
+			<p class="indent">The draugr maintain the noble houses and strict class hierarchy that was established when Karfell was a living kingdom. The warrior class, known as the Dead Marn, patrol in half-remembered echoes of their old sentry routes, while draugr jarls stir only every few months to attend council meetings with King Narfi. When a Doomskar brings Karfell into contact with another realm, the Dead Marn prefer to launch raids on other realms by sea, but occasionally march to war in silent ranks of undead warriors.</p>
+
+			<h4>DRAUGR TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are an Undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Draugr don't age as other races do. You are immune to the effects of aging and can't be aged magically.</p>
+			<p class="indent"><strong><em>Deathless Nature.</em></strong> You have resistance to poison damage and immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You don't need to eat, drink, or breathe.</p>
+			<p class="indent"><strong><em>Knowledge of the Past.</em></strong> You temporarily remember glimpses of the past, faded memories from ages ago. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Sleepless.</em></strong> You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Draugr)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Draugr)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_DEATHLESS_NATURE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_KNOWLEDGE_OF_THE_PAST" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_SLEEPLESS" />
+		</rules>
+	</element>
+
+	<element name="Deathless Nature" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_DEATHLESS_NATURE">
+		<description>
+			<p>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You don't need to eat, drink, or breathe.</p>
+		</description>
+		<sheet>
+			<description>You have immunity to disease, and you have advantage on saving throws you make to avoid or end the poisoned condition on yourself. You don't need to eat, drink, or breathe.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Knowledge of the Past" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_KNOWLEDGE_OF_THE_PAST">
+		<description>
+			<p>You temporarily remember glimpses of the past, faded memories from ages ago. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check.</description>
+		</sheet>
+	</element>
+
+	<element name="Sleepless" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_DRAUGR_SLEEPLESS">
+		<description>
+			<p>You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</p>
+		</description>
+		<sheet>
+			<description>You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</description>
+		</sheet>
+	</element>
+
+</elements>

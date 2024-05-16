@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-elf.xml" />
+		</update>
+	</info>
+
+	<element name="Elf" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_ELF">
+		<description>
+			<p>The elves live in the realm of Skemfar. Their ancestors actually used to be gods, the Einir, before being replaced by the modern pantheon of the Skoti. After their defeat, the leaders of the elvish Einir were imprisoned inside the Jaspera trees and the race was split into two clans: The Wood elves and Shadow elves. These two factions were alienated from each other for ages until recently, when an elf named Harald the Elder united the warring clans and named himself king. The elves are looking to reclaim their place as the gods of the realms, and the reunification of their society is a step toward that goal.</p>
+			<p class="indent">Elven tradition reveres Koma, the cosmos serpent. Many elves wear clothing that reflects that reverence—from hair braided to look like scales to woven designs and actual snakeskin. Their realm of Skemfar is full of the tunnels he left behind while he still moved freely in the realms. After he was cast out from the realms by the Skoti, some elves take it upon themselves to tend to these tunnels dutifully, praying for Koma to return and restore the elves to power.</p>
+			<h4>ELVEN EQUIPMENT</h4>
+			<p>Elves traditionally carry weapons and wear armor made from an ancient, bronze-like metal. Each weapon is custom smithed for a single elf and is carried through that elf's lifetime, then melted down and re-shaped for their descendants.</p>
+
+			<h4>ELF TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Einir Ancestry.</em></strong> You have advantage on saving throws you make to avoid or end the charmed condition on yourself. In addition, magic can't put you to sleep.</p>
+			<p class="indent"><strong><em>Gift of Sarulf.</em></strong>  You have the ability to communicate in a limited manner with Beasts. They can understand the meaning of your words, though you have no special ability to understand them in return.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Elf Clan.</em></strong> You gain additional benefits based on one of the following options (choose when you select this race):</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Wood Elf.</strong> Your walking speed increases to 35 feet. Additionally, you can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Shadow Elf.</strong> You have resistance to necrotic damage. Additionally, as a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can teleport this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Elf)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_ELF" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Elf)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_EINIR_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_GIFT_OF_SARULF" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_ELF_CLAN" />
+		</rules>
+	</element>
+
+	<element name="Einir Ancestry" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_EINIR_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end the charmed condition on yourself. In addition, magic can't put you to sleep.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed condition on yourself. In addition, magic can't put you to sleep.</description>
+		</sheet>
+	</element>
+
+	<element name="Gift of Sarulf" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_GIFT_OF_SARULF">
+		<description>
+			<p>You have the ability to communicate in a limited manner with Beasts. They can understand the meaning of your words, though you have no special ability to understand them in return.</p>
+		</description>
+		<sheet>
+			<description>You have the ability to communicate in a limited manner with Beasts. They can understand the meaning of your words, though you have no special ability to understand them in return.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Senses" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Keen Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Elf Clan" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_ELF_CLAN">
+		<description>
+			<p>You gain additional benefits based on one of the following options (choose when you select this race):</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Wood Elf.</strong> Your walking speed increases to 35 feet. Additionally, you can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Shadow Elf.</strong> You have resistance to necrotic damage. Additionally, as a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can teleport this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Elf Clan" supports="PSLE PSGK Elf Clan" />
+		</rules>
+	</element>
+
+	<element name="Wood Elf" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_ELF_CLAN_WOOD_ELF">
+		<supports>PSLE PSGK Elf Clan</supports>
+		<description>
+			<p>Your walking speed increases to 35 feet. Additionally, you can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet alt="Elf Clan, Wood Elf">
+			<description>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="35" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Shadow Elf" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_ELF_ELF_CLAN_SHADOW_ELF">
+		<supports>PSLE PSGK Elf Clan</supports>
+		<description>
+			<p>You have resistance to necrotic damage. Additionally, as a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. You can teleport this way a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet alt="Elf Clan, Shadow Elf" action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can magically teleport up to 30 feet to an unoccupied space you can see.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+</elements>

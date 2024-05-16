@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="race-naga.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-naga.xml" />
 		</update>
 	</info>
 	
 	<element name="Naga" type="Race" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACE_NAGA">
 		<description>
-			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in Plane Shift: Amonkhet.</p>
+			<p>Naga are snake-like humanoids. They lack lower limbs, instead having a long serpentine body. You can learn more about naga in <i>Plane Shift: Amonkhet</i>.</p>
 			<h4>NAGA TRAITS</h4>
 			<p>You have the following racial traits.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
@@ -20,11 +20,11 @@
 			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 			<p class="indent"><strong><em>Serpentine Build.</em></strong> You can use your serpentine body to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple this way.</p>
 			<p class="indent"><strong><em>Shed Skin.</em></strong> As a bonus action, you can end one condition on yourself from among blinded, deafened, grappled, paralyzed, poisoned, or restrained. Once you use this trait, you can't do so again until you finish a long rest.</p>
-			<p class="indent"><strong><em>Languages.</em></strong> You know Common and one language of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Naga)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BITE" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BLINDSIGHT" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_POISON_BITE" />
@@ -41,7 +41,7 @@
 			<p>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 		</description>
 		<sheet>
-			<description>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+			<description>You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing.</description>
 		</sheet>
 	</element>
 	<element name="Blindsight" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_RACIAL_TRAIT_NAGA_BLINDSIGHT">

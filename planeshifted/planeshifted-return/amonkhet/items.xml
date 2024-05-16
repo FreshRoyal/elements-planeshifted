@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/items.xml" />
 		</update>
 	</info>
@@ -81,7 +81,7 @@
 		</setters>
 	</element>
 	<element name="Tool Proficiency (Embalming Tools)" type="Proficiency" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_PROFICIENCY_TOOL_PROFICIENCY_EMBALMING_TOOLS">
-		<supports>Tool</supports>
+		<supports>Tool, Artisan tools</supports>
 	</element>
 
 	<element name="Lazotep Armor" type="Magic Item" source="Planeshifted Return to Amonkhet" id="ID_PSLE_PSRA_MAGIC_ITEM_LAZOTEP_ARMOR">

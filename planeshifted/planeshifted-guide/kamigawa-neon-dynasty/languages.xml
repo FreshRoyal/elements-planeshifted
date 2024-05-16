@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/languages.xml" />
 		</update>
 	</info>
@@ -55,12 +55,12 @@
 	</element>
 
 	<element name="Phyrexian" type="Language" source="Planeshifted Guide to Kamigawa: Neon Dynasty" id="ID_PSLE_PSGKND_LANGUAGE_PHYREXIAN">
-		<supports>Standard</supports>
+		<supports>Exotic</supports>
 		<description>
 			<p></p>
 		</description>
 		<setters>
-			<set name="standard">true</set>
+			<set name="exotic">true</set>
 			<set name="speakers">-</set>
 			<set name="script">-</set>
 		</setters>

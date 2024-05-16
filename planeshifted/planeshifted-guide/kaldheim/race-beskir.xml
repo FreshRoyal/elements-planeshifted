@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-beskir.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-beskir.xml" />
+		</update>
+	</info>
+
+	<element name="Beskir" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_BESKIR">
+		<description>
+			<p>Settled in the grasslands surrounding the grand longhall that bears their name, the Beskir clan is dedicated to maintaining peace, order, and law throughout their territories. Widely acknowledged as impartial adjudicators, the clerics of the Beskir—the Lawspeakers—enforce the Code of the Clans and settle arguments within and among all the clans of Bretagard. But only a fool would assume that their dedication to law and peace makes the Beskir weak, for their warriors are as fearsome as any Skelle or Tuskeri raider, and far more numerous. The Beskir are led by two women: Maja and Sigrid. Sigrid, the clan's spiritual leader, traces her lineage back to the legendary warrior Hurrik, who is said to have saved the god Alrund's life.</p>
+			<h4>CODE OF THE CLANS</h4>
+			<p>Generations ago, representatives from all five clans signed a blood pact to abide by a common code of law governing the relationships among the clans. This Code of the Clans provides a system of recompense to be enforced when a member of one clan brings harm to a member of another. For example, a murderer owes a debt to the victim's surviving family—and the severity of that debt depends on the family member's relationship to the victim. Recompense might be paid in gold, livestock, or other property, in a period of servitude, or in blood. The Code of the Clans names the Beskir clan as its defenders and adjudicators.</p>
+
+			<h4>BESKIR TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Beskir Intuition.</em></strong> You have proficiency in the Insight skill.</p>
+			<p class="indent"><strong><em>Blessing of Alrund.</em></strong> Starting at 3rd level, you can cast the <i>command spell</i> with this trait. Starting at 5th level, you can also cast the <i>zone of truth</i> spell with it. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+			<p class="indent"><strong><em>Feltmark Born.</em></strong> You have advantage on saving throws you make to avoid or end exhaustion on yourself.</p>
+			<p class="indent"><strong><em>Vigilant Guardian.</em></strong> When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Beskir)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Beskir)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BESKIR_INTUITION" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_FELTMARK_BORN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_VIGILANT_GUARDIAN" />
+		</rules>
+	</element>
+
+	<element name="Beskir Intuition" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BESKIR_INTUITION">
+		<description>
+			<p>You have proficiency in the Insight skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Beskir Intuition)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Blessing of Alrund" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND">
+		<description>
+			<p>Starting at 3rd level, you can cast the <i>command spell</i> with this trait. Starting at 5th level, you can also cast the <i>zone of truth</i> spell with it. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMAND" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Blessing of Alrund)" supports="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_INTELLIGENCE|ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_WISDOM|ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Blessing of Alrund">
+			<description display="false" />
+			<description level="3">You can cast the command spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You can cast the command and zone of truth spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Blessing of Alrund">
+			<description display="false" />
+			<description level="3">You can cast the command spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You can cast the command and zone of truth spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_BLESSING_OF_ALRUND_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Blessing of Alrund">
+			<description display="false" />
+			<description level="3">You can cast the command spell once per long rest. You can also cast this spell using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You can cast the command and zone of truth spells once per long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+
+	<element name="Feltmark Born" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_FELTMARK_BORN">
+		<description>
+			<p>You have advantage on saving throws you make to avoid or end exhaustion on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end exhaustion on yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Vigilant Guardian" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_BESKIR_VIGILANT_GUARDIAN">
+		<description>
+			<p>When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead.</description>
+		</sheet>
+	</element>
+
+</elements>

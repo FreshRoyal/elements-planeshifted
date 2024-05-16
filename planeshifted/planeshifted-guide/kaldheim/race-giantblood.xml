@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-giantblood.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/race-giantblood.xml" />
+		</update>
+	</info>
+
+	<element name="Giantblood" type="Race" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACE_GIANTBLOOD">
+		<description>
+			<p>So named after Tover Giants-blood, an enormous Kannah Warrior, a giantblood is a human of any clan descent who has a giant's ancestry. The blood of the giant runs strong in the veins of men, and overpowers whatever natural talent a clansman might possess.</p>
+			<h4>GIANTS</h4>
+			<p>The frost and fire giants of the realm of Surtland are locked in constant conflict. Frost giants are intelligent and secretive, using runic magic to divine the secrets of the Cosmos and jealously guarding them against the curiosity of outsiders. Frost giant wizards called Vela Mages dwell primarily in the well-protected Vela Heights. They have a special relationship with the similar-minded Omenseekers of Bretagard, who sail to Surtland occasionally to trade information with friendly frost giants.</p>
+			<p class="indent">Fire giants, by contrast, are brutal and impulsive, sharing their kin's physical strength and resilience but lacking any of the frost giants' knowledge and resources. Fire giants dwell in the lower elevations of Surtland where snowfields are divided by deep lava fissures. They live together in families and clans, building crude wooden structures from the realm's massive trees. They're smaller than frost giants, but they're still giants and are incredibly tough, strong, and resilient. They love hand-to-hand combat, but they're not above throwing boulders at their enemies, and their wizards have power over fire and lava.</p>
+
+			<h4>GIANTBLOOD TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a human for any prerequisite or effect that requires you to be a human.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Long-Limbed.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+			<p class="indent"><strong><em>Natural Athlete.</em></strong> You have proficiency in the Athletics skill.</p>
+			<p class="indent"><strong><em>Giant Build.</em></strong> You can move through the space of any creature that is of a size smaller than yours.</p>
+			<p class="indent">Additionally, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Giant's Legacy.</em></strong> You gain an additional benefit based on one of the following options (choose when you select this race):</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Fire Giant.</strong> You have resistance to fire damage.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Frost Giant.</strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Giantblood)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_HUMANOID_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Giantblood)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_LONG_LIMBED" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_NATURAL_ATHLETE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANT_BUILD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANTS_LEGACY" />
+		</rules>
+	</element>
+
+	<element name="Long-Limbed" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_LONG_LIMBED">
+		<description>
+			<p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+		</sheet>
+	</element>
+	
+	<element name="Natural Athlete" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_NATURAL_ATHLETE">
+		<description>
+			<p>You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Natural Athlete)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Giant Build" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANT_BUILD">
+		<description>
+			<p>You can move through the space of any creature that is of a size smaller than yours.</p>
+			<p class="indent">Additionally, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size smaller than yours. &#13;
+			You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Giant's Legacy" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANTS_LEGACY">
+		<description>
+			<p>You gain an additional benefit based on one of the following options (choose when you select this race):</p>
+			<ul class="unstyled">
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Fire Giant.</strong> You have resistance to fire damage.</li>
+				<li style="margin-left:1em;text-indent:-1em;"><strong>Frost Giant.</strong> You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Giant's Legacy" supports="PSLE PSGK Giants Legacy" />
+		</rules>
+	</element>
+
+	<element name="Fire Giant" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANTS_LEGACY_FIRE_GIANT">
+		<supports>PSLE PSGK Giants Legacy</supports>
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet alt="Giant's Legacy, Fire Giant" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	
+	<element name="Frost Giant" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_GIANTBLOOD_GIANTS_LEGACY_FROST_GIANT">
+		<supports>PSLE PSGK Giants Legacy</supports>
+		<description>
+			<p>You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.</p>
+		</description>
+		<sheet alt="Giant's Legacy, Frost Giant">
+			<description>You naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+</elements>
