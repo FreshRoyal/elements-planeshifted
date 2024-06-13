@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-khenra.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-khenra.xml" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Bite.</em></strong> You have a beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> You can use your fanged maw to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
 			<p class="indent"><strong><em>Keen Hearing and Smell.</em></strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
 			<p class="indent"><strong><em>Khenra Twin.</em></strong> You gain an additional benefit based on one of the following options (choose when you select this race):</p>
 			<ul class="unstyled">
