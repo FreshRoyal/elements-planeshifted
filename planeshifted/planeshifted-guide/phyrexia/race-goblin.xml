@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-goblin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-goblin.xml" />
+		</update>
+	</info>
+	
+	<element name="Goblin" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_GOBLIN">
+		<description>
+			<p>Goblins, like all other creatures on New Phyrexia, have patches of metal growing on their skin. These goblins also have flat heads with swept-back, sharply-pointed ears, four-fingered hands, and sharp claws on their fingers and toes. They have a natural talent for artifice.</p>
+			<p class="indent">Goblin social structure is largely chaotic, but the priesthood has significant power. The priests mostly focus on fertility and offerings of metal, which inspire raids, and are responsible for rites concerning the Steel Mother. The Steel Mother is a deity that the goblins believe created the plane and controls all metal. It was believed by the goblins that by sacrificing all metals and dead bodies to the Kuldotha, the furnace-city the objects and souls would be returned to the Steel Mother, and keep the Furnace running for her. The melted metal from sacrificed bodies was reclaimed and reforged into weapons and armor. Since the Phyrexianization, the Kuldotha has become part of the Autonomous Furnace of the Phyrexians, and goblin shamans desperately seek to reclaim it.</p>
+			<h4>Goblin Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid. You are also considered a goblinoid for any prerequisite or effect that requires you to be a goblinoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small (about 3-4 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Fire Resistance.</em></strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Forge Wise.</em></strong> You have proficiency with two of the following artisan's tools of your choice: brewer's supplies, jeweler's tools, mason's tools, smith's tools, or tinker's tools.</p>
+			<p class="indent"><strong><em>Fury of the Small.</em></strong> When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Goblin)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID_GOBLINOID" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Goblin)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Goblin)" supports="Standard||Exotic" />
+
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FIRE_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FORGE_WISE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_NATURAL_ARMOR" />
+		</rules>
+	</element>
+	<element name="Fire Resistance" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FIRE_RESISTANCE">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Forge Wise" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FORGE_WISE">
+		<description>
+			<p>You have proficiency with two of the following artisan's tools of your choice: brewer's supplies, jeweler's tools, mason's tools, smith's tools, or tinker's tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Forge Wise)" number="2" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Fury of the Small" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_FURY_OF_THE_SMALL">
+		<description>
+			<p>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal {{proficiency}} extra damage to the creature.</description>
+		</sheet>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_GOBLIN_NATURAL_ARMOR">
+		<description>
+			<p>While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing armor, your Armor Class is {{ac:natural armor:goblin phyrexia}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:goblin phyrexia:" value="13" bonus="base" />
+			<stat name="ac:natural armor:goblin phyrexia" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:goblin phyrexia" bonus="calculation" alt="Natural Armor (Goblin)" />
+		</rules>
+	</element>
+</elements>

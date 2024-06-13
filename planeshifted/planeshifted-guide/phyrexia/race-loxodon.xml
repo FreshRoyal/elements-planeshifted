@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-loxodon.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-loxodon.xml" />
+		</update>
+	</info>
+	
+	<element name="Loxodon" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_LOXODON">
+		<description>
+			<p>The loxodon, once inhabitants of the Razor Fields alongside the leonin and Auriok humans, have metal on their bodies just like all other life in New Phyrexia. They are humanoids with strong elephantine characteristics. The loxodons traditionally believe in the Modest Truth, a code of absolute morality that is taken at face value and passed on from generation to generation. Loxodon clerics continue to wandered the Mirrex sphere, dispensing justice in the form of physical punishment and offering atonement. They have a reputation for being stubborn and difficult to sway.</p>
+			<p class="indent">As Mirrodin became New Phyrexia, the Machine Orthodoxy's invasion of the Razor Fields isolated the remaining loxodon. Most of the last remaining living loxodons on the plane accompany <b>Ghalma</b> the Shaper (LG Loxodon <b>Mage</b>), who has settled in the rebel outpost of Bladehol</p>
+			<h4>Loxodon Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 7-8 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> 450 years on average.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Modest Truth.</em></strong> You have advantage on saving throws you make to avoid or end the charmed or frightened condition on yourself.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Trunk.</em></strong> You can use your trunk to manipulate an object, open or close a door or container, pick up or set down a Tiny object, or make an unarmed strike. The trunk can't activate magic items or lift more than 20 pounds.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Loxodon)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Loxodon)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Loxodon)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_MODEST_TRUTH" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_NATURAL_ARMOR" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_POWERFUL_BUILD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_TRUNK" />
+		</rules>
+	</element>
+	<element name="Keen Senses" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Loxodon)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Modest Truth" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_MODEST_TRUTH">
+		<descripton>
+			<p>You have advantage on saving throws you make to avoid or end the charmed or frightened condition on yourself.</p>
+		</descripton>
+		<sheet>
+			<description>You have advantage on saving throws you make to avoid or end the charmed or frightened condition on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Natural Armor" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_NATURAL_ARMOR">
+		<description>
+			<p>While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing armor, your Armor Class is {{ac:natural armor:loxodon}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:loxodon" value="13" bonus="base" />
+			<stat name="ac:natural armor:loxodon" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:loxodon" bonus="calculation" alt="Natural Armor (loxodon)" />
+		</rules>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+	<element name="Trunk" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_LOXODON_TRUNK">
+		<description>
+			<p>You can use your trunk to manipulate an object, open or close a door or container, pick up or set down a Tiny object, or make an unarmed strike. The trunk can't activate magic items or lift more than 20 pounds.</p>
+		</description>
+		<sheet>
+			<description>You can use your trunk to manipulate an object, open or close a door or container, pick up or set down a Tiny object, or make an unarmed strike. The trunk can't activate magic items or lift more than 20 pounds.</description>
+		</sheet>
+	</element>
+</elements>

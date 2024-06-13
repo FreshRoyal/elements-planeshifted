@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-vedalken.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-vedalken.xml" />
+		</update>
+	</info>
+	
+	<element name="Loxodon" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_LOXODON">
+		<description>
+			<p>The loxodon, once inhabitants of the Razor Fields alongside the leonin and Auriok humans, have metal on their bodies just like all other life in New Phyrexia. They are humanoids with strong elephantine characteristics. The loxodons traditionally believe in the Modest Truth, a code of absolute morality that is taken at face value and passed on from generation to generation. Loxodon clerics continue to wandered the Mirrex sphere, dispensing justice in the form of physical punishment and offering atonement. They have a reputation for being stubborn and difficult to sway.</p>
+			<p class="indent">As Mirrodin became New Phyrexia, the Machine Orthodoxy's invasion of the Razor Fields isolated the remaining loxodon. Most of the last remaining living loxodons on the plane accompany <b>Ghalma</b> the Shaper (LG Loxodon <b>Mage</b>), who has settled in the rebel outpost of Bladehol</p>
+			<h4>Loxodon Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 6-7 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p class="indent"><strong><em>Origin Query.</em></strong> You have proficiency in the Investigation and History skills.</p>
+			<p class="indent"><strong><em>Secondary Arms.</em></strong> You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+			<p class="indent"><strong><em>Tireless Precision.</em></strong> When you make an Intelligence (Investigation) check or an ability check using a tool with which you have proficiency, you can roll a d4 and add the number rolled to the ability check.</p>
+			<p class="indent"><strong><em>Vedalken Cunning.</em></strong> You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Loxodon)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Vedalken)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Vedalken)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_ORIGIN_QUERY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_SECONDARY_ARMS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_TIRELESS_PRECISION" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_CUNNING" />
+		</rules>
+	</element>
+	<element name="Amphibious" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Origin Query" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_ORIGIN_QUERY">
+		<description>
+			<p>You have proficiency in the Investigation and History skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Origin Query (Vedalken)" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Secondary Arms" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_SECONDARY_ARMS">
+		<description>
+			<p>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+		</description>
+		<sheet>
+			<description>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</description>
+		</sheet>
+	</element>
+	<element name="Tireless Precision" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_TIRELESS_PRECISION">
+		<description>
+			<p>When you make an Intelligence (Investigation) check or an ability check using a tool with which you have proficiency, you can roll a d4 and add the number rolled to the ability check.</p>
+		</description>
+		<sheet>
+			<description>When you make an Intelligence (Investigation) check or an ability check using a tool with which you have proficiency, you can roll a d4 and add the number rolled to the ability check.</description>
+		</sheet>
+	</element>
+	<element name="Vedalken Cunning" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VEDALKEN_CUNNING">
+		<description>
+			<p>You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence, Wisdom, and Charisma saving throws against spells.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-vampire.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-vampire.xml" />
+		</update>
+	</info>
+	
+	<element name="Vampire" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_VAMPIRE">
+		<description>
+			<p>Vampires on New Phyrexia are created through necromancy. Like everything else on the plane, they are partly made of metal; the long claws of vampires are made of iron, and they often have cables and metal pipes running along their skin.</p>
+			<p class="indent">There are clans of Vampires that live in the swamps of the Mephidross; most often, they are Moriok humans who willingly except the curse of vampirism to survive the Nim zombies there. <b>Vraan</b>, the executioner thane, is a phyrexian vampire warlord who vies against the praetor Sheoldred for the title of ruler of the Dross Pits. He commands a group of vampire assassins called the Bleak Coven, and uses them to further his goals throughout the entire plane of New Phyrexia, which usually involve the execution of his enemies.</p>
+			<p class="indent">The most notable feature of New Phyrexia's vampires is that their "fangs" are on their hands rather than in their mouth. Their pointer and third fingers are clawed and can drain blood from their victims.</p>
+			<h4>Myr Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are an Undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small (choose when you select this race).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Vampires don't age. You can't be aged magically.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+			<p class="indent"><strong><em>Deathless Nature.</em></strong> You don't need to eat, drink, or breathe.</p>
+			<p class="indent"><strong><em>Vampiric Drain.</em></strong> As an action, you can make a special attack with your Claws against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vampire)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<select type="Racial Trait" name="Size (Vampire)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Vampire)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Vampire)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_LIFE_SPAN"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_CLAWS"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_DEATHLESS_NATURE"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_DRAIN"  />
+		</rules>
+	</element>
+	<element name="Life Span" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_LIFE_SPAN">
+		<description>
+			<p>Vampires don't age. You can't be aged magically.</p>
+		</description>
+		<sheet>
+			<description>Vampires don't age. You can't be aged magically.</description>
+		</sheet>
+	</element>
+	<element name="Claws" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_CLAWS">
+		<description>
+			<p>You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have sharp claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>
+	<element name="Deathless Nature" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_DEATHLESS_NATURE">
+		<description>
+			<p>You don't need to eat, drink, or breathe.</p>
+		</description>
+		<sheet>
+			<description>You don't need to eat, drink, or breathe.</description>
+		</sheet>
+	</element>
+	<element name="Vampiric Drain" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_VAMPIRE_DEATHLESS_NATURE">
+		<description>
+			<p>As an action, you can make a special attack with your Claws against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>As an action, you can make a special attack with your Claws against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain {{proficiency}} temporary hit points.</description>
+		</sheet>
+	</element>
+</elements>

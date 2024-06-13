@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-elf.xml" />
+		</update>
+	</info>
+	
+	<element name="Elf" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_ELF">
+		<description>
+			<p>As all organic life on New Phyrexia, the Viridian elves are partly inorganic, growing copper from their flesh as a result of the mycosynth that touches everything on the plane. Their organic skin can appear in shades of pale white and bright green.</p>
+			<p class="indent">The elves once resided in the forest of copper trees known as the Tangle. Even before the Phyrexianization of the plane, the Viridian elves were enemies of inorganic and mechanical constructs, frequently coming into conflict with the Myr and the drones created by the Vedalken.</p>
+			<p class="indent">The Viridian elves once looked to the trolls of Tel-Jilad for guidance. The trolls considered the Tel-Jilad (the "Tree of Tales") their sacred home, and they lived within its hollow core. Though the trolls are all but extinct, the elves still hold the Tel-Jilad in reverence. Inscribed into its metal surface is the history of Mirrodin, except near the bottom where all the writings have been etched out.</p>
+			<p class="indent">Due to their long lives, elves will engage in a ceremony known as the Ritual of Rebuking, in which an older elf has their memories erased so that they can start anew and focus on the tasks at hand.</p>
+			<h4>Elf Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 5-6 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> 750 years on average.</p>
+			<p class="indent"><strong><em>Copper Spikes.</em></strong> A creature grappling or grappled by you takes piercing damage equal to your proficiency bonus at the start of each of your turns.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were in dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Iron Scent.</em></strong> As an action, you can pinpoint, by scent, the location of ferrous metal within 30 feet of you.</p>
+			<p class="indent"><strong><em>Mask of the Wild.</em></strong> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+			<p class="indent"><strong><em>Siege Monster.</em></strong> You deal double damage to objects and structures. When you damage a Construct creature with an attack or a spell, the attack or spell deals extra damage to the creature equal to your proficiency bonus.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Elf)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Elf)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Elf)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_COPPER_SPIKES" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_KEEN_SENSES" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_IRON_SCENT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_MASK_OF_THE_WILD" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_SIEGE_MONSTER" />
+		</rules>
+	</element>
+	<element name="Copper Spikes" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_COPPER_SPIKES">
+		<description>
+			<p>A creature grappling or grappled by you takes piercing damage equal to your proficiency bonus at the start of each of your turns.</p>
+		</description>
+		<sheet>
+			<description>A creature grappling or grappled by you takes {{proficiency}} piercing damage at the start of each of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Keen Senses" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Elf Keen Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Iron Scent" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_IRON_SCENT">
+		<description>
+			<p>As an action, you can pinpoint, by scent, the location of ferrous metal within 30 feet of you.</p>
+		</description>
+		<sheet action="Action">
+			<description>As an action, you can pinpoint, by scent, the location of ferrous metal within 30 feet of you.</description>
+		</sheet>
+	</element>
+	<element name="Mask of the Wild" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_MASK_OF_THE_WILD">
+		<description>
+			<p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+		</description>
+		<sheet>
+			<description>You can attempt to hide even when you are only lightly obscured.</description>
+		</sheet>
+	</element>
+	<element name="Siege Monster" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_ELF_SIEGE_MONSTER">
+		<description>
+			<p>You deal double damage to objects and structures. When you damage a Construct creature with an attack or a spell, the attack or spell deals extra damage to the creature equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You deal double damage to objects and structures. When you damage a Construct creature with an attack or a spell, it deals {{proficiency}} extra damage to the creature.</description>
+		</sheet>
+	</element>
+</elements>

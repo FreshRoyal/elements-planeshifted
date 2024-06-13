@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-myr.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-myr.xml" />
+		</update>
+	</info>
+	
+	<element name="Myr" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_MYR">
+		<description>
+			<p>Myr were created by Memnarch, once the ruler of the plane before the Phyrexians. They were intended to be mindless servitors and acted out a single role without question. However, there is said to be intelligence and emotion behind their sullen, mechanical eyes.</p>
+			<p class="indent">Since the fall of Memnarch, many myr continued to fulfill their duties regardless of having no master while others simply shut down to await commands that would never come. Some developed consciousness and free will.</p>
+			<p class="indent">At the start of the Phyrexian invasion, many myr were adapted to the Phyrexian side and equipped with sinew grafts, ichor, and necrogen. Those that weren't sometimes prove valuable, if inadvertent allies to the rebllion.</p>
+			<h4>Myr Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Construct.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small (about 3-4 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Myr can function indefinitely as long as they are properly maintained. Being aged magically causes you to rust.</p>
+			<p class="indent"><strong><em>Built for Success.</em></strong> You can add a d4 to one attack roll, ability check, or saving throw you make, and you can do so after seeing the d20 roll but before the effects of the roll are resolved.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Mechanical Nature.</em></strong> You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being poisoned. You don't need to eat, drink, or breathe.</p>
+			<p class="indent"><strong><em>Natural Armor.</em></strong> While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+			<p class="indent"><strong><em>Repair.</em></strong> If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).</p>
+			<p class="indent"><strong><em>Sleepless.</em></strong> You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</p>
+			<p class="indent"><strong><em>Specialized Design.</em></strong> You have proficiency with two tools of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Myr)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Myr)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Myr)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_LIFE_SPAN"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_BUILT_FOR_SUCCESS"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_MECHANICAL_NATURE"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_NATURAL_ARMOR"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_REPAIR"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_SLEEPLESS"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_SPECIALIZED_DESIGN"  />
+		</rules>
+	</element>
+	<element name="Life Span" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_LIFE_SPAN">
+		<description>
+			<p>Myr can function indefinitely as long as they are properly maintained. Being aged magically causes you to rust.</p>
+		</description>
+		<sheet>
+			<description>Myr can function indefinitely as long as they are properly maintained. Being aged magically causes you to rust.</description>
+		</sheet>
+	</element>
+	<element name="Built for Success" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_BUILT_FOR_SUCCESS">
+		<description>
+			<p>You can add a d4 to one attack roll, ability check, or saving throw you make, and you can do so after seeing the d20 roll but before the effects of the roll are resolved.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can add a d4 to one attack roll, ability check, or saving throw you make, and you can do so after seeing the d20 roll but before the effects of the roll are resolved.</description>
+		</sheet>
+	</element>
+	<element name="Mechanical Nature" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_NATURAL_ARMOR">
+		<description>
+			<p>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being poisoned. You don't need to eat, drink, or breathe.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to poison damage and immunity to disease, and you have advantage on saving throws against being poisoned. You don't need to eat, drink, or breathe.</description>
+		</sheet>
+	</element>
+	<element name="Repair" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_REPAIR">
+		<description>
+			<p>If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).</p>
+		</description>
+		<sheet>
+			<description>If the mending spell is cast on you, you can spend a Hit Die, roll it, and regain a number of hit points equal to the roll plus your Constitution modifier (minimum of 1 hit point).</description>
+		</sheet>
+	</element>
+	<element name="Sleepless" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_SLEEPLESS">
+		<description>
+			<p>You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</p>
+		</description>
+		<sheet>
+			<description>You don't need to sleep, and magic can't put you to sleep. You remain conscious during a long rest, though you must still refrain from strenuous activity to gain the benefit of the rest.</description>
+		</sheet>
+	</element>
+	<element name="Specialized Design" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_MYR_SPECIALIZED_DESIGN">
+		<description>
+			<p>You have proficiency with two tools of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with two tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Human)" supports="Tool" number="2" />
+		</rules>
+	</element>
+</elements>
