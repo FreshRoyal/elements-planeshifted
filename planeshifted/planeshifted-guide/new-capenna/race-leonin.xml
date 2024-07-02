@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-leonin.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-leonin.xml" />
+		</update>
+	</info>
+
+	<element name="Leonin" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_LEONIN">
+		<description>
+			<p>The leonin in New Capenna are anthropomorphic felines, and closely resemble house cats and caracal. They possess a natural speed and grace, and have a penchant for surviving against impossible odds. They are primarily found among the Cabaretti and Brokers crime families.</p>
+	
+			<h4>LEONIN TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Agility.</em></strong> You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Cat's Grace.</em></strong> You don't take fall damage from falling 20 feet or less as long as you aren't incapacitated.</p>
+			<p class="indent"><strong><em>Claws.</em></strong> You can use your claws to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Feline Talent.</em></strong> You have proficiency in one of the following skills of your choice: Acrobatics, Perception, Stealth, or Survival.</p>
+			<p class="indent"><strong><em>Nine Lives.</em></strong> When you drop to 0 hit points as a result of taking damage, you can instead drop to 1 hit point and immediately spend a number of hit die up to your maximum, regaining hit points equal to one roll of each spent die. You can use this trait eight times.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Leonin)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Leonin)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_AGILITY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_CATS_GRACE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_CLAWS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_FELINE_TALENT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_NINE_LIVES" />
+		</rules>
+	</element>
+
+	<element name="Agility" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_AGILITY">
+		<description>
+			<p>You can take the Dash action as a bonus action. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can take the Dash action as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Cat's Grace" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_CATS_GRACE">
+		<description>
+			<p>You don't take fall damage from falling 20 feet or less as long as you aren't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>You don't take fall damage from falling 20 ft or less as long as you aren't incapacitated.</description>
+		</sheet>
+	</element>
+
+	<element name="Claws" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_CLAWS">
+		<description>
+			<p>You can use your claws to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have claws that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Feline Talent" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_FELINE_TALENT">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Feline Talent" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Feline Talent)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Nine Lives" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_LEONIN_NINE_LIVES">
+		<description>
+			<p>When you drop to 0 hit points as a result of taking damage, you can instead drop to 1 hit point and immediately spend a number of hit die up to your maximum, regaining hit points equal to one roll of each spent die. You can use this trait eight times.</p>
+		</description>
+		<sheet usage="8">
+			<description>When you drop to 0 hp as a result of taking damage, you can instead drop to 1 hp and immediately spend a number of hit die up to your maximum, regaining hp equal to one roll of each spent die.</description>
+		</sheet>
+	</element>
+	
+</elements>

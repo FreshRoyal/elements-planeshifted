@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-aven.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-aven.xml" />
+		</update>
+	</info>
+
+	<element name="Aven" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_AVEN">
+		<description>
+			<p>The aven are a race of anthropomorphic birdfolk, possessing feathers, beaks, and wings. The aven are quite diverse, with a wide range of feather colorations and beak shapes, often bearing a striking resemblance to various breeds of birds. Many aven are corvid in appearance, but other breeds include Eagle, Doves, Falcons, Hawks, Hummingbirds, Owls, and Pigeons.</p>
+	
+			<h4>AVEN TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small or Medium (choose when you select this race).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Beak.</em></strong> You have a sharp beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+			<p class="indent"><strong><em>Powerful Wings.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with a gust of wind from your wings in a 30-foot line that is 5 feet wide. Each creature in that area must succeed on a Strength saving throw (DC = 8 + your Dexterity modifier + your proficiency bonus) or be pushed 15 feet away from you in a direction following the line. The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Aven)" supports="Custom Ability Score Improvement Option" />
+			<select type="Racial Trait" name="Size (Aven)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Aven)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_BEAK" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_FLIGHT" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_POWERFUL_WINGS" />
+		</rules>
+	</element>
+
+	<element name="Beak" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_BEAK">
+		<description>
+			<p>You have a sharp beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have a beak that you can use to make unarmed strikes. When you hit with it, the strike deals 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_FLIGHT">
+		<description>
+			<p>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{innate speed}} feet. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+
+	<element name="Powerful Wings" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_AVEN_POWERFUL_WINGS">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with a gust of wind from your wings in a 30-foot line that is 5 feet wide. Each creature in that area must succeed on a Strength saving throw (DC = 8 + your Dexterity modifier + your proficiency bonus) or be pushed 15 feet away from you in a direction following the line. The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you take the Attack action on your turn, you can replace one of your attacks with a gust of wind from your wings in a 30-foot line that is 5 feet wide. Each creature in that area must succeed on a Strength saving throw (DC {{powerful wings:dc}}) or be pushed 15 feet away from you in a direction following the line. The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area.</description>
+		</sheet>
+		<rules>
+			<stat name="powerful wings:dc" value="8" />
+			<stat name="powerful wings:dc" value="dexterity:modifier" />
+			<stat name="powerful wings:dc" value="proficiency" />
+		</rules>
+	</element>
+	
+</elements>

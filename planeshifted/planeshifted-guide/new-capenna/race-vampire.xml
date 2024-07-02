@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-vampire.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-vampire.xml" />
+		</update>
+	</info>
+
+	<element name="Vampire" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_VAMPIRE">
+		<description>
+			<p>Vampires are undead creatures sired by the Maestros family, birthed from a demonic deal during the Kingdom Era. They are effectively immortal, and have a reputation for indulgence and hedonism. Vampires in New Capenna aren't harmed by sunlight and other common weaknesses, but they don't cast reflections, and can be recognized by their lifeless eyes.</p>
+			<p class="indent">The vampires in the metropolis of New Capenna are often part of the Maestros crime family. The orignal boss of the Maestros, Xander, was the plane's first vampire. While becoming a vampire is not a requirement of joining the Maestros, many human members do receive the gift of vampirism.</p>
+
+			<h4>VAMPIRE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are an Undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you select this race.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Vampires don't age as other races do. You are immune to the effects of aging and can't be aged magically.</p>
+			<p class="indent"><strong><em>Bite.</em></strong> You have elongated fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+			<p class="indent"><strong><em>Deathless Nature.</em></strong> You don't need to eat, drink, or breathe. You don't cast reflections and don't appear in mirrors.</p>
+			<p class="indent"><strong><em>Limited Flight.</em></strong> Starting at 5th level, you can use a bonus action to fly up to a number of feet equal to your walking speed. If you are in the air at the end of this movement, you fall if nothing is holding you aloft.</p>
+			<p class="indent"><strong><em>Vampiric Drain.</em></strong> As an action, you can make a special attack with your Bite against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. The target must also succeed on a Constitution saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus, or be cursed with vampirism.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Vampire)" supports="Custom Ability Score Improvement Option" />
+			<select type="Racial Trait" name="Size (Vampire)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:climb" value="innate speed" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Vampire)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_BITE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_DEATHLESS_NATURE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_LIMITED_FLIGHT" level="5" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_DRAIN" />
+		</rules>
+	</element>
+
+	<element name="Bite" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_BITE">
+		<description>
+			<p>You have elongated fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have fangs that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Deathless Nature" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_DEATHLESS_NATURE">
+		<description>
+			<p>You don't need to eat, drink, or breathe. You don't cast reflections and don't appear in mirrors.</p>
+		</description>
+		<sheet>
+			<description>You don't need to eat, drink, or breathe. You don't cast reflections and don't appear in mirrors.</description>
+		</sheet>
+	</element>
+
+	<element name="Limited Flight" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_LIMITED_FLIGHT">
+		<description>
+			<p>Starting at 5th level, you can use a bonus action to fly up to a number of feet equal to your walking speed. If you are in the air at the end of this movement, you fall if nothing is holding you aloft.</p>
+		</description>
+		<sheet>
+			<description>You can use a bonus action to fly up to {{speed}} ft. If you are in the air at the end of this movement, you fall if nothing is holding you aloft.</description>
+		</sheet>
+	</element>
+	
+	<element name="Vampiric Drain" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VAMPIRE_VAMPIRIC_DRAIN">
+		<description>
+			<p>As an action, you can make a special attack with your Bite against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain temporary hit points equal to your proficiency bonus. The target must also succeed on a Constitution saving throw against a DC equal to 8 + your Constitution modifier + your proficiency bonus, or be cursed with vampirism.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>You can make a special attack with your Bite against a creature that isn't a Construct or Undead. If the attack hits, it deals its normal damage, and you gain temporary hp equal to {{proficiency}}. The target must also succeed on a Constitution saving throw against a DC equal to {{vampiric drain:dc}}, or be cursed with vampirism.</description>
+		</sheet>
+		<rules>
+			<stat name="vampiric drain:dc" value="8" />
+			<stat name="vampiric drain:dc" value="proficiency" />
+			<stat name="vampiric drain:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+
+</elements>

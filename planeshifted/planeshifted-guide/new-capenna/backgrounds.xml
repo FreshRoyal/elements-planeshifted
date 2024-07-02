@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/backgrounds.xml" />
+		</update>
+	</info>
+
+	<!--Artisan-->
+	<element name="Artisan" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_ARTISAN">
+		<description>
+			<p>You apprenticed under a master craftsman before setting out as an artisan of your own. You have learned to create basic crafts, and have also learned the skillful art of haggling.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Investigation, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> One type of artisan's tools</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> A set of artisan's tools of your choice, an abacus, a merchant's scale, a deed for a city storefront, a set of common clothes, and a purse containing 15 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CRAFTER" />
+			<div class="sidebar">
+				<h4>DEED FOR A STOREFRONT</h4>
+				<p>Your DM may allow you to use the deed granted by your background to run a business. The rules for running a business as a Downtime Activity appear in the <i>Dungeon Master's Guide</i>.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="short">Investigation, Persuasion, 1 Artisan's Tool, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Tool Proficiency (Artisan)" supports="Artisan tool" />
+			<select type="Language" name="Language (Artisan)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CRAFTER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Crafter" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CRAFTER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you buy a nonmagical item, you receive a 20 percent discount on it. Additionally, when you craft an item using a tool with which you have proficiency, the required crafting time is reduced by 20 percent.</p>
+		</description>
+		<sheet alt="Crafter" />
+	</element>
+
+	<!--Caterer-->
+	<element name="Caterer" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_CATERER">
+		<description>
+			<p>Everyone needs to eat. You have studied gastronomic arts under the city's finest chefs in the busiest and most exclusive kitchens for the highest paying customers.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Nature, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Brewer's supplies, cook's utensils</li>
+				<li><strong>Equipment:</strong> Brewer's supplies, cook's utensils, a mess kit, a chef's knife (dagger), an iron pot, a set of common clothes, and a belt pouch containing 5 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHEF" />
+		</description>
+		<setters>
+			<set name="short">Nature, Survival, Brewer's Supplies, Cook's Utensils</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHEF" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Chef" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHEF">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<ul>
+				<li>As part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</li>
+				<li>As you finish a long rest, you can use your cook's utensils to cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus.</li>
+				<li>You have advantage on saving throws you make to avoid or end the poisoned condition on yourself.</li>
+			</ul>
+		</description>
+		<sheet alt="Chef" />
+	</element>
+
+	<!--Doctor-->
+	<element name="Doctor" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_DOCTOR">
+		<description>
+			<p>You have studied medicine and the biologies of the various races in the city. You have found work as a doctor in one of New Capenna's hospitals, or as an underground patcher for the families.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Medicine, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Alchemist's supplies, herbalism kit</li>
+				<li><strong>Equipment:</strong> A healer's kit, an herbalism kit, a vial of antitoxin, soap, a magnifying glass, an hourglass, a bedroll, a set of traveler's clothes, and a belt pouch containing 15 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_HEALER" />
+			<div class="reference">
+				<div element="ID_PHB_FEAT_HEALER" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Medicine, Survival, Alchemist's Supplies, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_HEALER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Healer" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_HEALER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the Healer feat from the <i>Player's Handbook</i>. In addition, whenever you roll a die to determine the number of hit points restored by a spell or by the Healer feat, you can reroll the die if it rolls a 1, and you must use the new roll.</p>
+			<div class="reference">
+				<div element="ID_PHB_FEAT_HEALER" />
+			</div>
+		</description>
+		<sheet alt="Healer" />
+		<rules>
+			<grant type="Feat" id="ID_PHB_FEAT_HEALER" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_WITH_A_FEAT" />
+		</rules>
+	</element>
+
+	<!--Driver-->
+	<element name="Driver" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_DRIVER">
+		<description>
+			<p>Getting around the streets of New Capenna is a necessary risk. You've found a name for yourself as a cab driver or family chauffeur, and have earned your own set of wheels.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Acrobatics, Perception</li>
+				<li> <strong>Tool Proficiencies:</strong> Vehicles (land)</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li> <strong>Equipment:</strong> One type of vehicle from new capenna, a lucky charm (choose one or roll on the Trinket's table), a set of traveler's clothes, and a belt pouch containing 10gp.</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_DRIVER_AUTOMOBILE_EXPERT" />
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_DRIVER_MECHANIC" />
+		</description>
+		<setters>
+			<set name="short">Acrobatics, Perception, 1 Language, Vehicles (Land)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Language" name="Language (Driver)" supports="Standard||Exotic" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_DRIVER_AUTOMOBILE_EXPERT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGNC Mechanic" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Automobile Expert" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_DRIVER_AUTOMOBILE_EXPERT">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Whenever you make a Dexterity check to pilot or maintain control of a vehicle with which you are proficient you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
+		</description>
+		<sheet alt="Automobile Expert" />
+	</element>
+	
+	<element name="Variant Feature: Mechanic" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_DRIVER_MECHANIC">
+		<supports>Background Feature, PSGNC Mechanic</supports>
+		<description>
+			<p>If your character has the driver background, you may select this background feature instead of Automobile Expert.</p>
+			<p class="indent">Provided you have tinker's tools, you can perform repairs on a land vehicle. When you use this ability, you restore a number of hit points to a land vehicle equal to (5*PB). A vehicle cannot be repaired by you in this way again until after it has been fully repaired.</p>
+		</description>
+		<sheet alt="Mechanic">
+			<description>Provided you have tinker's tools, you can perform repairs on a land vehicle. When you use this ability, you restore a number of hit points to a land vehicle equal to (5*PB). A vehicle cannot be repaired by you in this way again until after it has been fully repaired.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+		</rules>
+	</element>
+
+	<!--Family Initiate-->
+	<element name="Family Initiate" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FAMILY_INITIATE">
+		<description>
+			<p>Each of the five crime families of New Capenna are constantly looking for new recruits. Whether you willingly joined up or were forced into doing so, you find yourself starting at the bottom of one of the families' crime ladders.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Investigation, Persuasion</li>
+				<li><strong>Languages:</strong> Two from the Family Tools table</li>
+				<li><strong>Equipment:</strong> A family signet ring, a set of common clothes, two tools from the Family Tools table, and a purse containing 15gp</li>
+			</ul>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FAMILY_INITIATE_FAMILY_CONNECTIONS"/>
+		</description>
+		<setters>
+			<set name="short">Investigation, Persuasion, 2 Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Background Variant" name="Crime Family" supports="PSGNC Crime Family" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FAMILY_INITIATE_FAMILY_CONNECTIONS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Brokers" type="Background Variant" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_VARIANT_FAMILY_INITIATE_BROKERS">
+		<supports>PSGNC Crime Family</supports>
+		<description>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+		</description>
+		<sheet alt="Family Initiate, Brokers" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+		</rules>
+	</element>
+
+	<element name="Cabaretti" type="Background Variant" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_VARIANT_FAMILY_INITIATE_Cabaretti">
+		<supports>PSGNC Crime Family</supports>
+		<description>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+		</description>
+		<sheet alt="Family Initiate, Cabaretti" />
+		<rules>
+			<select type="Proficiency" name="Gaming Set (Cabaretti)" supports="Gaming Set" />
+			<select type="Proficiency" name="Musical Intrument (Cabaretti)" supports="Musical Instrument" />
+		</rules>
+	</element>
+
+	<element name="Maestros" type="Background Variant" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_VARIANT_FAMILY_INITIATE_MAESTROS">
+		<supports>PSGNC Crime Family</supports>
+		<description>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+		</description>
+		<sheet alt="Family Initiate, Maestros" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Obscura" type="Background Variant" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_VARIANT_FAMILY_INITIATE_OBSCURA">
+		<supports>PSGNC Crime Family</supports>
+		<description>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+		</description>
+		<sheet alt="Family Initiate, Obscura" />
+		<rules>
+			<select type="Proficiency" name="Gaming Set (Obscura)" supports="Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Riveteers" type="Background Variant" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_VARIANT_FAMILY_INITIATE_RIVETEERS">
+		<supports>PSGNC Crime Family</supports>
+		<description>
+			<h5>FAMILY TOOLS</h5>
+			<table>
+				<thead>
+					<tr><td>Crime Family</td><td>Tools</td></tr>
+				</thead>
+				<tr><td>Brokers</td><td>Calligrapher's supplies, forgery kit</td></tr>
+				<tr><td>Cabaretti</td><td>One type of gaming set, one type of musical instrument</td></tr>
+				<tr><td>Maestros</td><td>Painter's supplies, potter's supplies</td></tr>
+				<tr><td>Obscura</td><td>One type of gaming set, weaver's tools</td></tr>
+				<tr><td>Riveteers</td><td>Carpenter's tools, smith's tools</td></tr>
+			</table>
+		</description>
+		<sheet alt="Family Initiate, Riveteers" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Family Connections" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FAMILY_INITIATE_FAMILY_CONNECTIONS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As an initiate of your family, you can always get food and lodging for yourself and your friends at a family business, and you know how to get messages to and from other members of the family. The degree to which such acquaintances are willing to help you depends on your current standing with the family.</p>
+			<p class="indent">If your campaign uses the optional Renown rules found in the <i>Dungeon Master's Guide</i>, you begin the campaign with 2 renown within one of the five crime families.</p>
+		</description>
+		<sheet alt="Family Connections" />
+	</element>
+
+	<!--Informant-->
+	<element name="Informant" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_INFORMANT">
+		<description>
+			<p>The families are always paying for information. Maybe you're a snoop, a snitch, a private eye, or a reporter for the Capenna Herald. Whatever the case, information is your forte.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Investigation, Perception</li>
+				<li><strong>Languages:</strong> Two of your choice</li>
+				<li><strong>Equipment:</strong> A bottle of black ink, an ink pen, an empty book, a an unopened letter, a set of common clothes, and a belt pouch containing 10 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_INFORMANT_INFORMATION"/>
+		</description>
+		<setters>
+			<set name="short">Investigation, Perception, 2 Languages</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Language" name="Language (Informant)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_INFORMANT_INFORMATION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Information" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_INFORMANT_INFORMATION">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You can overhear and discover information during your travels. As part of a long rest, you can learn one piece of lore, which is equivalent to one true statement about a specific person, place, or thing of your choice. Examples include knowledge of a creature's resistances, the password needed to enter a sealed dungeon level, the spells commonly prepared by an order of wizards, and so on. The DM is the final arbiter concerning exactly what you can learn.</p>
+		</description>
+		<sheet alt="Information" />
+	</element>
+
+	<!--Muscle-->
+	<element name="Muscle" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_MUSCLE">
+		<description>
+			<p>You have undergone combat training, and in the past have found work as a club bouncer, an enforcer or leg-breaker for the families, or as a celebrity pugilist in underground fight rings.</p>			
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Athletics, Intimidation</li>
+				<li><strong>Tool Proficiencies:</strong> Forgery kit, One type of gaming set</li>
+				<li><strong>Equipment:</strong> A gaming set of your choice, a uniform from your previous employment (costume clothes), a signal whistle, a set of manacles, and a purse containing 10 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_MUSCLE_BRAWLER" />
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_MUSCLE_SAVAGE_ATTACKER" />
+		</description>
+		<setters>
+			<set name="short">Athletics, Intimidation, Forgery Kit, 1 Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<select type="Proficiency" name="Gaming Set (Muscle)" supports="Gaming Set" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_MUSCLE_BRAWLER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature||PSGNC Savage Attacker" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Brawler" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_MUSCLE_BRAWLER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the following benefits:
+			<ul>
+				<li>Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike.</li>
+				<li>Whenever you roll a damage die for an unarmed strike or improvised weapon attack, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+				<li>When you hit a creature with an unarmed strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</li>
+				<li>You are proficient with improvised weapons.</li>
+			</ul>
+			</p>
+		</description>
+		<sheet alt="Brawler" />
+	</element>
+
+	<element name="Variant Feature: Savage Attacker" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_MUSCLE_SAVAGE_ATTACKER">
+		<supports>Background Feature, PSGNC Savage Attacker</supports>
+		<description>
+			<p>If your character has the muscle background, you may select this background feature instead of Brawler.</p>
+			<p class="indent">You gain the Savage Attacker feat from the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet alt="Savage Attacker">
+			<description>You gain the Savage Attacker feat from the <i>Player's Handbook</i>.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<grant type="Feat" id="ID_PHB_FEAT_MOBILE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_WITH_A_FEAT" />
+		</rules>
+	</element>
+
+	<!--Outlander-->
+	<element name="Outlander" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_OUTLANDER">
+		<description>
+			<p>Unlike most, you grew up outside the city walls, on the blasted surface of Capenna. Up until now, you've been forced into a harsh life of survival of the fittest without the comforts and amenities of the city.</p>			
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Nature, Survival</li>
+				<li><strong>Tool Proficiencies:</strong> Navigator's tools, cartographer's tools</li>
+				<li><strong>Equipment:</strong> Navigator's tools, cartographer's tools, a hunting trap, a set of traveler's clothes, and a belt pouch containing 10gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_OUTLANDER_WANDERER" />
+			<div class="reference">
+				<div element="ID_PHB_FEAT_MOBILE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Nature, Survival, Navigator's tools, Cartographer's tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_OUTLANDER_WANDERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Wanderer" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_OUTLANDER_WANDERER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the Mobile feat from the <i>Player's Handbook</i>.</p>	
+			<div class="reference">
+				<div element="ID_PHB_FEAT_MOBILE" />
+			</div>
+		</description>
+		<sheet alt="Wanderer" />
+		<rules>
+			<grant type="Feat" id="ID_PHB_FEAT_MOBILE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_WITH_A_FEAT" />
+		</rules>
+	</element>
+
+	<!--Requisitioner-->
+	<element name="Requisitioner" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_REQUISITIONER">
+		<description>
+			<p>While some families use their own thieves, the high rollers of New Capenna are always looking for skilled requisitioners to procure gold from bank vaults or highly prized art pieces.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Sleight of Hand, Stealth</li>
+				<li><strong>Tool Proficiencies:</strong> Disguise kit, thieves' tools</li>
+				<li><strong>Equipment:</strong> Disguise kit, thieves' tools, a set of common clothes, and a belt pouch containing 10 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_NIMBLE_THIEF" />
+		</description>
+		<setters>
+			<set name="short"> Sleight of Hand, Stealth, Disguise Kit, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_NIMBLE_THIEF" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Nimble Thief" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_NIMBLE_THIEF">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<ul>
+				<li>If you are hidden, you can move up to a number of feet equal to half your walking speed and remain hidden if you end this movement in a position that is obscured, behind cover, or where you are otherwise not clearly visible.</li>
+				<li>Whenever you succeed on a Dexterity (Sleight of Hand) check to steal an object worn or carried by a creature as part of the Use an Object action on your turn, you can conceal that object on your person as part of the same action. Your successful Dexterity (Sleight of Hand) check determines the DC for a creature's ability check to discover the object on your person.</li>
+			</ul>
+		</description>
+		<sheet alt="Nimble Thief" />
+	</element>
+	
+	<!--Socialite-->
+	<element name="Socialite" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_SOCIALITE">
+		<description>
+			<p>You're most familiar with the high-roller scene in New Capenna, and find yourself mingling with the upper echelon of crime bosses and wealthy patrons in the more lavish and luxurious locations of the city.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Insight, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> One type of gaming set</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Equipment:</strong> A vial of perfume, a steel mirror, a signet ring, sealing wax, a set of fine clothes, and a purse containing 25 gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHARISMATIC_INFLUENCE" />
+		</description>
+		<setters>
+			<set name="short">Insight, Persuasion, 1 Gaming Set, 1 Language</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Proficiency" name="Gaming Set (Socialite)" supports="Gaming Set" />
+			<select type="Language" name="Language (Socialite)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHARISMATIC_INFLUENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Charismatic Influence" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CHARISMATIC_INFLUENCE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>After 1 minute of talking with a creature that can hear and understand you, you can attempt to charm or frighten it. You make a Charisma (Deception), Charisma (Intimidation), or Charisma (Persuasion) check contested by the creature's Wisdom (Insight) check.</p>
+			<p class="indent">If you succeed on a Charisma (Deception) or Charisma (Persuasion) check, the creature is charmed by you for 1 minute. This effect ends immediately if you or your companions do anything harmful to it.</p>
+			<p class="indent">If you succeed on a Charisma (Intimidation) check, the creature is frightened of you for 1 minute.</p>
+		</description>
+		<sheet alt="Charismatic Influence" />
+	</element>
+	
+	<!--Swindler-->
+	<element name="Swindler" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_SWINDLER">
+		<description>
+			<p>Everyone needs to make a living somehow. You earn your coin as a conman, running various schemes and games to take advantage of the unwary citizen's coinpurse.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Deception, Sleight of Hand</li>
+				<li><strong>Tool Proficiencies:</strong> Forgery kit, one type of gaming set</li>
+				<li><strong>Equipment:</strong> A disguise kit, a gaming set of your choice, a lucky charm (choose one or roll on the Trinkets table), a set of costume clothes, and a belt pouch containing 15gp</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FALSE_IDENTITY" />
+		</description>
+		<setters>
+			<set name="short">Deception, Sleight of Hand, Forgery Kit, 1 Gaming Set</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<select type="Proficiency" name="Gaming Set (Swindler)" supports="Gaming Set" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: False Identity" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_FALSE_IDENTITY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.</p>
+			<p class="indent">Additionally, when you copy writing or craftwork produced by yourself or someone else, you have advantage on any ability checks you make to produce an exact duplicate.</p>
+		</description>
+		<sheet alt="False Identity" />
+	</element>
+	
+	<!--Urchin-->
+	<element name="Urchin" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_URCHIN">
+		<description>
+			<p>You've never had much coin, and instead spend your time in the back alleys and understreets of the city with more nefarious characters.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Insight, Stealth</li>
+				<li><strong>Tool Proficiencies:</strong> One type of gaming set, thieves' tools</li>
+				<li><strong>Equipment:</strong> A gaming set (one of your choice), thieves' tools, a bedroll, a dagger, a set of common clothes, and a pet (<strong>cat</strong>, <strong>rat</strong>, or <strong>dog</strong>).</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_LUCKY" />
+			<div class="reference">
+				<div element="ID_PHB_FEAT_LUCKY" />
+			</div>
+			<div class="sidebar">
+				<h5>PETS</h5>
+				<p>A pet regards you as a friendly acquaintance but acts independently of you. You gain no special influence over it and it behaves as is typical for a member of its race. It will not fight for you, and will leave if it is abused or frequently endangered.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="short">Insight, Stealth, 1 Gaming Set, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<select type="Proficiency" name="Gaming Set (Urchin)" supports="Gaming Set" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_LUCKY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+
+	<element name="Feature: Lucky" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_LUCKY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the Lucky feat from the <i>Player's Handbook</i>.</p>
+			<div class="reference">
+				<div element="ID_PHB_FEAT_LUCKY" />
+			</div>
+		</description>
+		<sheet alt="Lucky" />
+		<rules>
+			<grant type="Feat" id="ID_PHB_FEAT_LUCKY" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_WITH_A_FEAT" />
+		</rules>
+	</element>
+
+	<!--Wrecking Crew-->
+	<element name="Wrecking Crew" type="Background" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_WRECKING_CREW">
+		<description>
+			<p>You know this city best. As a member of a wrecking crew, you're heavily involved in the construction of various city architecture, and the eventual destruction thereof.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Athletics, Acrobatics</li>
+				<li><strong>Tool Proficiencies:</strong> Tinker's tools and one of your choice from among carpenter's tools, mason's tools, or smith's tools.</li>
+				<li><strong>Equipment:</strong> Tinker's tools, one set of artisan's tools of your choice, block and tackle, a climber's kit, a grappling hook, and a sledgehammer</li>
+			</ul>
+			<div element="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CONSTRUCTION_AND_DEMOLITION" />
+		</description>
+		<setters>
+			<set name="short">Athletics, Acrobatics, Tinker's Tools, 1 Artisan's Tool</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+			<select type="Proficiency" name="Artisan's Tool (Wrecking Crew)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+			<grant type="Background Feature" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CONSTRUCTION_AND_DEMOLITION" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Construction &amp; Demolition" type="Background Feature" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_BACKGROUND_FEATURE_CONSTRUCTION_AND_DEMOLITION">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<ul>
+				<li>You deal double damage to nonmagical objects and structures with your weapon attacks.</li>
+				<li>As an action, you can use your tinker's tools to restore a number of hit points to a damaged nonmagical object or structure equal to your proficiency bonus. Once you use this benefit, you can't do so again until you finish a long rest.</li>
+				<li>When you make an Intelligence (History) check related to a structure, you are considered proficient in the History or Insight skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet alt="Construction &amp; Demolition" />
+	</element>
+
+</elements>

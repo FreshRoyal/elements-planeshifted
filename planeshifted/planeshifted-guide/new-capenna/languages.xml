@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Aven" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_AVEN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by aven.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Aven</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Cephalid" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_CEPHALID">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by cephalids.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Cephalids</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Diabolic" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_DIABOLIC">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by demons and devils.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Demons, Devils</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Leonin" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_LEONIN">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by leonin and sphinxes.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Leonin, Sphinxes</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Phyrexian" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_PHYREXIAN">
+		<supports>Exotic</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">-</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Raccoon" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_RACCOON">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by raccoonfolk.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Raccoonfolk</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<element name="Rhox" type="Language" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_LANGUAGE_RHOX">
+		<supports>Standard</supports>
+		<description>
+			<p>Typically spoken by rhox.</p>
+		</description>
+		<setters>
+			<set name="standard">true</set>
+			<set name="speakers">Rhox</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+	
+</elements>

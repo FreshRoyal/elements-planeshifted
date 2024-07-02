@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/spells.xml" />
+		</update>
+	</info>
+
+	<element name="Aperture" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_APERTURE">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock Wizard</supports>
+		<description>
+			<p>This spell creates a prophecy orb, a ball of glowing blue energy, in an unoccupied space within 5 feet of you. It is a Tiny weightless, semisolid object that can be held and carried, and lasts for the duration.</p>
+			<p class="indent">While holding the orb, it captures and records information you receive by a single divination spell (such as <i>divination</i>, <i>legend lore</i>, or <i>scrying</i>). Thereafter, the orb depicts an illusory recreation of the knowledge recorded, and can't record any further information. Once an orb has recorded information, the orb lasts until it is dispelled.</p>
+			<p class="indent">Casting this spell while holding a prophecy orb allows you to instantly receive the information recorded. Casting detect thoughts on the orb has the same effect.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Arcane Bombardment" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_ARCANE_BOMBARDMENT">
+		<supports>Wizard</supports>
+		<description>
+			<p>Before the spell ends, when you cast a 2nd-level spell that targets only one creature and doesn't have a range of self, you can target a second creature in range with the same spell. When you do so, this spell immediately ends. To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the spell effects the next 3rd-level spell you cast before the spell ends that is eligible.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Case the Joint" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_CASE_THE_JOINT">
+		<supports>Bard, Ranger, Sorcerer, Warlock, Wizard. Spell Saving Throw</supports>
+		<description>
+			<p>You touch a willing creature and grant it the ability to see into and through solid matter out to 30 feet for the duration. To the target, solid objects within that radius appear transparent and don't prevent light from passing through them. This vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.</p>
+			<p class="indent">If you cast the spell two or more times before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spyglass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Corpse Explosion" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_CORPSE_EXPLOSION">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You cause the corpse of a Medium or smaller creature you can see within range to explode. Each creature in a 10-foot radius sphere centered on the corpse must make a Dexterity saving throw. A target takes 4d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">The corpse targeted by this spell and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. That creature can be restored to life only by means of a true resurrection or a <i>wish</i> spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">fire</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Dig Up the Body" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_DIG_UP_THE_BODY">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as a <b>capennan vampire</b>. When the spell ends, the vampire dies.</p>
+			<p class="indent">Roll initiative for the vampire, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.</p>
+			<p class="indent">At the end of each of the vampire's turns, it makes a Charisma saving throw. On a failed save, the vampire continues to obey you. On a successful save, your control of the vampire ends for the rest of the duration, and the vampire spends its turns pursuing and attacking the nearest non-vampires to the best of its ability. If you stop concentrating on the spell before it reaches its full duration, an uncontrolled vampire doesn't die for 1d6 rounds if it still has hit points.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spade</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Hold for Ransom" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_HOLD_FOR_RANSOM">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<p>A cube of thin light beams springs into existence in a 5-foot radius around a creature you can see within range. When the cube appears, each creature within its area must succeed on a Dexterity saving throw or be caught inside it.</p>
+			<p class="indent">Creatures can't physically pass through the cube's walls, but objects can be carefully maneuvered past the light beams. The walls of the cube are immune to all damage, but spells can pass into the cube's area, and the cube can be targeted by <i>dispel magic</i> or similar magic.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Concentration, until dispelled</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a ransom note</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Illuminated Blade" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_ILLUMINATED_BLADE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You summon twin daggers of solidified light in your hands. These magic daggers last until the spell ends. They count as simple melee weapons with which you are proficient. They deal 1d8 radiant damage on a hit and have the finesse, light, and thrown properties (range 20/60). In addition, the daggers shed bright light in 10-foot radius and dim light for an additional 10 feet.</p>
+			<p class="indent">If you drop one of the weapons or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the dagger to reappear in your hand.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Inspect Echo" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_INSPECT_ECHO">
+		<supports>Artificer, Cleric, Wizard</supports>
+		<description>
+			<p>This spell creates a translucent illusion of recent events in your vicinity, up to a 15-foot cube, going back a number of days equal to your Spellcasting modifier. For each minute you concentrate, the spell recreates one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation.</p>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Concentration, up to 10 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Kitt Kando's Incandescent Aria" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_KITT_KANDOS_INCANDESCENT_ARIA">
+		<supports>Bard, Sorcerer, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>As part of the casting of this spell, you sing a high note. For the duration, you must use your bonus action on each of your turns to continue singing.</p>
+			<p class="indent">When you cast this spell, and when you use your bonus action to continue singing on your turn, each creature that can hear you in a 20-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 4d6 thunder damage. A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.</p>
+			<p class="indent">If you concentrate on this spell for the full duration, each creature in the spell's area that can hear you is magically transformed into a statue made of rose petals. While transformed, a creature is petrified. An unsecured nonmagical object that isn't being worn or carried is also transformed if it's in the spell's area. A <i>remove curse</i> or <i>greater restoration</i> spell cast on the target ends the transformation.</p>
+		</description>
+		<setters>
+			<set name="keywords">thunder</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (20-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Light 'Em Up" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_LIGHT_EM_UP">
+		<supports>Bard, Sorcerer, Warlock, Spell Saving Throw</supports>
+		<description>
+			<p>You rapid fire blasts of arcane energy from your fingertips at a 10-foot cube you can see within range. Each creature in the area must make a Dexterity saving throw, taking 2d8 force damage on a failed save, or half as much on a successful save.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Out of the Way" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_OUT_OF_THE_WAY">
+		<supports>Bard, Sorcerer, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>You magically twist space around another creature you can see within range. The target must succeed on a Dexterity saving throw (the target can choose to fail), or the target is teleported to an unoccupied space of your choice that you can see within range.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Security Bypass" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_SECURITY_BYPASS">
+		<supports>Artificer, Bard, Ranger, Wizard</supports>
+		<description>
+			<p>You become incorporeal for the duration. You gain the following benefits until the spell ends:</p>
+			<ul>
+				<li>You can move through other creatures and objects as if they were difficult terrain. You take 5 (1d10) force damage if you end your turn inside an object.</li>
+				<li>You have advantage on Dexterity (Stealth) and Dexterity (Sleight of Hand) checks.</li>
+				<li>You have resistance to acid, fire, lightning, and thunder damage, and to nonmagical bludgeoning, piercing, and slashing damage.</li>
+				<li>You have advantage on saving throws you make to avoid or end the grappled, paralyzed, petrified, prone, and restrained conditions on yourself.</li>
+				<li>You are immune to poison damage and the poisoned condition.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Sleep with the Fishes" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_SLEEP_WITH_THE_FISHES">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>One creature you can see within range must succeed on a Constitution saving throw or become cursed for the duration. While cursed, the target loses the ability to swim and can't benefit from a swim speed, and their weight is doubled. If submerged in liquid—such as water, mud, or snow—the target sinks at a rate of 60 feet per round.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a length of string and stone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Sticky Fingers" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_STICKY_FINGERS">
+		<supports>Artificer, Bard, Ranger, Wizard</supports>
+		<description>
+			<p>Choose one object you can see within range weighing no more than 10 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet toward you. If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet toward you.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Strangle" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_STRANGLE">
+		<supports>Bard, Ranger, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+		<description>
+			<p>Choose one object you can see within range around a creature's neck, such as a necklace, scarf, or bowtie. The creature wearing the object must succeed on a Strength or Dexterity saving throw (its choice) or the object you target compresses the target's neck for the duration. Until the spell ends, the creature wearing the object can't breathe or speak. If you are hidden from the creature wearing the object when you cast this spell, a creature that fails its save starts suffocating as if it ran out of air.</p>
+			<p class="indent">At the end of its turn, a creature can repeat the Strength or Dexterity saving throw, ending the spell on a success.</p>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Structural Assault" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_STRUCTURAL_ASSAULT">
+		<supports>Artificer, Sorcerer, Warlock, Wizard, Spell Attack</supports>
+		<description>
+			<p>You fire a beam of arcane energy at a nonmagical object or structure you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 8d12 force damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a hammer</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Wiretapping" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_WIRETAPPING">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<p>You choose a telephone or similar communications device you can see within range and mystically tap into its workings. Until the spell ends, when the device is used to communicate with another creature, you can hear the communications in your mind. You can hear the voices of communicating creatures and recognize them if you have met them before. This spell doesn't translate languages or decode secret messages.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b>  If you cast this spell using a spell slot of 3rd level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 4th level or higher, the duration is 8 hours. If you use a spell slot of 5th level or higher, the duration is 24 hours. If you use a 7th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 4th level or higher grants a duration that doesn't require concentration.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a copper wire and a pair of pliers</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Witness Protection" type="Spell" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_SPELL_WITNESS_PROTECTION">
+		<supports>Artificer, Bard, Cleric, Wizard</supports>
+		<description>
+			<p>You make one creature you touch look and sound different until the spell ends. This spell affects the target's appearance and voice, but not its clothing, armor, weapons, or other belongings on its person. The target can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change the target's body type, so the target must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.</p>
+			<p class="indent">The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to the target's outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel the target's head and hair. If you use this spell to cause the target to appear thinner than they are, the hand of someone who reaches out to touch them would bump into them while it was seemingly still in midair.</p>
+			<p class="indent">To discern that the target is disguised, a creature can use its action to inspect the target's appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.</p>
+			<p class="indent">If you concentrate on this spell for the entire possible duration, the illusion becomes permanent. A remove curse spell ends this effect.</p>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+</elements>

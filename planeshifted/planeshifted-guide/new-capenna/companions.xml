@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="companions.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/companions.xml" />
+		</update>
+	</info>
+
+	<element name="Chrome Cat" type="Companion" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_CHROME_CAT">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>The chrome cat is a halo-powered automaton, trusted for its durability and stealth abilities. They are found mostly in service to artificers and mages.</p>
+		</description>
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="ac">12</set>
+			<set name="hp">10 (4d4)</set>
+			<set name="speed">40 ft., climb 30 ft.</set>
+			<set name="senses">passive Perception 13</set>
+			<set name="languages">—</set>
+			<set name="saves">Con +2</set>
+			<set name="skills">Perception +3, Stealth +4</set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">charmed, exhaustion, poisoned</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_PSLE_PSGNC_COMPANION_TRAIT_CHROME_CAT_KEEN_SMELL</set>
+			<set name="actions">ID_PSLE_PSGNC_COMPANION_ACTION_CHROME_CAT_CLAWS</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Keen Senses" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_CHROME_CAT_KEEN_SMELL">
+		<description>
+			<p>The cat has advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>The cat has advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+	
+	<element name="Claws" type="Companion Action" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_ACTION_CHROME_CAT_CLAWS">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Dog" type="Companion" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_DOG">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>New Capenna is home to numerous breeds of dogs, distantly related to the wild wolves of the Kingdom Era. They are a favorite pet amongst the higher class of the city, along with cats.</p>
+		</description>
+		<setters>
+			<set name="strength">8</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">8</set>
+			<set name="ac">12</set>
+			<set name="hp">3 (1d6)</set>
+			<set name="speed">40 ft.</set>
+			<set name="senses">passive Perception 13</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_PSLE_PSGNC_COMPANION_TRAIT_DOG_KEEN_HEARING_AND_SMELL,ID_PSLE_PSGNC_COMPANION_TRAIT_DOG_PACK_TACTICS</set>
+			<set name="actions">ID_PSLE_PSGNC_COMPANION_ACTION_DOG_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="3" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Keen Hearing and Smell" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_DOG_KEEN_HEARING_AND_SMELL">
+		<description>
+			<p>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+		</description>
+		<sheet>
+			<description>The dog has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Pack Tactics" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_DOG_PACK_TACTICS">
+		<description>
+			<p>The dog has advantage on an attack roll against a creature if at least one of the dog's allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>The dog has advantage on an attack roll against a creature if at least one of the dog's allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bite" type="Companion Action" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_ACTION_DOG_BITE">
+		<description>
+			<p>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Fish" type="Companion" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_FISH">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>New Capenna has a saying, "you'll be sleeping with the fishes." This is a euphemism describing drowning, a favorite method of murder for the crime families, and the inspiration for a deadly spell. While fish are often seen as little more than food, some individuals pay handsomely for exotic species of fish, keeping them in lavishly large aquariums that showcase the frivolous wealth of the owner.</p>
+		</description>
+		<setters>
+			<set name="strength">2</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">9</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">7</set>
+			<set name="charisma">2</set>
+			<set name="ac">13</set>
+			<set name="hp">1 (1d4-1)</set>
+			<set name="speed">0 ft., swim 40 ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 8</set>
+			<set name="languages">—</set>
+			<set name="type">Beast</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">0</set>
+			<set name="traits">ID_PSLE_PSGNC_COMPANION_TRAIT_FISH_WATER_BREATHING</set>
+			<set name="actions">ID_PSLE_PSGNC_COMPANION_ACTION_FISH_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="1" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:swim" value="40" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Water Breathing" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_FISH_WATER_BREATHING">
+		<description>
+			<p>The fish can breathe only underwater.</p>
+		</description>
+		<sheet>
+			<description>The fish can breathe only underwater.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bite" type="Companion Action" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_ACTION_FISH_BITE">
+		<description>
+			<p>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Goldhound" type="Companion" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_GOLDHOUND">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>A goldhound is a halo-powered automaton, highly valued because it is made of gold. Many wealthy patrons would pay dearly to own such a construct and add to it their collection.</p>
+		</description>
+		<setters>
+			<set name="strength">10</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">8</set>
+			<set name="ac">12</set>
+			<set name="hp">9 (2d6+2)</set>
+			<set name="speed">40 ft.</set>
+			<set name="senses">passive Perception 13</set>
+			<set name="languages">—</set>
+			<set name="skills">Perception +3</set>
+			<set name="resistances">bludgeoning, piercing, and slashing from nonmagical attacks</set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">poisoned</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_PSLE_PSGNC_COMPANION_TRAIT_GOLDHOUND_KEEN_HEARING_AND_SMELL,ID_PSLE_PSGNC_COMPANION_TRAIT_GOLDHOUND_PACK_TACTICS</set>
+			<set name="actions">ID_PSLE_PSGNC_COMPANION_ACTION_GOLDHOUND_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="9" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Keen Hearing and Smell" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_GOLDHOUND_KEEN_HEARING_AND_SMELL">
+		<description>
+			<p>The goldhound has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>
+		</description>
+		<sheet>
+			<description>The goldhound has advantage on Wisdom (Perception) checks that rely on hearing or smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Pack Tactics" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_GOLDHOUND_PACK_TACTICS">
+		<description>
+			<p>The goldhound has advantage on an attack roll against a creature if at least one of the goldhound's allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>The goldhound has advantage on an attack roll against a creature if at least one of the goldhound's allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bite" type="Companion Action" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_ACTION_GOLDHOUND_BITE">
+		<description>
+			<p>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Halo Scarab" type="Companion" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_HALO_SCARAB">
+		<supports>Familiar, Variant Familiar</supports>
+		<description>
+			<p>A halo scarab is a halo-powered automaton that doubles as a brooch. This expensive accessory pulses with the colors that best complement the wearer's outfit.</p>
+		</description>
+		<setters>
+			<set name="strength">1</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">1</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">1</set>
+			<set name="ac">13</set>
+			<set name="hp">3 (1d4+1)</set>
+			<set name="speed">30 ft., burrow 30 ft., climb 30 ft.</set>
+			<set name="senses">tremorsense 60 ft. (blind beyond this radius), passive Perception 11</set>
+			<set name="languages">—</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1/4</set>
+			<set name="traits">ID_PSLE_PSGNC_COMPANION_TRAIT_HALO_SCARAB_FALSE_APPEARANCE,ID_PSLE_PSGNC_COMPANION_TRAIT_HALO_SCARAB_SPIDER_CLIMB</set>
+			<set name="actions">ID_PSLE_PSGNC_COMPANION_ACTION_HALO_SCARAB_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="3" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:burrow" value="30" bonus="base" />
+			<stat name="companion:climb" value="30" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="False Appearance" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_HALO_SCARAB_FALSE_APPEARANCE">
+		<description>
+			<p>While the scarab remains motionless, it is indistinguishable from a brooch.</p>
+		</description>
+		<sheet>
+			<description>While the scarab remains motionless, it is indistinguishable from a brooch.</description>
+		</sheet>
+	</element>
+
+	<element name="Pack Tactics" type="Companion Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_TRAIT_HALO_SCARAB_SPIDER_CLIMB">
+		<description>
+			<p>The scarab can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+		</description>
+		<sheet>
+			<description>The scarab can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+		</sheet>
+	</element>
+	
+	<element name="Bite" type="Companion Action" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_COMPANION_ACTION_HALO_SCARAB_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+	
+</elements>
