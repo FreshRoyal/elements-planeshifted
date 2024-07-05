@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-angel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-angel.xml" />
 		</update>
 	</info>
@@ -29,7 +29,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Angel)" supports="Custom Ability Score Improvement Option" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
-			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_TYPE_CELESTIAL" />
+			<grant type="ID_INTERNAL_RACIAL_TRAIT_TYPE_CELESTIAL" />
 
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />

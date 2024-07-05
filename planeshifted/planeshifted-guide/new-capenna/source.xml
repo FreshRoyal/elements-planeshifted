@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/source.xml" />
 		</update>
 	</info>
@@ -20,17 +20,4 @@
 		</setters>
 	</element>
 
-	<!--Remove celestial once it's in the Legacy repo-->
-	<element name="Celestial" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_TYPE_CELESTIAL">
-		<supports>Creature Type</supports>
-		<description>
-			<p>Your creature type is Celestial.</p>
-			<div class="reference">
-				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
-			</div>
-		</description>
-		<sheet alt="Creature Type">
-			<description>Celestial.</description>
-		</sheet>
-	</element>
 </elements>
