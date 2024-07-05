@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="race-angel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/race-angel.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<grant type="Racial Trait" id="ID_PSRA_RACIAL_TRAIT_TYPE_CELESTIAL" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CELESTIAL" />
 			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Angel)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Racial Trait" id="ID_PSLE_PSRA_RACIAL_TRAIT_ANGEL_BLESSING_OF_THE_GOD_PHARAOH" />
