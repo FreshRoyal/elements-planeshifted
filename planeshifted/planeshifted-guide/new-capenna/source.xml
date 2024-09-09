@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/source.xml" />
+		</update>
+	</info>
+
+	<element name="Planeshifted Guide to New Capenna" type="Source" source="Core" id="ID_HOMEBREW_SOURCE_PSLE_NEW_CAPENNA">
+		<description>
+			<p>Explore <i>Magic: The Gathering</i>'s 1920s setting of New Capenna in this rules expansion and campaign setting guide for <i>Dungeons &amp; Dragons 5th Edition</i></p>
+		</description>
+		<setters>
+			<set name="abbreviation">PSGNC</set>
+			<set name="url">https://www.gmbinder.com/share/-MwNFSQV03EoKj1L7j3g</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/PSGNC.jpg</set>
+			<set name="author" abbreviation="PSLE" url="https://www.reddit.com/user/letterephesus/">letterephesus</set>
+			<set name="homebrew">true</set>
+			<set name="release">20221130</set>
+		</setters>
+	</element>
+
+</elements>

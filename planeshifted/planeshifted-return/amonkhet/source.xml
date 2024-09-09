@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Planeshifted Return to Amonkhet Source</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet/source.xml" />
 		</update>
 	</info>
@@ -19,20 +19,6 @@
 			<set name="homebrew">true</set>
 			<set name="release">20220102</set>
 		</setters>
-	</element>
-
-	<!-- celestial type is missing from internals.xml, will remove this once fixed -->
-	<element name="Celestial" type="Racial Trait" source="Planeshifted Return to Amonkhet" id="ID_PSRA_RACIAL_TRAIT_TYPE_CELESTIAL">
-		<supports>Creature Type</supports>
-		<description>
-			<p>Your creature type is Celestial.</p>
-			<div class="reference">
-				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
-			</div>
-		</description>
-		<sheet alt="Creature Type">
-			<description>Celestial.</description>
-		</sheet>
 	</element>
 	
 </elements>

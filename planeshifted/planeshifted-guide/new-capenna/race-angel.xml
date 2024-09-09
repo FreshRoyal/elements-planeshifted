@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.2">
+			<file name="race-angel.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-angel.xml" />
+		</update>
+	</info>
+
+	<element name="Angel" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_ANGEL">
+		<description>
+			<p>Angels are winged humanoids manifestations of divine magic whose appears reflects aspects of the city itself. During the Kingdom Era, they and the demons cooperated to stave off a phyrexian incursion, creating the city of New Capenna. It was said that the angels sacrificed themselves in the creation of the city, though some believe the demons had some sort of hand in the matter. They entered a kind of stasis, sealed away in angelic statues throughout the city.</p>
+			<p class="indent">It was later discovered that Halo, the miraculous substance that drives New Capenna's technology and economy, came from the angels. Giada, the last angel, ascended during the Adversary War, and the other angels started awaken, jumpstarting the flow of Halo once more.</p>
+			<div class="sidebar">
+				<h4>ANGELS AND HALO</h4>
+				<p>Halo, a substance derived from the angels, is an important part of the technology and economy of New Capenna; the families constantly vying for it to obtain more power. Work with your DM to establish the role your angel character plays in this power struggle. Perhaps you are a cooperative producer of Halo for one of the Families, or perhaps you are on the run or in hiding, keeping your ability to produce Halo a secret.</p>
+			</div>
+			<h4>ANGEL TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Celestial.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Angels don't age as other races do. You are immune to the effects of aging and can't be aged magically.</p>
+			<p class="indent"><strong><em>Create Halo.</em></strong> As a bonus action, you can touch a vial containing at least 1 ounce of water and magically transform it into a <i>potion of halo</i>. A potion of halo you make with this trait lasts until it is drunk or until the end of your next long rest.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Flight.</em></strong> Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Angel)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="ID_INTERNAL_RACIAL_TRAIT_TYPE_CELESTIAL" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Angel)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_ANGEL_CREATE_HALO" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_ANGEL_FLIGHT" />
+		</rules>
+	</element>
+
+	<element name="Create Halo" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_ANGEL_CREATE_HALO">
+		<description>
+			<p>As a bonus action, you can touch a vial containing at least 1 ounce of water and magically transform it into a <i>potion of halo</i>. A potion of halo you make with this trait lasts until it is drunk or until the end of your next long rest.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You can touch a vial containing at least 1 ounce of water and magically transform it into a potion of halo. A potion of halo you make with this trait lasts until it is drunk or until the end of your next long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Flight" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_ANGEL_FLIGHT">
+		<description>
+			<p>Because of your wings, you have a flying speed equal to your walking speed. You can't use this flying speed if you're wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{innate speed}} feet. You can't use this flying speed if you're wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+	
+</elements>

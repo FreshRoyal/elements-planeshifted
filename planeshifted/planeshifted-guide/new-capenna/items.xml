@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/items.xml" />
+		</update>
+	</info>
+
+	<!--Treasures-->
+
+	<element name="Arc Spitter" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_ARC_SPITTER">
+		<description>
+			<p>The arc spitter is a Riveteers-made arcane firearm powered by drums of halo.</p>
+			<p class="indent">This magic weapon deals lightning damage instead of piercing damage. A <i>potion of halo</i> can be poured into the weapon's drum, supplying 400 shots of ammunition. </p>
+		</description>
+		<setters>
+			<set name="keywords">automatic rifle, lightning</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">450</set>
+			<set name="type" addition="automatic rifle">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_FIREARM</set>
+		</setters>
+	</element>
+
+	<element name="Brass Knuckles" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_BRASS_KNUCKLES">
+		<description>
+			<p>Not necessarily made of brass, these metal knuckles are worn on the fist for additional damage.</p>
+			<p class="indent">While wearing brass knuckles, your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for an unarmed strike. You can't be disarmed of brass knuckles unless you are incapacitated.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ceremonial Groundbreaker" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_CEREMONIAL_GROUNDBREAKER">
+		<description>
+			<p>The ceremonial groundbreaker is a shovel imbued with magic from the ritual and tradition of New Capennan construction.</p>
+			<p class="indent">When you use this magic shovel as an improvised weapon, you can treat it as a greatclub, and you have a +1 bonus to attack and damage rolls made with it.</p>
+			<p class="indent">As an action while holding this magic shovel, you can touch an area of loose dirt on the ground that can fit within a 5-foot cube and manipulate it in one of the following ways:</p>
+			<ul>
+				<li>You instantaneously excavate the area of dirt and deposit it at another point within 5 feet of you.</li>
+				<li>You cause the area to become difficult terrain, or normal terrain if it is already difficult terrain, for 1 hour.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="weapon">Greatclub</set>
+			<set name="enhancement">1</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Jackhammer" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_JACKHAMMER">
+		<description>
+			<p>A jackhammer is most often used by sawjacks and wrecking crews to quickly chisel through concrete and stone.</p>
+			<p class="indent">The jackhammer has 10 charges. You can expend a charge as an action and use the jackhammer to make a melee weapon attack against a creature or object within 5 feet of you. If you have proficiency with mason's tools, you may add your proficiency bonus to the attack roll. On a hit, the jackhammer deals 2d8 piercing damage to a creature, or 4d8 piercing damage to an object or structure. If the jackhammer has no charges left, it can be used as an improvised weapon that deals 1d8 bludgeoning damage on a hit.</p>
+			<p class="indent">The jackhammer runs on halo. A <i>potion of halo</i> can be poured into the jackhammer to restore all its charges.</p>
+		</description>
+		<setters>
+			<set name="keywords">bludgeoning, damage</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="charges">10</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Luxior, Giada's Gift" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_LUXIOR_GIADAS_GIFT">
+		<description>
+			<p>This magic longsword was once owned by the planeswalker Elspeth. It was imbued with halo by the angel Giada, who gave her life to awaken the sleeping angels of New Capenna.</p>
+			<p class="indent"><strong><em>Magic Weapon.</em></strong> You gain a +3 bonus to attack and damage rolls made with this magic sword. In addition, the sword functions as a <i>pearl of power</i>.</p>
+			<p class="indent"><strong><em>Holy Light.</em></strong> The sword sheds bright light in a 5-foot radius and dim light for an additional 5 feet. Fiends find the sword's light disconcerting and painful, even if they can't see it, and have disadvantage on attack rolls and saving throws made within the sword's radius of bright light. In addition, you have advantage on attack rolls against fiends in the sword's radius of bright light.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While the sword is on your person, you can use an action to cast one of the following spells from it: <i>cure wounds</i>, <i>greater restoration</i>, or <i>lesser restoration</i>. Once you use the sword to cast a spell, you can't cast that spell from it again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword, spell</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+
+	<element name="Potion of Halo" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_POTION_OF_HALO">		
+		<description>
+			<p>When you drink this potion, your exhaustion level is reduced by one, and you gain one of the following effects of your choice:</p>
+			<ul>
+				<li>Roll a number of d4s equal to your proficiency bonus. You regain a number of hit points equal to the total rolled.</li>
+				<li>For 1 minute, you have advantage on Wisdom-based ability checks, Strength-based ability checks, Strength-based attack rolls, and Strength saving throws.</li>
+				<li>You regain one expended spell slot of 3rd level or lower.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">healing, advantage</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Quick-Draw Dagger" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_QUICK_DRAW_DAGGER">
+		<description>
+			<p>You can draw a quick-draw dagger on your turn without taking the Use an Object action, even if you have already interacted with another object on your turn. In addition, you can make one attack with it as a bonus action on each of your turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">dagger, lightning</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="type" addition="dagger">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="weapon">Dagger</set>
+		</setters>
+	</element>
+
+	<element name="Shadow Generator" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_SHADOW_GENERATOR">
+		<description>
+			<p>While holding the pocket-sized generator, you can use an action to cause shadows to wreathe your body. While you are wreathed in shadows, you become heavily obscured to others as long as you are in bright light, and you become invisible to others as long as you are in dim light or darkness. Anything you are wearing or carrying is obscured or rendered invisible with you. You remain wreathed in shadows until you attack or cast a spell or until you use an action to end the effect.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+
+	<element name="Telephone" type="Magic Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_MAGIC_ITEM_TELEPHONE">
+		<description>
+			<p>A telephone is a modern communication device, consisting of a rotary dial and a earpiece/mouthpiece connected by a cable. Most telephones are stationary, but modern magic allows for some telephones to be portable, carried in a small handbag. Each telephone has a unique number sequence used to contact it.</p>
+			<p class="indent"><strong><em>Make a Call.</em></strong> You can use your action while holding the telephone to dial another telephone whose number sequence you know. The target telephone rings audibly out to 100 feet. Another creature can use its action to pick up the earpiece of the target telephone and receive the call, which ends the ringing sound and connects the two telephones until either creature uses their action to hang the earpiece and end the call. While the telephones are connected, the two creatures can communicate with each other verbally as though they were next to each other.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<!--Vehicles-->
+	<element name="Getaway Car" type="Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_ITEM_GETAWAY_CAR">
+		<description>
+			<div class="reference">
+				<div element="ID_PSLE_PSGNC_INFORMATION_GETAWAY_CAR_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>		
+		</setters>
+	</element> 
+	<element name="Getaway Car" type="Information" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_INFORMATION_GETAWAY_CAR_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (15 ft. by 10 ft.)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 20 (natural armor)</li>
+				<li><strong>Hit Points</strong> 60</li>
+				<li><strong>Speed</strong> 200 ft.</li>
+				<li><strong>Creature Capazity</strong> 4 Medium creatures</li>
+				<li><strong>Cargo Capazity</strong> 500 lb.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>18 (+4)</td><td>14 (+2)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but invisible</li>
+			</ul>
+			<p><strong><em>Getaway.</em></strong> The controller of the vehicle has advantage on Dexterity (Stealth) checks made to hide the vehicle.</p>
+			<p><strong><em>Quick Escape.</em></strong> The controller of the vehicle has advantage on initiative rolls.</p>
+		</description>
+	</element>
+
+	<element name="Hoard Hauler" type="Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_ITEM_HOARD_HAULER">
+		<description>
+			<div class="reference">
+				<div element="ID_PSLE_PSGNC_INFORMATION_HOARD_HAULER_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">5000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element> 
+	<element name="Hoard Hauler" type="Information" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_INFORMATION_HOARD_HAULER_STATBLOCK">
+		<description>
+			<p><em>Huge vehicle (15 ft. by 10 ft.)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 21 (natural armor)</li>
+				<li><strong>Hit Points</strong> 150</li>
+				<li><strong>Speed</strong> 120 ft.</li>
+				<li><strong>Creature Capazity</strong> 4 Medium creatures</li>
+				<li><strong>Cargo Capazity</strong> 2 tons</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>12 (+1)</td><td>20 (+5)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Resistances</strong> bludgeoning</li>
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but invisible</li>
+			</ul>
+			<p><strong><em>Bankbuster.</em></strong> The controller of the vehicle has advantage on attack rolls made to crash into objects and creatures.</p>
+		</description>
+	</element>
+
+	<element name="Limousine" type="Item" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_ITEM_LIMOUSINE">
+		<description>
+			<div class="reference">
+				<div element="ID_PSLE_PSGNC_INFORMATION_LIMOUSINE_STATBLOCK" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">6000</set>
+			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+			<set name="type">Vehicle</set>			
+		</setters>
+	</element> 
+	<element name="Limousine" type="Information" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_INFORMATION_LIMOUSINE_STATBLOCK">
+		<description>
+			<p><em>Gargantuan vehicle (30 ft. by 10 ft.)</em></p>
+			<ul class="unstyled mb">
+				<li><strong>Armor Class</strong> 19 (natural armor)</li>
+				<li><strong>Hit Points</strong> 60</li>
+				<li><strong>Speed</strong> 100 ft.</li>
+				<li><strong>Creature Capazity</strong> 8 Medium creatures</li>
+				<li><strong>Cargo Capazity</strong> 100 lb.</li>
+			</ul>
+			<table style="text-align:center">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>16 (+3)</td><td>14 (+2)</td><td>0 (-5)</td><td>0 (-5)</td><td>0 (-5)</td></tr>
+			</table>
+			<ul class="unstyled mb">
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> all conditions but invisible</li>
+			</ul>
+			<p><strong><em>Impressive.</em></strong> The controller of the vehicle has advantage on Charisma (Persuasion) and Charisma (Intimidation) checks.</p>
+		</description>
+	</element>
+
+</elements>

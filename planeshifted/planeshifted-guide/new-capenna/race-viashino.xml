@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-viashino.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-viashino.xml" />
+		</update>
+	</info>
+
+	<element name="Viashino" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_VIASHINO">
+		<description>
+			<p>The viashino are anthropomorphic reptile folk, descended from Capennan dragons. They possess scales, sharp claws and fangs, and many retain the draconic abilities of breathing fire and seeing through illusions.</p>
+			<p class="indent">The dragons of Capenna are all extinct save one: <strong>Ziatora</strong>, the demon dragon crime boss of the Riveteers. Viashino are almost exclusively found among the Riveteers, though it is uncertain whether they do this out of fealty to Ziatora, or if she exerts some kind of magical influence over them.</p>
+
+			<h4>VIASHINO TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong>  You are a Humanoid. You are also considered a dragonborn for any prerequisite or effect that requires you to be a dragonborn.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Breath Weapon.</em></strong> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of dragonfire in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent">You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Claws and Fangs.</em></strong> You have sharp claws and a fanged maw that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+			<p class="indent"><strong><em>Dragon Sight.</em></strong> Starting at 5th level, you can use a bonus action to gain truesight with a range of 30 feet for 1 minute. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Viashino)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_TYPE_HUMANOID_DRAGONBORN" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Viashino)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_BREATH_WEAPON" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_CLAWS_AND_FANGS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_DRAGON_SIGHT" level="5" />
+		</rules>
+	</element>
+
+	<element name="Humanoid Dragonborn" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_TYPE_HUMANOID_DRAGONBORN">
+		<supports>Creature Type</supports>
+		<description>
+			<p>You are a Humanoid. You are also considered a dragonborn for any prerequisite or effect that.</p>
+			<div class="reference">
+				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
+			</div>
+		</description>
+		<sheet alt="Creature Type">
+			<description>Humanoid. You are also considered a dragonborn for any prerequisite or effect that </description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_DRAGONBORN" />
+		</rules>
+	</element>
+
+	<element name="Breath Weapon" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_BREATH_WEAPON">
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of dragonfire in a 15-foot cone. Each creature in that area must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 fire damage. On a successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>
+			<p class="indent">You can use your Breath Weapon a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Attack" usage="{{proficiency}}/Long Rest">
+			<description>You can replace one of your attacks with an exhalation of a dragonfire in a 15-foot cone. Each creature in the area must make a Dexterity saving throw against a DC{{breath weapon:dc}}. On a failed save, the creature takes {{breath weapon:dice count}}d10 fire damage, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="breath weapon:dc" value="8" />
+			<stat name="breath weapon:dc" value="constitution:modifier" />
+			<stat name="breath weapon:dc" value="proficiency" />
+			<stat name="breath weapon:dice count" value="1" level="1" bonus="base" />
+			<stat name="breath weapon:dice count" value="2" level="5" bonus="base" />
+			<stat name="breath weapon:dice count" value="3" level="11" bonus="base" />
+			<stat name="breath weapon:dice count" value="4" level="17" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Claws and Fangs" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_CLAWS_AND_FANGS">
+		<description>
+			<p>You have sharp claws and a fanged maw that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + your Strength modifier slashing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>You have sharp claws and a fanged maw that you can use to make unarmed strikes. When you hit with them, the strike deals 1d6 + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Dragon Sight" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_VIASHINO_DRAGON_SIGHT">
+		<description>
+			<p>Starting at 5th level, you can use a bonus action to gain truesight with a range of 30 feet for 1 minute. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can use a bonus action to gain truesight with a range of 30 feet for 1 minute.</description>
+		</sheet>
+	</element>
+
+</elements>

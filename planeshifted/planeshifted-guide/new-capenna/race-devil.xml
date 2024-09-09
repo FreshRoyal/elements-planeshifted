@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-devil.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-devil.xml" />
+		</update>
+	</info>
+
+	<element name="Devil" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_DEVIL">
+		<description>
+			<p>The devils of New Capenna the subordinates of demons. They are small humanoids with red skin, horns, and glowing red eyes. They are creatures of chaos and tend to be more impulsive than their fiendish counterparts. The demons of Capenna strike bargains with the powerful bosses of the families, while the devils are just happy to make a quick buck as enforcers, bouncers, and spies.</p>
+	
+			<h4>DEVIL TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Fiend.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> Devils don't age as other races do. You are immune to the effects of aging and can't be aged magically.</p>
+			<p class="indent"><strong><em>Craftiness.</em></strong> You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Devilish Resistance.</em></strong> You have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Devil's Magic.</em></strong> You know the <i>produce flame</i> cantrip. Starting at 3rd level, you can cast the <i>hellish rebuke</i> spell with this trait. Starting at 5th level, you can cast the <i>heat metal</i> spell with it. Once you cast <i>hellish rebuke</i> or <i>heat metal</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Devil)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FIEND" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Devil)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_CRAFTINESS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILISH_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC" />
+		</rules>
+	</element>
+
+	<element name="Craftiness" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_CRAFTINESS">
+		<description>
+			<p>You have proficiency in one of the following skills of your choice: Arcana, Investigation, Medicine, Sleight of Hand, or Survival.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Craftiness" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_SLEIGHTOFHAND|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Craftiness)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Devilish Resistance" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILISH_RESISTANCE">
+		<description>
+			<p>You have resistance to fire damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	
+	<element name="Devil's Magic" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC">
+		<description>
+			<p>You know the <i>produce flame</i> cantrip. Starting at 3rd level, you can cast the <i>hellish rebuke</i> spell with this trait. Starting at 5th level, you can cast the <i>heat metal</i> spell with it. Once you cast <i>hellish rebuke</i> or <i>heat metal</i> with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have of the appropriate level.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+			<grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEAT_METAL" level="5" />
+			<select type="Racial Trait" name="Spellcasting Ability (Devil's Magic)" supports="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_INTELLIGENCE|ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_WISDOM|ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Devil's Magic">
+			<description>You know the produce flame cantrip. &#13;
+			Your spellcasting ability for this spell is Intelligence.</description>
+			<description level="3">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+			<description level="5">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell and the heat metal spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Devil's Magic">
+			<description>You know the produce flame cantrip. &#13;
+			Your spellcasting ability for this spell is Wisdom.</description>
+			<description level="3">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+			<description level="5">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell and the heat metal spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_DEVIL_DEVILS_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Devil's Magic">
+			<description>You know the produce flame cantrip. &#13;
+			Your spellcasting ability for this spell is Charisma.</description>
+			<description level="3">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell with this trait once per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+			<description level="5">You know the produce flame cantrip. &#13;
+			You can cast the hellish rebuke spell and the heat metal spell with this trait once each per long rest. You can also cast these spells using any spell slots you have of the appropriate level. &#13;
+			Your spellcasting ability for these spells is Charisma.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-cephalid.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-cephalid.xml" />
+		</update>
+	</info>
+
+	<element name="Cephalid" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_CEPHALID">
+		<description>
+			<p>Cephalids are humanoids with octopus-like features, native to the long lost seas and lakes of Old Capenna. They possess tentacles that act as facial and head hair, and retain many cephalopod traits, including color-changing markings controlled by their emotions, three hearts, and a boneless anatomy that allows them to "pour" themselves into tight spaces. Their natural talent for stealth and subterfuge make them favored by the Obscura family, who are always looking for spies.</p>
+	
+			<h4>CEPHALID TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Amphibious.</em></strong> You can breathe air and water.</p>
+			<p class="indent"><strong><em>Boneless.</em></strong> You can squeeze through a space as narrow as 1 inch wide, provided you aren't wearing armor and are carrying nothing. You have advantage on ability checks you make to initiate or escape a grapple.</p>
+			<p class="indent"><strong><em>Cephalid Resilience.</em></strong> You have resistance to acid and cold damage.</p>
+			<p class="indent"><strong><em>Chameleon Skin.</em></strong> As an action, you can change the color of your skin to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundings.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Three Hearts.</em></strong> You have advantage on death saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Cephalid)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Cephalid)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_AMPHIBIOUS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_BONELESS" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_CEPHALID_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_CHAMELEON_SKIN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_THREE_HEARTS" />
+		</rules>
+	</element>
+
+	<element name="Amphibious" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_AMPHIBIOUS">
+		<description>
+			<p>You can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe air and water.</description>
+		</sheet>
+	</element>
+
+	<element name="Boneless" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_BONELESS">
+		<description>
+			<p>You can squeeze through a space as narrow as 1 inch wide, provided you aren't wearing armor and are carrying nothing. You have advantage on ability checks you make to initiate or escape a grapple.</p>
+		</description>
+		<sheet>
+			<description>You can squeeze through a space as narrow as 1 inch wide, provided you aren't wearing armor and are carrying nothing. You have advantage on ability checks you make to initiate or escape a grapple.</description>
+		</sheet>
+	</element>
+
+	<element name="Cephalid Resistance" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_CEPHALID_RESISTANCE">
+		<description>
+			<p>You have resistance to acid and cold damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="Chameleon Skin" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_CHAMELEON_SKIN">
+		<description>
+			<p>As an action, you can change the color of your skin to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundings.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can change the color of your skin to match the color and texture of your surroundings, giving you advantage on Dexterity (Stealth) checks made to hide in those surroundings.</description>
+		</sheet>
+	</element>
+
+	<element name="Three Hearts" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_CEPHALID_THREE_HEARTS">
+		<description>
+			<p>You have advantage on death saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on death saving throws.</description>
+		</sheet>
+	</element>
+	
+</elements>

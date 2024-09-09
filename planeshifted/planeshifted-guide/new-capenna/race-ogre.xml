@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-ogre.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-ogre.xml" />
+		</update>
+	</info>
+
+	<element name="Ogre" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_OGRE">
+		<description>
+			<p>Ogres are towering humanoids with imposing physiques. They characteristically have long lower canines, strong under-bites, and pointed ears. It is unknown if they share any ancestry with the elves or other humanoid races.</p>
+			<p class="indent">An ogre's natural talents lend them to be commonly found as enforcers, bodyguards, hired muscle, and pugilists. They are also sought after by the Riveteers for their natural strength.</p>
+
+			<h4>OGRE TRAITS</h4>
+			<p>You have the following racial traits. </p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray.</p>
+			<p class="indent"><strong><em>Giant Step.</em></strong> You can move through the space of any creature that is of a size smaller than yours.</p>
+			<p class="indent">You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest, and you can use it no more than once per turn.</p>
+			<p class="indent"><strong><em>Heavy-Handed.</em></strong> Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
+			<p class="indent"><strong><em>Long-Limbed.</em></strong> When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+			<p class="indent"><strong><em>Natural Athlete.</em></strong> You have proficiency in the Athletics skill.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ogre)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Ogre)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_GIANT_STEP" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_HEAVY_HANDED" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_LONG_LIMBED" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_NATURAL_ATHLETE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_POWERFUL_BUILD" />
+		</rules>
+	</element>
+
+	<element name="Giant Step" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_GIANT_STEP">
+		<description>
+			<p>You can move through the space of any creature that is of a size smaller than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size smaller than yours.</description>
+		</sheet>
+	</element>
+
+	<element name="Heavy-Handed" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_HEAVY_HANDED">
+		<description>
+			<p>Your unarmed strikes deal 1d6 + your Strength modifier bludgeoning damage, instead of the bludgeoning damage normal for unarmed strikes.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes deal 1d6 + {{strength:modifier}} bludgeoning damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Long-Limbed" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_LONG_LIMBED">
+		<description>
+			<p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+		</description>
+		<sheet>
+			<description>When you make a melee attack on your turn, your reach for it is 5 ft greater than normal.</description>
+		</sheet>
+	</element>
+
+	<element name="Natural Athlete" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_NATURAL_ATHLETE">
+		<description>
+			<p>You have proficiency in the Athletics skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Natural Athlete)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Powerful Build" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_OGRE_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+	<element name="Resourceful" type="Racial Trait" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACIAL_TRAIT_HUMAN_VARIANT_RESOURCEFUL">
+		<description>
+			<p>Whenever you finish a long rest, you are given inspiration, using the rules for inspiration provided in the <i>Player's Handbook</i>.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a long rest, you are given inspiration.</description>
+		</sheet>
+	</element>
+
+</elements>

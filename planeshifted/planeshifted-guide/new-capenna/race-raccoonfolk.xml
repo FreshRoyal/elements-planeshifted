@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-raccoonfolk.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-raccoonfolk.xml" />
+		</update>
+	</info>
 
 	<element name="Raccoonfolk" type="Race" source="Planeshifted Guide to New Capenna" id="ID_PSLE_PSGNC_RACE_RACCOONFOLK">
 		<description>
@@ -19,7 +24,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (RAccoonfolk)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Raccoonfolk)" supports="Custom Ability Score Improvement Option" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<stat name="innate speed:climb" value="innate speed" bonus="base" />

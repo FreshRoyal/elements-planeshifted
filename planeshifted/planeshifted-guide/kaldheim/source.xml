@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/source.xml" />
 		</update>
 	</info>
@@ -34,19 +34,5 @@
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
 		</rules>
-	</element>
-
-	<!--Remove celestial once it's in the Legacy repo-->
-	<element name="Celestial" type="Racial Trait" source="Planeshifted Guide to the Ten Realms of Kaldheim" id="ID_PSLE_PSGK_RACIAL_TRAIT_TYPE_CELESTIAL">
-		<supports>Creature Type</supports>
-		<description>
-			<p>Your creature type is Celestial.</p>
-			<div class="reference">
-				<div element="ID_WOTC_INTERNAL_INFORMATION_CREATURE_TYPE" />
-			</div>
-		</description>
-		<sheet alt="Creature Type">
-			<description>Celestial.</description>
-		</sheet>
 	</element>
 </elements>

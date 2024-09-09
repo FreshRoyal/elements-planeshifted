@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="amonkhet.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-return/amonkhet.index" />
 		</update>
 	</info>
