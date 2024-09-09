@@ -301,6 +301,16 @@
 			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. While wielding it, you have a +2 bonus to AC, and you are immune to fire and poison damage.</p>
 			<p class="indent">When you hit with a melee attack using this weapon, you can cast one of the following spells from it: <i>grasping vine, heat metal, locate animals or plants, plant growth, spike growth.</i></p>
 		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="weapon">Longsword</set>
+			<set name="attunement">true</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
 	</element>
 	<element name="Tangleweave Armor" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_TANGLEWEAVE_ARMOR">
 		<description>
