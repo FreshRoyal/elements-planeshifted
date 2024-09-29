@@ -130,7 +130,7 @@
 	</element>
 
 	<!-- Glistening Oil Hazard -->
-	<element name="Glistening Oil" type="Item" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL">
+	<element name="Glistening Oil" type="Item" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_ITEM_GLISTENING_OIL">
 		<description>
 			<p><i>Hazard</i></p>
 			<p>Glistening oil is an infectious black ichor. Some Phyrexian creatures weaponize this oil by coating their weapons with it. On New Phyrexia, the oil can be found leaking from structures, collecting in pools and fountains, or dripping from the spheres above. A pool of glistening oil typically covers a 10-foot square. A creature can avoid being struck by dripping glistening oil with a successful DC 10 Dexterity saving throw. A creature that comes into contact with glistening oil must make a DC 15 Constitution saving throw or become afflicted with phyresis until cured. Phyresis can't be cured by any means short of a <i>wish</i> spell.</p>
@@ -163,7 +163,7 @@
 			</select>
 		</rules>
 	</element>
-	<element name="Glistening Strike" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_STRIKE">
+	<element name="Glistening Oil Strike" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_STRIKE">
 		<description>
 			<p>Your unarmed strikes are coated with glistening oil.</p>
 		</description>
