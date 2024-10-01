@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/items.xml" />
+		</update>
+	</info>
+	
+	<element name="Barbed Batterfist" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_BARBED_BATTERFIST">
+		<description>
+			<p>This gauntlet is made of metal spikes held together by magical plating.</p>
+			<p class="indent">You can use a barbed batterfist to make an unarmed strike. When you hit with it, the strike deals 1d6 + your Strength modifier piercing damage, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<setters>
+			<set name="keywords">barbed, fist, bat</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Batterskull" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_BATTERSKULL">
+		<description>
+			<p>This helm covers the face and depicts a grotesque skull with forehead plates and tusk-like growths around the jaws. While wearing it, you gain a +3 bonus to AC, saving throws, initiative, and to attack and damage rolls made with unarmed strikes.</p>
+			<p><b><i>Living Weapon.</i></b> While not being worn, the batterskull becomes a creature with the statistics of a <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p68">phyrexian germ</a>, except it gains the benefits of the magic item as if it were wearing the item.</p>
+			<p class="indent">While you are attuned to the <i>batterskull</i>, the creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours.</p>
+			<p class="indent">The creature reverts to its magic item form if it drops to 0 hit points. While you are attuned to the batterskull, you can also revert the creature to its magic item form by using an action while touching it. When the creature becomes an item again, it can't become a creature until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">helm, skull, summon</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+	<element name="Bladehold War-Whip" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_BLADEHOLD_WAR_WHIP">
+		<description>
+			<p>This whip made of magical energy splits in two, with weighted hexgold plates at each end.</p>
+			<p class="indent">Once on each of your turns when you attack with this magic weapon using the Attack action, you can make one additional attack with it as part of the same action.</p>
+		</description>
+		<setters>
+			<set name="keywords">whip, hexgold</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">Whip</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="Blade of Shared Souls" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_BLADE_OF_SHARED_SOULS">
+		<description>
+			<p>This hexgold blade leaves a fading illusory trail of self-dupicates whenever it is moved.</p>
+			<p class="indent">As an action while wielding this magic weapon, you can cast the <i>true polymorph</i> spell on yourself. When you cast this spell this way, your new form can only be a creature that regards you as an ally and is within 120 feet of you, and the transformation lasts for 1 hour. The weapon can't be used this way again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, hexgold</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatsword, Longsword, Rapier, Scimitar, or Shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Greatsword, Longsword, Rapier, Scimitar, Shortsword</set>
+		</setters>
+	</element>
+	<element name="Blinkmoth Serum" type="Magic Item" source="Dungeon" id="ID_PSLE_PSGP_MAGIC_ITEM_BLINKMOTH_SERUM">		
+		<description>
+			<p>When you drink this potion, your Intelligence score changes to 21 for 1 hour. The potion has no effect on you if your Intelligence is equal to or greater than that score.</p>
+			<p class="indent">When the hour ends, you must succeed on a DC 15 Constitution saving throw or be afflicted with long-term madness (determined randomly or by the DM; see "Madness" in chapter 8 of the Dungeon Master's Guide). The madness ends early if you drink another blinkmoth serum. This viscous blue serum is harvested from <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p37">blinkmoths</a>.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Dragonwing Glider" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_DRAGONWING_GLIDER">
+		<description>
+			<p>This glider is made from a dragon's wings held together with hexgold plates. You can use it to fly, provided your weight (including whatever you are wearing or carrying) doesn't exceed 300 pounds. It has a flying speed of 30 feet, and you must use two hands to control its movement.</p>
+			<p class="indent">The glider has a 14-foot wingspan, and weighs 25 pounds.</p>
+		</description>
+		<setters>
+			<set name="keywords">fly</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Glimmer Lens" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_GLIMMER_LENS">
+		<description>
+			<p>This contraption attaches to your shoulders and extends a mechanical arm that holds a magical light source. While extended, it casts bright light in a 60-foot cone and dim light for an additional 60 feet. As an action, you can retract or extend the arm.</p>
+		</description>
+		<setters>
+			<set name="keywords">light</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Hexgold Armor" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_HEXGOLD_ARMOR">
+		<supports>Armor</supports>
+		<description>
+			<p>Hexgold is made from the plates of the glimmervoid treated with blinkmoth serum.</p>
+			<p class="indent">While wearing this armor, you have advantage on saving throws you make to avoid the effects of phyresis.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, medium, heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Any">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Hexgold {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Hexgold Weapon" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_HEXGOLD_WEAPON">
+		<description>
+			<p>Hexgold is made from the plates of the glimmervoid treated with blinkmoth serum.</p>
+			<p class="indent">When you hit a Phyrexian with a melee attack using this weapon, the attack is a critical hit.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword, hexgold</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Hexgold {{parent}}</set>
+		</setters>
+	</element>
+	<element name="Ichormoon Gauntlet" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_ICHORMOON_GAUNTLET">
+		<description>
+			<p>This gauntlet was created and used by the planeswalker Tamiyo after her compleation. It consists of many fingers that ends in various surgical tools and connects to the host via many tiny cables.</p>
+			<p class="indent">The gauntlet can hold 12 charges, but has 0 charges when found. Whenever a spell is cast within 60 feet of the gauntlet while you are wearing it, it regains 1 charge. As an action while wearing the gauntlet, you can use the charges in one of the following ways:</p>
+			<ul>
+				<li>You can use your action and expend 1 charge to cause another magic item of your choice within 60 feet of you to regain an expended charge.</li>
+				<li>Whenever a creature within 60 feet of you makes an ability check or saving throw, you can use your reaction and expend 1 charge to give that creature your choice of advantage or disadvantage on the roll.</li>
+				<li>You can use your action and expend 12 charges to cast the time stop spell. When you cast this spell this way, you can choose any number of allies within 60 feet of you to be unaffected by it. Casting this spell this way doesn't cause the gauntlet to gain a charge.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">gauntlet, punch</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	<element name="Infested Fleshcutter" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_INFESTED_FLESHCUTTER">
+		<description>
+			<p>This blade is made of the porcelain bone material of Elesh Norn's machine army, with flesh-like decorations around the hilt.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p class="indent">The <i>infested fleshcutter</i> has 5 charges, and regains 1d4 + 1 expended charges daily at dawn. When you hit with a melee attack using it, you can expend 1 charge to summon a <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p71">phyrexian mute</a> from it. The creature appears in an unoccupied space within 5 feet of you. The creature is friendly to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. It disappears after 1 minute or when it drops to 0 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatsword, Longsword, Rapier, Scimitar, or Shortsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+			<set name="rarity">Legendary</set>
+			<set name="weapon">Greatsword, Longsword, Rapier, Scimitar, Shortsword</set>
+		</setters>
+	</element>
+	<element name="Mindsplice Apparatus" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_MINDSPLICE_APPARATUS">
+		<description>
+			<p>The mindsplice apparatus is a device that covers the eyes and injects them with blinkmoth serum.</p>
+			<p class="indent">The <i>mindsplice apparatus</i> has 6 charges, and regains 1d4 + 3 expended charges daily at dawn. As an action while wearing it, you can expend 1 or more charges to cast one of the following spells from it: <i>augury</i> (2 charges), <i>clairvoyance</i> (3 charges), <i>divination</i> (4 charges), <i>find traps</i> (2 charges), <i>locate animals or plants</i> (2 charges), <i>locate creature</i> (4 charges), <i>locate object</i> (2 charges).</p>
+		</description>
+		<setters>
+			<set name="keywords">glasses</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Potion</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Necrogen (Vial)" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_NECROGEN_VIAL">
+		<description>
+			<p>Necrogen is a corrosive substance found in the Dross Pits of New Phyrexia. It can be found as a corrosive gas or a liquid, and is responsible for the creation of the Nim, Phyrexia's zombies.</p>
+			<p><b><i>Gas.</i></b> As an action, you can throw the vial at a point you can see within 20 feet, shattering it on impact. It creates 10-foot radius sphere of necrogen gas centered on that point. The gas spreads around corners. It lasts for 10 minutes or until strong wind disperses it. Its area is lightly obscured.</p>
+			<p class="indent">When a creature enters the gas for the first time on a turn or starts its turn there, that creature must succeed on a DC 10 Constitution saving throw or take 1d6 acid damage.</p>
+			<p><b><i>Liquid.</i></b> As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the necrogen as an improvised weapon. On a hit, the target takes 2d6 acid damage.</p>
+			<p>A creature reduced to 0 hit points by necrogen (liquid or gas) dies. It rises the following turn as a zombie. It hostile to all creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">vial</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Phyrexian Grimoire" type="Magic Item" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_PHYREXIAN_GRIMOIRE">
+		<description>
+			<p>This thick tome's pages are made from flesh and bound in an assortment of tessellated metal bits. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: <i>animate dead, create undead, gentle repose, speak with dead, phyrexian rebirth,* postmortem lunge, unnatural restoration</i>. It functions as a spellbook for you.</p>
+			<p class="indent">While you are holding the book, you can use it as a spellcasting focus for your wizard spells.</p>
+		</description>
+		<setters>
+			<set name="keywords">wizard, grimoire</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Wondrous Item</set>
+			<set name="attunement" addition="by a Wizard">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Skullbomb" type="Magic Item" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_SKULLBOMB">
+		<description>
+			<p>A skullbomb is an explosive created from the skull of a Phyrexian. As an action, you can light the skullbomb and throw it at a point up to 60 feet away. The skullbomb explodes and produces an effect in a 5-foot radius sphere centered on that point. An unwilling creature in the sphere can make a DC 12 Dexterity saving throw to avoid the effects of the skullbomb. The effect is determined by the skullbomb's sphere of origin.</p>
+			<div element="ID_PSLE_PSGP_INFORMATION_SKULLBOMB" />
+		</description>
+		<setters>
+			<set name="keywords">bomb</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb</set>
+			<set name="type=">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Skullbomb" type="Information" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_INFORMATION_SKULLBOMB">
+		<description>
+			<table>
+				<thead>
+					<tr><td>Origin</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>Fair Basilica</td><td>Each creature in the sphere gains a flying speed of 60 feet for 1 minute.</td></tr>
+				<tr><td>Surgical Bay</td><td>Each creature in the sphere is affected by the <i>banishment</i> spell.</td></tr>
+				<tr><td>Dross Pits</td><td>The corpse of each creature within the sphere is affected by the <i>revivify</i> or <i>animate dead</i> spell (your choice).</td></tr>
+				<tr><td>Autonomous Furnace</td><td>Each creature in the sphere takes 6d6 fire damage.</td></tr>
+				<tr><td>Hunter Maze</td><td>The Strength score of each creature in the sphere is increased by 2 for 1 minute.</td></tr>
+			</table>
+		</description>
+	</element>
+	<element name="Staff of Compleation" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_STAFF_OF_COMPLEATION">
+		<description>
+			<p>This staff appears to be made of metallic bone and has a horned skull fitted to its top. As an action while holding the staff, you can choose to take an amount of necrotic damage that cannot be reduced in any way to create one of the following effects:</p>
+			<ul>
+				<li>You regain one expended spell slot. You take 1d10 necrotic damage per level of the spell slot regained.</li>
+				<li>You cast the finger of death spell. You take 7d8 necrotic damage. You can't cast this spell this way again until you finish a short or long rest.</li>
+				<li>One creature of your choice within 60 feet of you automatically fails the next saving throw it makes within 1 minute using an ability score of your choice. You take 6d6 necrotic damage.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a Spellcaster">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	<element name="Staff of the Storyteller" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_STAFF_OFTHE_STORYTELLER">
+		<description>
+			<p>This gnarled and spiked wooden staff is the staff of Thrun, the last troll of New Phyrexia.</p>
+			<p class="indent"><b><i>Limited Magic Immunity.</i></b> While holding this staff, you can't be affected or detected by spells of 6th level or lower unless you wish to be. You have advantage on saving throws against all other spells.</p>
+			<p class="indent"><b><i>Dead Men Tell Tales.</i></b> As an action while holding this staff, you can cause the spirit of one corpse you can see within 60 feet of you to rise as a <b>ghost</b>. It appears in its corpse's space and disappears after 1 hour or when it drops to 0 hit points. You gain no special power over the ghost, but it is friendly to you and your companions and will attempt to defend you. The ghost will answer any question you ask of it to the best of its ability, but knows only what it knew in life, including the languages it knew. You can't use this property of the staff until you finish a short or long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+	</element>
+	<element name="Sword of Forge and Frontier" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_SWORD_OF_FORGE_AND_FRONTIER">
+		<description>
+			<p>You gain a +2 bonus to attack and damage rolls made with this magic weapon. While wielding it, you have a +2 bonus to AC, and you are immune to fire and poison damage.</p>
+			<p class="indent">When you hit with a melee attack using this weapon, you can cast one of the following spells from it: <i>grasping vine, heat metal, locate animals or plants, plant growth, spike growth.</i></p>
+		</description>
+		<setters>
+			<set name="keywords">sword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="rarity">Artifact</set>
+			<set name="weapon">Longsword</set>
+			<set name="attunement">true</set>
+			<set name="weight" lb="3">3 lb.</set>
+		</setters>
+	</element>
+	<element name="Tangleweave Armor" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_TANGLEWEAVE_ARMOR">
+		<description>
+			<p>This armor is made from magical wooden roots that appear to be rotting. While wearing it, you gain the following benefits:</p>
+			<ul>
+				<li>You have a +2 bonus to AC.</li>
+				<li>You can move across difficult terrain made of plants without spending extra movement.</li>
+				<li>The ground in a 10-foot radius around you is overgrown with plants and is difficult terrain for creatures other than you. The radius moves with you.</li>
+				<li>Your reach for melee attacks you make is 5 feet greater than normal.</li>
+				<li>You have advantage on saving throws you make to avoid or end the prone condition.</li>
+			</ul>
+			<p class="indent"><b><i>Living Weapon.</i></b> While not being worn, the armor becomes a creature with the statistics of a <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p68">phyrexian germ</a>, except it gains the benefits of the magic item as if it were wearing the item.</p>
+			<p class="indent">While you are attuned to the armor, the creature is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the creature defends itself but takes no other actions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours.</p>
+			<p class="indent">The creature reverts to its magic item form if it drops to 0 hit points. While you are attuned to the armor, you can also revert the creature to its magic item form by using an action while touching it. When the creature becomes an item again, it can't become a creature until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, medium, heavy</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="Any">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">2</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Tangleweave {{parent}}</set>
+		</setters>
+	</element>
+</elements>

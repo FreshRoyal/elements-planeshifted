@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/spells.xml" />
+		</update>
+	</info>
+	
+	<element name="Carrion's Call" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_CARRIONS_CALL">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You summon <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p71">four phyrexian mites</a> that appear in unoccupied spaces that you can see within range. Each creature disappears when it drops to 0 hit points or when the spell ends.</p>
+			<p class="indent">The summoned creatures are friendly to you and your companions. In combat, the summoned creatures share your initiative count, but take their turn as a group immediately after yours. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of glistening oil, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Corrosive Gale" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_CORROSIVE_GALE">
+		<supports>Artificer, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<p>Until the spell ends, acid falls like rain in a 40-foot-radius, 40-foot-high cylinder centered on a point you can see within range. Until the spell ends, the area is lightly obscured.</p>
+			<p class="indent">A creature in the area when you cast the spell or that enters the spell's area for the first time on a turn must make a Constitution saving throw, taking 4d6 acid damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">acid, rain</set>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="range">150 feet</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sulfur in a vial of rainwater</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Duress" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_DURESS">
+		<supports>Bard, Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>You attempt to interfere with a creature's knowledge of spells. One creature of your choice that you can see within range must make a Wisdom saving throw. On a failed save, you probe the target's mind and learn what spells it knows or has prepared, if any. For the duration, the target loses the ability to cast one of those spells of your choice.</p>
+			<p class="indent">At the end of each of its turns, the target can repeat the Wisdom saving throw, ending the spell on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords">spells, magic</set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Eyes of Gitaxias" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_EYES_OF_GITAXIAS">
+		<supports>Bard, Cleric, Druid, Warlock, Wizard</supports>
+		<description>
+			<p>Name a location you are familiar with on any plane of existence. You create an invisible sensor at that location. You can specify a target destination in general terms, and the sensor appears at or near that destination, at the DM's discretion. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist.</p>
+			<p class="indent">You can see and hear through the sensor as if you were in its space. During this time, you are deaf and blind with regard to your own senses.</p>
+			<p class="indent">As an action, you can move the sensor up to 30 feet in any direction. The sensor can't enter another plane of existence, and a solid barrier blocks the sensor's movement.</p>
+		</description>
+		<setters>
+			<set name="keywords">scry</set>
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fuel for the Cause" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_FUEL_FOR_THE_CAUSE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You drain the mind and will of the triggering creature, repurposing its energy. The triggering creature must reroll the d20 and use the lower roll. You then create one of the following effects:</p>
+			<ul>
+				<li>One magic item of your choice within range regains an expended charge.</li>
+				<li>For 1 minute, one creature of your choice within range has advantage on Strength-based ability checks and Strength saving throws, and its weapon attacks deal 1d4 extra damage.</li>
+				<li>For 1 minute, one creature of your choice within range has disadvantage on Constitution saving throws and Strength saving throws.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">protect, energy</set>
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when a creature you can see within 60 feet of you succeeds on an ability check or saving throw using a mental ability score</set>
+			<set name="range">60 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hate Mirage" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_HATE_MIRAGE">
+		<supports>Bard, Wizard</supports>
+		<description>
+			<p>You create an illusory duplicate of a creature of challenge rating 4 or lower that you can see within range. The duplicate appears in an unoccupied space within range, and disappears when it drops to 0 hit points or when the spell ends. The duplicate is a creature, partially real and formed from shadow stuff. The duplicate has all the statistics of the creature it duplicates, except it has half the creature's hit point maximum and is a Construct. The duplicate isn't sapient and doesn't know anything the original creature knew.</p>
+			<p class="indent">The duplicate is an ally to you and your companions. In combat, the duplicate shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th. Using a spell slot of 7th level or higher allows you to create a second duplicate of either the same creature or another creature within range.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, illusion</set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="range">30 feet</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sand</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Marrow Shards" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_MARROW_SHARDS">
+		<supports>Artificer, Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You magically expel shards of bone from your body and launch them at nearby creatures. You take necrotic damage equal to one roll of your hit dice, which can't be reduced in any way. Then each creature in a 20-foot cone originating from you must make a Dexterity saving throw, taking 6d6 piercing damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<setters>
+			<set name="keywords">bone, necrotic</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Postmortem Lunge" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_POSTMORTEM_LUNGE">
+		<supports>Artificer, Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>This spell causes the corpse of a creature within range to animate for one final attack. You cause the corpse to make a weapon attack or unarmed strike against a creature other than itself within range that you mentally choose. The corpse uses the statistics it used in life to make the attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">zombie, necrotic</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sheoldred's Edict" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_SHEOLDREDS_EDICT">
+		<supports>Bard, Cleric, Paladin</supports>
+		<description>
+			<p>You issue a command of betrayal. Each Humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically. On a failed save, the target must use its reaction to make a melee attack against a creature other than itself that you mentally choose.</p>
+		</description>
+		<setters>
+			<set name="keywords">command</set>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="range">120 feet</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unnatural Restoration" type="Spell" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_SPELL_UNNATURAL_RESTORATION">
+		<supports>Artificer, Druid</supports>
+		<description>
+			<p>You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new body from the rare herbs and calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails.</p>
+			<p class="indent">The reincarnated creature recalls its former life and experiences. It retains the appearance and capabilities it had in its original form, with the following exceptions:</p>
+			<ul>
+				<li>The creature is a Plant.</li>
+				<li>The creature has vulnerability to fire damage.</li>
+				<li>As long as the creature spends at least 5 hours a day in direct sunlight, it doesn't need to eat or drink.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">plant</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="duration">Instantaneous</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">rare herbs worth at least 1,000 gp, which the spell consumes, and a bit of copper</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

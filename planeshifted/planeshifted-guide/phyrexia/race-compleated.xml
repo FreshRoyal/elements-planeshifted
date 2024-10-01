@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-compleated.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-compleated.xml" />
+		</update>
+	</info>
+	
+	<element name="Compleated" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_COMPLEATED">
+		<description>
+			<p>Phyrexians reproduce using flesh-vats and birthing pods, or they are created by infecting other beings with glistening oil. The oil is a mutagen that first twists the minds of the infected, before eventually replacing all vital liquids in the host body. This prepares the host for compleation, a surgical process overseen by other Phyrexians that integrates the body's organic matter with artificial machinery. If these procedures prove fatal, necromancy reanimates the host. Once the host's body is fully integrated with machinery, they are considered truly Phyrexianized.</p>
+			<h4>Compleated Traits</h4>
+			<p>You might have once been a member of another race, but you now possess only the following racial traits.</p>
+			<p class="indent"><strong><em>Ancestral Legacy.</em></strong> You keep the following elements of your previous race: your Creature Type, your Size, and your Speed.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> In addition to your creature type, you are also considered a phyrexian for any prerequisite or effect that requires you to be a phyrexian.</p>
+			<p class="indent"><strong><em>Life Span.</em></strong> You cease aging and cannot be aged magically.</p>
+			<p class="indent"><strong><em>Integrated Artifice.</em></strong> You gain one weapon or tool of your choice that attaches to your body, becoming inseparable from you. As a bonus action, you can retract the item into your body or extend it from there. While it is extended, you can use the item as if you were holding it, and you are proficient with it.</p>
+			<p class="indent"><strong><em>Phyrexian Nature.</em></strong> You have immunity to disease, and you have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+			<p class="indent"><strong><em>Specialized Design.</em></strong> You gain an additional benefit based on one of the following options (choose when you gain this race):</p>
+			<p class="indent"><strong>Secondary Arms.</strong> You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+			<p class="indent"><strong>Heated Body.</strong> A creature that hits you with a melee attack while within 5 feet of you takes fire damage equal to your proficiency bonus. A creature grappling or grappled by you also takes that damage at the start of each of your turns.</p>
+			<p class="indent"><strong>Unnatural Armor.</strong> While you aren't wearing armor, your base Armor Class is 12 + your Constitution modifier.</p>
+			<div class="sidebar">
+				<h5>A Single Drop</h5>
+				<p>The statistics for glistening oil are adjusted to be more forgiving for campaigns and adventures. For a more "lore-friendly" version of the oil, consider making the afflicted creature repeat the saving throw at the end of every hour, rather than at the end of a long rest.</p>
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Compleated)" supports="Custom Ability Score Improvement Option" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Compleated)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Compleated)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_ANCESTRAL_LEGACY" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_CREATURE_TYPE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_LIFE_SPAN" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_INTEGRATED_ARTIFICE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_PHYREXIAN_NATURE" />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_SPECIALIZED_DESIGN" />
+		</rules>
+	</element>
+	<element name="Ancestral Legacy" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_ANCESTRAL_LEGACY">
+		<description>
+			<p>You keep the following elements of your previous race: your Creature Type, your Size, and your Speed.</p>
+			<p><strong><em>Notes:</em></strong> This trait's mechanics aren't implemented in the Aurora Builder. But you can emulate mechanics of this trait with following options:</p>
+			<p class="indent"><b>Speed.</b> You can regain lost speed by selecting and equipping items from Additional Features category of the Equipment section.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Size (Compleated)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+		</rules>
+	</element>
+	<element name="Creature Type" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_CREATURE_TYPE">
+		<description>
+			<p>In addition to your creature type, you are also considered a phyrexian for any prerequisite or effect that requires you to be a phyrexian.</p>
+		</description>
+		<sheet>
+			<description>You are also considered a phyrexian for any prerequisite or effect that requires you to be a phyrexian.</description>
+		</sheet>
+	</element>
+	<element name="Life Span" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_LIFE_SPAN">
+		<description>
+			<p>You cease aging and cannot be aged magically.</p>
+		</description>
+		<sheet>
+			<description>You cease aging and cannot be aged magically.</description>
+		</sheet>
+	</element>
+	<element name="Integrated Artifice" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_INTEGRATED_ARTIFICE">
+		<description>
+			<p>You gain one weapon or tool of your choice that attaches to your body, becoming inseparable from you. As a bonus action, you can retract the item into your body or extend it from there. While it is extended, you can use the item as if you were holding it, and you are proficient with it.</p>
+		</description>
+		<sheet>
+			<description>You gain one weapon or tool of your choice that attaches to your body, becoming inseparable from you. As a bonus action, you can retract the item into your body or extend it from there. While it is extended, you can use the item as if you were holding it, and you are proficient with it.</description>
+		</sheet>
+	</element>
+	<element name="Phyrexian Nature" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_PHYREXIAN_NATURE">
+		<description>
+			<p>You have immunity to disease, and you have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+		</description>
+		<sheet>
+			<description>You have immunity to disease, and you have advantage on saving throws you make to avoid or end the charmed condition on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Specialized Design" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_SPECIALIZED_DESIGN">
+		<description>
+			<p>You gain an additional benefit based on one of the following options (choose when you gain this race):</p>
+			<p class="indent"><strong>Secondary Arms.</strong> You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+			<p class="indent"><strong>Heated Body.</strong> A creature that hits you with a melee attack while within 5 feet of you takes fire damage equal to your proficiency bonus. A creature grappling or grappled by you also takes that damage at the start of each of your turns.</p>
+			<p class="indent"><strong>Unnatural Armor.</strong> While you aren't wearing armor, your base Armor Class is 12 + your Constitution modifier.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Racial Trait" name="Specialized Design (Compleated)" supports="Phyrexian Design" />
+		</rules>
+	</element>
+	<element name="Secondary Arms" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_SECONDARY_ARMS">
+		<supports>Phyrexian Design</supports>
+		<description>
+			<p>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
+		</description>
+		<sheet>
+			<description>You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</description>
+		</sheet>
+	</element>
+	<element name="Heated Body" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_HEATED_BODY">
+		<supports>Phyrexian Design</supports>
+		<description>
+			<p>A creature that hits you with a melee attack while within 5 feet of you takes fire damage equal to your proficiency bonus. A creature grappling or grappled by you also takes that damage at the start of each of your turns.</p>
+		</description>
+		<sheet>
+			<description>A creature that hits you with a melee attack while within 5 feet of you takes fire damage equal to your proficiency bonus. A creature grappling or grappled by you also takes that damage at the start of each of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Unnatural Armor" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_COMPLEATED_UNNATURAL_ARMOR">
+		<supports>Phyrexian Design</supports>
+		<description>
+			<p>While you aren't wearing armor, your base Armor Class is 12 + your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing armor, your Armor Class is {{ac:natural armor:compleated}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:compleated" value="12" bonus="base" />
+			<stat name="ac:natural armor:compleated" value="constitution:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:compleated" bonus="calculation" alt="Natural Armor (Compleated)" />
+		</rules>
+	</element>
+
+	<!-- Glistening Oil Hazard -->
+	<element name="Glistening Oil" type="Item" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_ITEM_GLISTENING_OIL">
+		<description>
+			<p><i>Hazard</i></p>
+			<p>Glistening oil is an infectious black ichor. Some Phyrexian creatures weaponize this oil by coating their weapons with it. On New Phyrexia, the oil can be found leaking from structures, collecting in pools and fountains, or dripping from the spheres above. A pool of glistening oil typically covers a 10-foot square. A creature can avoid being struck by dripping glistening oil with a successful DC 10 Dexterity saving throw. A creature that comes into contact with glistening oil must make a DC 15 Constitution saving throw or become afflicted with phyresis until cured. Phyresis can't be cured by any means short of a <i>wish</i> spell.</p>
+			<p class="indent">At the end of each long rest, a creature afflicted with phyresis must repeat the Constitution saving throw. A creature wearing hexgold armor has advantage on this saving throw. A creature under the effects of a potion of halo* or a cosmos elixir* automatically succeeds on this saving throw. If a creature fails its saves ten times (the failures don't need to be consecutive), the affliction ends, and creature gains the following traits:</p>
+			<p class="indent"><strong>All Will Be One.</strong> You gain a new character bond that supersedes all others: "I serve Phyrexia." You are free to interpret this bond in accordance with your alignment; you may seek to hide this new bond from others to further Phyrexia's goals in secret, or you may attempt to infect others by force.</p>
+			<p class="indent"><strong>Glistening Strike.</strong> Your unarmed strikes are coated with glistening oil.</p>
+			<p class="indent"><strong>Language.</strong> You can speak, read, and write Phyrexian.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">false</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_ALL_WILL_BE_ONE" />
+			<grant type="Racial Trait" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_STRIKE" />
+			<grant type="Language" id="ID_PSLE_PSGP_LANGUAGE_PHYREXIA" />
+		</rules>
+	</element>
+	<element name="All Will Be One" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_ALL_WILL_BE_ONE">
+		<compendium display="false" />
+		<description>
+			<p>You gain a new character bond that supersedes all others: "I serve Phyrexia." You are free to interpret this bond in accordance with your alignment; you may seek to hide this new bond from others to further Phyrexia's goals in secret, or you may attempt to infect others by force.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select name="Bond" type="List">
+				<item id="1">I serve Phyrexia.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Glistening Oil Strike" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PHYREXIA_RACIAL_TRAIT_GLISTENING_OIL_STRIKE">
+		<description>
+			<p>Your unarmed strikes are coated with glistening oil.</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes are coated with glistening oil.</description>
+		</sheet>
+	</element>
+</elements>

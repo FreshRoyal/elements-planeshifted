@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="race-human.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/race-human.xml" />
+		</update>
+	</info>
+	
+	<element name="Human" type="Race" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACE_HUMAN">
+		<description>
+			<p>The humans of New Phyrexia, are found divided among five ethnic groups, each with a culture based on one of the five colors of magic that suffuse the multiverse and the plane; influenced by the five suns of New Phyrexia.</p>
+			<p class="indent"><b>Auriok.</b> The Auriok are a tall people with bronze skin, stiff white hair, and muscular frames. The metal that grows from their flesh is gold. The Auriok were once a nomadic human ethnic group from the Razor Fields. Warriors and diplomats in equal turns, the Auriok survive by trading with other races with whom they come in contact.</p>
+			<p class="indent"><b>Neurok.</b> The Neurok are shorter and more slender than other humans, and have pale skin that ranges from light pink to faint gray. The metal that grows from their flesh is silver. Native to the islands of the Quicksilver sea, the Neurok highly value knowledge, and like the vedalken are in constant pursuit of it.</p>
+			<p class="indent"><b>Moriok.</b> The Moriok tend to have pale complexions and sleek physiques. The metal that grows from their flesh is lead. The most alarming feature of the Moriok is the black metal plate that grows across their eyes, making them blind. The Moriok traditionally revere the black moon of Mirrodin, calling it the Whisperer, and believe that it grants power to those who can listen.</p>
+			<p class="indent"><b>Vulshok.</b> The Vulshok are large and powerful, with muscular frames and thick, tanned skin and hair that resembles flexible metal wire. The metal that grows from their flesh is iron. The Vulshok are divided into six tribes: the Anvil, the Blade, the Hammer, the Helm, the Shield, and the Spear. Each tribe fulfills a role in Vulshok culture, such as crafting, training warriors, providing magic, and so on.</p>
+			<p class="indent"><b>Sylvok.</b> The Sylvok are of medium height and build, with fair skin, sometimes with a greenish tinge. The metal that grows from their flesh is copper. The Sylvok are a reclusive human ethnic group that onced lived in the Tangle, New Phyrexia's copper forest. The Sylvok practice a druidic religion, and have a hunter-gatherer culture in a unique relationship with the Tangle's ecosystem.</p>
+			<h4>Human Traits</h4>
+			<p>You have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 5-7 feet tall).</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Human Determination.</em></strong> When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Tool Proficiency.</em></strong> You have proficiency with one tool of your choice.</p>
+			<p class="indent"><strong><em>Tribe.</em></strong> You hail from one of the human Mirran tribes, which determines the type of metal that adorns your flesh and other characteristics. You gain an additional benefit based on one of the following options (choose when you select this race):</p>
+			<br />
+			<p class="indent"><strong><em>Auriok.</em></strong> You have proficiency in the Athletics and Persuasion skills.</p>
+			<p class="indent"><strong><em>Moriok.</em></strong> You have blindsight out to 30 feet, but are blinded beyond this radius. Using this blindsight, you can perceive your surroundings without relying on sight.</p>
+			<p class="indent"><strong><em>Neurok.</em></strong> You have proficiency in the Investigation and Stealth skills.</p>
+			<p class="indent"><strong><em>Sylvok.</em></strong> You have proficiency in the Nature and Survival skills.</p>
+			<p class="indent"><strong><em>Vulshok.</em></strong> While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Human)" supports="Custom Ability Score Improvement Option" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_RACE_HUMAN" />
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Human)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Human)" supports="Standard||Exotic" />
+
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_DETERMINATION"  />
+			<grant type="Racial Trait" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TOOL_PROFICIENCY"  />
+			<select type="Racial Trait" name="Tribe Traits" supports="PSGP Human" />
+		</rules>
+	</element>
+	<element name="Human Determination" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_DETERMINATION">
+		<description>
+			<p>When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you make an attack roll, ability check, or saving throw, after seeing the result but before the effects of the roll are resolved, you can reroll the die and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Tool Proficiency" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TOOL_PROFICIENCY">
+		<description>
+			<p>You have proficiency with one tool of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Human)" supports="Tool" />
+		</rules>
+	</element>
+	<!-- Tribes -->
+	<element name="Auriok" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TRIBE_AURIOK">
+		<supports>PSGP Human</supports>
+		<description>
+			<p>The Auriok are a tall people with bronze skin, stiff white hair, and muscular frames. The metal that grows from their flesh is gold. The Auriok were once a nomadic human ethnic group from the Razor Fields. Warriors and diplomats in equal turns, the Auriok survive by trading with other races with whom they come in contact.</p>
+			<p class="indent"><strong><em>Auriok.</em></strong> You have proficiency in the Athletics and Persuasion skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Auriok Tribe (Human)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Auriok Tribe)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" number="2" />
+		</rules>
+	</element>
+	<element name="Neurok" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TRIBE_NEUROK">
+		<supports>PSGP Human</supports>
+		<description>
+			<p>The Neurok are shorter and more slender than other humans, and have pale skin that ranges from light pink to faint gray. The metal that grows from their flesh is silver. Native to the islands of the Quicksilver sea, the Neurok highly value knowledge, and like the vedalken are in constant pursuit of it.</p>
+			<p class="indent"><b><i>Neurok.</i></b> You have proficiency in the Investigation and Stealth skills.</p>
+		</description>
+		<shet display="false" />
+		<rules>
+			<select type="Proficiency" name="Neurok Tribe (Human)" supports="ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_STEALTH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Neurok Tribe)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" number="2" />
+		</rules>
+	</element>
+	<element name="Moriok" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TRIBE_MORIOK">
+		<supports>PSGP Human</supports>
+		<description>
+			<p>The Moriok tend to have pale complexions and sleek physiques. The metal that grows from their flesh is lead. The most alarming feature of the Moriok is the black metal plate that grows across their eyes, making them blind. The Moriok traditionally revere the black moon of Mirrodin, calling it the Whisperer, and believe that it grants power to those who can listen.</p>
+			<p class="indent"><b><i>Moriok.</i></b> You have blindsight out to 30 feet, but are blinded beyond this radius. Using this blindsight, you can perceive your surroundings without relying on sight.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight out to 30 feet, but are blinded beyond this radius. Using this blindsight, you can perceive your surroundings without relying on sight.</description>
+		</sheet>
+	</element>
+	<element name="Sylvok" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TRIBE_SYLVOK">
+		<supports>PSGP Human</supports>
+		<description>
+			<p>The Sylvok are of medium height and build, with fair skin, sometimes with a greenish tinge. The metal that grows from their flesh is copper. The Sylvok are a reclusive human ethnic group that onced lived in the Tangle, New Phyrexia's copper forest. The Sylvok practice a druidic religion, and have a hunter-gatherer culture in a unique relationship with the Tangle's ecosystem.</p>
+			<p class="indent"><b><i>Sylvok.</i></b> You have proficiency in the Nature and Survival skills.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Sylvok Tribe (Human)" supports="ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Sylvok Tribe)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" number="2" />
+		</rules>
+	</element>
+	<element name="Vulshok" type="Racial Trait" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_RACIAL_TRAIT_HUMAN_TRIBE_VULSHOK">
+		<supports>PSGP Human</supports>
+		<description>
+			<p>The Vulshok are large and powerful, with muscular frames and thick, tanned skin and hair that resembles flexible metal wire. The metal that grows from their flesh is iron. The Vulshok are divided into six tribes: the Anvil, the Blade, the Hammer, the Helm, the Shield, and the Spear. Each tribe fulfills a role in Vulshok culture, such as crafting, training warriors, providing magic, and so on.</p>
+			<p class="indent"><b><i>Vulshok.</i></b> While you aren't wearing armor, your base Armor Class is 13 + your Dexterity modifier.</p>
+		</description>
+		<sheet>
+			<description>While you aren't wearing armor, your Armor Class is {{ac:natural armor:vulshok}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor:vulshok" value="13" bonus="base" />
+			<stat name="ac:natural armor:vulshok" value="dexterity:modifier" bonus="ability" />
+			<stat name="ac:calculation" value="ac:natural armor:vulshok" bonus="calculation" alt="Natural Armor (Vulshok)" />
+		</rules>
+	</element>
+</elements>
