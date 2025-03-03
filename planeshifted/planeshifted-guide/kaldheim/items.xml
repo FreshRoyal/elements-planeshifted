@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kaldheim/items.xml" />
 		</update>
 	</info>
@@ -94,7 +94,7 @@
 			<p class="indent">When Trygul and Bygul pull the chariot, they have a speed of 60 feet and can move up to two Medium or smaller creatures riding in the chariot. In combat, both cats act on the same initiative and take the same action each turn. Creatures riding in the chariot while Trygul and Bygul are pulling it have half cover.</p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="attunement">true</set>
 			<set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
@@ -160,7 +160,7 @@
 			<p class="indent">When you use an action to name a liquid with the horn, you can choose one of the following additional potion liquids: <i>Potion of cold resistance</i>, <i>potion of fire resistance</i>, <i>potion of greater healing</i>, <i>potion of growth</i>, <i>potion of hill giant strength</i>, <i>potion of water breathing</i>. The horn produces one ounce of these potion liquids, which is enough for one creature to drink and gain the magical effect that potion produces. Once the jug produces a potion liquid, it can't produce more potion liquid or another potion liquid until the next dawn.</p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -201,7 +201,7 @@
 			<p>These Large wings are constructed from a bronze frame and raven wings, and attach to your back. You can use them to fly, provided your weight (including whatever you are wearing or carrying) doesn't exceed 300 pounds. They have a flying speed of 30 feet, and can't hover. If the the raven wings lose their rider while airborne, they fall.</p>
 		</description>
 		<setters>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -256,7 +256,7 @@
 		</description>
 		<setters>
 			<set name="keywords">spells</set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -356,7 +356,7 @@
 		</description>
 		<setters>
 			<set name="keywords">saving throw</set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
@@ -373,7 +373,7 @@
 		</description>
 		<setters>
 			<set name="keywords">advantage, saving throw</set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
