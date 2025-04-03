@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-rhox.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/new-capenna/race-rhox.xml" />
 		</update>
 	</info>
@@ -11,7 +11,7 @@
 			<p>Rhox are anthropomorphic rhinoceros folk, once living proudly in Capenna's open plains during the Kingdom Era. They are humanoid in form, but possess thick, leathery skin and a sharp facial horn. They possess a natural strength that lends itself to physical labor and security work.</p>
 			<p class="indent">Rhox are quite common in Capenna, and can be commonly found among Riveteers wrecking crews, Brokers enforcers, and in Cabaretti kitchens.</p>
 	
-			<h4>LEONIN TRAITS</h4>
+			<h4>RHOX TRAITS</h4>
 			<p>You have the following racial traits. </p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium.</p>
