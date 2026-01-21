@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/phyrexia/items.xml" />
 		</update>
 	</info>
@@ -68,7 +68,7 @@
 			<set name="weapon">Greatsword, Longsword, Rapier, Scimitar, Shortsword</set>
 		</setters>
 	</element>
-	<element name="Blinkmoth Serum" type="Magic Item" source="Dungeon" id="ID_PSLE_PSGP_MAGIC_ITEM_BLINKMOTH_SERUM">		
+	<element name="Blinkmoth Serum" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_BLINKMOTH_SERUM">		
 		<description>
 			<p>When you drink this potion, your Intelligence score changes to 21 for 1 hour. The potion has no effect on you if your Intelligence is equal to or greater than that score.</p>
 			<p class="indent">When the hour ends, you must succeed on a DC 15 Constitution saving throw or be afflicted with long-term madness (determined randomly or by the DM; see "Madness" in chapter 8 of the Dungeon Master's Guide). The madness ends early if you drink another blinkmoth serum. This viscous blue serum is harvested from <a href="https://www.gmbinder.com/share/-MYlGPAwIkEIBNF7cJ5p#p37">blinkmoths</a>.</p>
@@ -213,7 +213,7 @@
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
-	<element name="Phyrexian Grimoire" type="Magic Item" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_PHYREXIAN_GRIMOIRE">
+	<element name="Phyrexian Grimoire" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_PHYREXIAN_GRIMOIRE">
 		<description>
 			<p>This thick tome's pages are made from flesh and bound in an assortment of tessellated metal bits. When found, the book contains the following spells, which are wizard spells for you while you are attuned to the book: <i>animate dead, create undead, gentle repose, speak with dead, phyrexian rebirth,* postmortem lunge, unnatural restoration</i>. It functions as a spellbook for you.</p>
 			<p class="indent">While you are holding the book, you can use it as a spellcasting focus for your wizard spells.</p>
@@ -228,7 +228,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Skullbomb" type="Magic Item" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_SKULLBOMB">
+	<element name="Skullbomb" type="Magic Item" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_MAGIC_ITEM_SKULLBOMB">
 		<description>
 			<p>A skullbomb is an explosive created from the skull of a Phyrexian. As an action, you can light the skullbomb and throw it at a point up to 60 feet away. The skullbomb explodes and produces an effect in a 5-foot radius sphere centered on that point. An unwilling creature in the sphere can make a DC 12 Dexterity saving throw to avoid the effects of the skullbomb. The effect is determined by the skullbomb's sphere of origin.</p>
 			<div element="ID_PSLE_PSGP_INFORMATION_SKULLBOMB" />
@@ -243,7 +243,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Skullbomb" type="Information" source="Phyrexian Guide to Phyrexia" id="ID_PSLE_PSGP_INFORMATION_SKULLBOMB">
+	<element name="Skullbomb" type="Information" source="Planeshifted Guide to Phyrexia" id="ID_PSLE_PSGP_INFORMATION_SKULLBOMB">
 		<description>
 			<table>
 				<thead>
