@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="race-orochi.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-planeshifted/master/planeshifted/planeshifted-guide/kamigawa-neon-dynasty/race-orochi.xml" />
 		</update>
 	</info>
@@ -28,12 +28,11 @@
 			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).</p>
 			<p class="indent"><strong><em>Secondary Arms.</em></strong> You have two secondary arms below your primary pair of arms. The secondary arms function like your primary arms.</p>
 			<p class="indent"><strong><em>Serpentine Build.</em></strong> You have a serpentine body which you can use to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple.</p>
-			<p class="indent"><strong><em>Serpentine Build.</em></strong> You have a serpentine body which you can use to grapple a creature while leaving your hands free. You have advantage on ability checks you make to initiate a grapple.</p>
 			<p class="indent"><strong><em>Poison Bite.</em></strong> As an action, you can make a special strike with your Bite. If the attack hits, it deals its normal damage, and the target must succeed on a Constitution saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier or be poisoned until the start of your next turn. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Orochi)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Orochi)" supports="Custom Ability Score Improvement Option" requirements="!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
 			<select type="Racial Trait" name="Size (Orochi)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
